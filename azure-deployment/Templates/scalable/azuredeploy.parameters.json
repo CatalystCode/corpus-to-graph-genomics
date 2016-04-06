@@ -1,0 +1,33 @@
+﻿{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "DB_SERVER": { "value": "dbServerName" },
+    "DB_NAME": { "value": "dbName" },
+    "DB_USER": { "value": "userName" },
+    "DB_PASSWORD": { "value": "dbPassword" },
+    "STORAGE_ACCOUNT": { "value": "storageAccount" },
+    "QUEUE_TRIGGER_QUERY": { "value": "trigger-query-name" },
+    "QUEUE_NEW_IDS": { "value": "newpaperids-name" },
+    "QUEUE_SCORING": { "value": "scoring-name" },
+    "LOG_STORAGE_ACCOUNT": { "value": "logStorageAccount" },
+    "LOG_LEVEL": { "value": "log" },
+    "SERVICE_DOC_URL": { "value": "http://serviceUrl" },
+    "SCORING_SERVICES": { "value": "http://serviceUrl" },
+    "SUPPORTED_ENTITIES": { "value": "entity1type;entity2type" },
+    "GOOGLE_CLIENT_ID": { "value": "googleClientId" },
+    "GOOGLE_CLIENT_SECRET": { "value": "googleClientSecret" },
+    "GOOGLE_ADMIN_ACCOUNT": { "value": "email@gmail.com" },
+    "triggerSchedulerSiteName": { "value": "triggerSchedulerWebAppMachineName" },
+    "queryIdSiteName": { "value": "queryWebAppMachineName" },
+    "docParserSiteName": { "value": "docParserWebAppMachineName" },
+    "scoringSiteName": { "value": "ScoringWebAppMachineName" },
+    "hostingPlanName": { "value": "BasicHostingPlan" },
+    "sku": { "value": "Basic" },
+    "siteLocation": { "value": "West US" },
+    "repoURL": { "value": "https://github.com/repoName.git" },
+    "branch": { "value": "master" },
+    "graphWebsiteName": { "value": "graphWebsiteName" },
+    "consoleWebsiteName": { "value": "consoleWebsiteName" }
+  }
+}

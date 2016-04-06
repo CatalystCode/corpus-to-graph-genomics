@@ -1,0 +1,56 @@
+{
+  "name": "miroculus-pipeline",
+  "version": "1.0.0",
+  "description": "A project meant only for editing internal modules. It is not meant to be run.",
+  "main": "app.js",
+  "author": {
+    "name": "mor shemesh",
+    "email": "morshe@microsoft.com"
+  },
+  "dependencies": {
+    "async": "^1.5.2",
+    "azure-logging": "^0.3.2",
+    "azure-storage": "^0.6.0",
+    "base32": "^0.0.6",
+    "body-parser": "^1.15.0",
+    "bower": "^1.7.2",
+    "colors": "^1.1.2",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.0",
+    "corpus2graph-pipeline": "^1.0.2",
+    "debug": "~2.0.0",
+    "docrouter": "^0.7.0",
+    "express": "^4.13.4",
+    "express-session": "^1.12.1",
+    "extend": "^3.0.0",
+    "fs-extra": "^0.26.5",
+    "googleapis": "^2.1.7",
+    "marked": "^0.3.5",
+    "mocha": "^2.4.5",
+    "moment": "^2.11.1",
+    "morgan": "^1.7.0",
+    "multiparty": "^4.1.2",
+    "node-uuid": "^1.4.7",
+    "passport": "^0.3.2",
+    "passport-google-oauth": "^0.2.0",
+    "q": "^1.4.1",
+    "querystring": "^0.2.0",
+    "request": "^2.69.0",
+    "string": "^3.3.1",
+    "string_format": "0.0.6",
+    "tedious": "^1.13.2",
+    "tedious-connection-pool": "^0.3.9",
+    "url": "^0.11.0",
+    "validator": "^4.5.2",
+    "wordwrap": "^1.0.0"
+  },
+  "scripts": {
+    "postinstall": "node deployment/ensure-folder-hierarchy && node deployment/ensure-sql",
+    "test": "./node_modules/.bin/mocha test/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/CatalystCode/miroculus-pipeline"
+  },
+  "license": "MIT"
+}

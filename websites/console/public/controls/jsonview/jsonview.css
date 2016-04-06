@@ -1,0 +1,34 @@
+
+.jsonview-control {
+    margin: 5px 0px 5px 0px;
+}
+
+.jsonview-control table {
+    border-collapse:collapse;
+    empty-cells:show;
+    font-family: courier;
+}
+
+.jsonview-control table td {
+    border: 1px silver solid;
+    padding: 3px;
+    vertical-align: top;
+    text-align: left;
+    word-wrap: normal;
+
+}
+
+.jsonview-control .metadataField
+{
+    background-color: #eeeeee;
+    font-weight: bold;
+}
+.jsonview-control .metadataValue
+{
+    background-color: #eeeeda;
+}
+
+.jsonview-control .timestamp
+{
+    font-size: 0.7em;
+}

@@ -1,0 +1,427 @@
+﻿{
+  "$schema": "http://schema.management.azure.com/schemas/2014-04-01-preview/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "DB_SERVER": {
+      "type": "string",
+      "minLength": 1
+    },
+    "DB_NAME": {
+      "type": "string",
+      "minLength": 1
+    },
+    "DB_PASSWORD": {
+      "type": "securestring",
+      "minLength": 1
+    },
+    "DB_USER": {
+      "type": "string",
+      "minLength": 1
+    },
+    "STORAGE_ACCOUNT": {
+      "type": "string",
+      "minLength": 1
+    },
+    "QUEUE_SCORING": {
+      "type": "string",
+      "minLength": 1
+    },
+    "QUEUE_NEW_IDS": {
+      "type": "string",
+      "minLength": 1
+    },
+    "QUEUE_TRIGGER_QUERY": {
+      "type": "string",
+      "minLength": 1
+    },
+    "LOG_LEVEL": {
+      "type": "string",
+      "minLength": 1
+    },
+    "LOG_STORAGE_ACCOUNT": {
+      "type": "string",
+      "minLength": 1
+    },
+    "SERVICE_DOC_URL": {
+      "type": "string",
+      "minLength": 1
+    },
+    "SCORING_SERVICES": {
+      "type": "string",
+      "minLength": 1
+    },
+    "SUPPORTED_ENTITIES": {
+      "type": "string"
+    },
+    "GOOGLE_CLIENT_ID": {
+      "type": "string",
+      "minLength": 1
+    },
+    "GOOGLE_CLIENT_SECRET": {
+      "type": "string",
+      "minLength": 1
+    },
+    "GOOGLE_ADMIN_ACCOUNT": {
+      "type": "string",
+      "minLength": 1
+    },
+    "webjobsSiteName": {
+      "type": "string",
+      "metadata": {
+        "description": "The name of the web app that you wish to create."
+      }
+    },
+    "hostingPlanName": {
+      "type": "string",
+      "metadata": {
+        "description": "The name of the App Service plan to use for hosting the web app."
+      }
+    },
+    "siteLocation": {
+      "type": "string",
+      "metadata": {
+        "description": "The location to use for creating the web app and hosting plan. It must be one of the Azure locations that support web apps."
+      }
+    },
+    "graphWebsiteName": {
+      "type": "string",
+      "metadata": {
+        "description": "The name for the Graph API website."
+      }
+    },
+    "consoleWebsiteName": {
+      "type": "string",
+      "metadata": {
+        "description": "The name for the console website."
+      }
+    },
+    "sku": {
+      "type": "string",
+      "allowedValues": [
+        "Free",
+        "Shared",
+        "Basic",
+        "Standard"
+      ],
+      "defaultValue": "Free",
+      "metadata": {
+        "description": "The pricing tier for the hosting plan."
+      }
+    },
+    "workerSize": {
+      "type": "string",
+      "allowedValues": [
+        "0",
+        "1",
+        "2"
+      ],
+      "defaultValue": "0",
+      "metadata": {
+        "description": "The instance size of the hosting plan (small, medium, or large)."
+      }
+    },
+    "repoURL": {
+      "type": "string",
+      "defaultValue": "https://github.com/morsh/azure-web-job-sample.git",
+      "metadata": {
+        "description": "The URL for the GitHub repository that contains the project to deploy."
+      }
+    },
+    "branch": {
+      "type": "string",
+      "defaultValue": "master",
+      "metadata": {
+        "description": "The branch of the GitHub repository to use."
+      }
+    },
+    "databaseCollation": {
+      "type": "string",
+      "minLength": 1,
+      "defaultValue": "SQL_Latin1_General_CP1_CI_AS"
+    },
+    "databaseEdition": {
+      "type": "string",
+      "defaultValue": "Basic",
+      "allowedValues": [
+        "Basic",
+        "Standard",
+        "Premium"
+      ]
+    },
+    "databaseRequestedServiceObjectiveName": {
+      "type": "string",
+      "defaultValue": "Basic",
+      "allowedValues": [
+        "Basic",
+        "S0",
+        "S1",
+        "S2",
+        "P1",
+        "P2",
+        "P3"
+      ],
+      "metadata": {
+        "description": "Describes the performance level for Edition"
+      }
+    },
+    "pipelineStorageType": {
+      "type": "string",
+      "defaultValue": "Standard_LRS",
+      "allowedValues": [
+        "Standard_LRS",
+        "Standard_ZRS",
+        "Standard_GRS",
+        "Standard_RAGRS",
+        "Premium_LRS"
+      ]
+    }
+  },
+  "resources": [
+    {
+      "apiVersion": "2015-04-01",
+      "name": "[parameters('hostingPlanName')]",
+      "type": "Microsoft.Web/serverfarms",
+      "location": "[parameters('siteLocation')]",
+      "properties": {
+        "name": "[parameters('hostingPlanName')]",
+        "sku": "[parameters('sku')]",
+        "workerSize": "[parameters('workerSize')]",
+        "numberOfWorkers": 1
+      }
+    },
+    {
+      "name": "[parameters('DB_SERVER')]",
+      "type": "Microsoft.Sql/servers",
+      "location": "[resourceGroup().location]",
+      "apiVersion": "2014-04-01-preview",
+      "dependsOn": [ ],
+      "tags": {
+        "displayName": "[parameters('DB_SERVER')]"
+      },
+      "properties": {
+        "administratorLogin": "[parameters('DB_USER')]",
+        "administratorLoginPassword": "[parameters('DB_PASSWORD')]"
+      },
+      "resources": [
+        {
+          "name": "AllowAllWindowsAzureIps",
+          "type": "firewallrules",
+          "location": "[resourceGroup().location]",
+          "apiVersion": "2014-04-01-preview",
+          "dependsOn": [
+            "[concat('Microsoft.Sql/servers/', parameters('DB_SERVER'))]"
+          ],
+          "properties": {
+            "startIpAddress": "0.0.0.0",
+            "endIpAddress": "255.255.255.255"
+          }
+        },
+        {
+          "name": "[parameters('DB_NAME')]",
+          "type": "databases",
+          "location": "[resourceGroup().location]",
+          "apiVersion": "2014-04-01-preview",
+          "dependsOn": [
+            "[parameters('DB_SERVER')]"
+          ],
+          "tags": {
+            "displayName": "[parameters('DB_NAME')]"
+          },
+          "properties": {
+            "collation": "[parameters('databaseCollation')]",
+            "edition": "[parameters('databaseEdition')]",
+            "maxSizeBytes": "1073741824",
+            "requestedServiceObjectiveName": "[parameters('databaseRequestedServiceObjectiveName')]"
+          }
+        }
+      ]
+    },
+    {
+      "name": "[parameters('STORAGE_ACCOUNT')]",
+      "type": "Microsoft.Storage/storageAccounts",
+      "location": "[resourceGroup().location]",
+      "apiVersion": "2015-06-15",
+      "dependsOn": [ ],
+      "tags": {
+        "displayName": "[parameters('STORAGE_ACCOUNT')]"
+      },
+      "properties": {
+        "accountType": "[parameters('pipelineStorageType')]"
+      }
+    },
+    {
+      "name": "[parameters('LOG_STORAGE_ACCOUNT')]",
+      "type": "Microsoft.Storage/storageAccounts",
+      "location": "[resourceGroup().location]",
+      "apiVersion": "2015-06-15",
+      "dependsOn": [ ],
+      "tags": {
+        "displayName": "[parameters('LOG_STORAGE_ACCOUNT')]"
+      },
+      "properties": {
+        "accountType": "[parameters('pipelineStorageType')]"
+      }
+    },
+    {
+      "apiVersion": "2015-04-01",
+      "name": "[parameters('webjobsSiteName')]",
+      "type": "Microsoft.Web/sites",
+      "location": "[parameters('siteLocation')]",
+      "dependsOn": [
+        "[resourceId('Microsoft.Web/serverfarms', parameters('hostingPlanName'))]",
+        "[resourceId('Microsoft.Sql/servers/', parameters('DB_SERVER'))]",
+        "[resourceId('Microsoft.Storage/storageAccounts/', parameters('STORAGE_ACCOUNT'))]",
+        "[resourceId('Microsoft.Storage/storageAccounts/', parameters('LOG_STORAGE_ACCOUNT'))]"
+      ],
+      "properties": {
+        "serverFarmId": "[parameters('hostingPlanName')]"
+      },
+      "resources": [
+        {
+          "apiVersion": "2015-04-01",
+          "name": "appsettings",
+          "type": "config",
+          "dependsOn": [
+            "[resourceId('Microsoft.Web/sites', parameters('webjobsSiteName'))]"
+          ],
+          "properties": {
+            "WEBSITE_NODE_DEFAULT_VERSION": "4.2.3",
+            "PIPELINE_ROLE": "all_in_one",
+            "DEPLOYMENT_ROLE": "all_in_one",
+            "PIPELINE_WEBJOB_TYPE": "all_in_one",
+            "DB_SERVER": "[concat(parameters('DB_SERVER'), '.database.windows.net')]",
+            "DB_NAME": "[parameters('DB_NAME')]",
+            "DB_PASSWORD": "[parameters('DB_PASSWORD')]",
+            "DB_USER": "[parameters('DB_USER')]",
+            "STORAGE_ACCOUNT": "[parameters('STORAGE_ACCOUNT')]",
+            "STORAGE_KEY": "[listKeys(concat('Microsoft.Storage/storageAccounts/', parameters('STORAGE_ACCOUNT')),'2015-06-15').key1]",
+            "QUEUE_SCORING": "[parameters('QUEUE_SCORING')]",
+            "QUEUE_NEW_IDS": "[parameters('QUEUE_NEW_IDS')]",
+            "QUEUE_TRIGGER_QUERY": "[parameters('QUEUE_TRIGGER_QUERY')]",
+            "LOG_LEVEL": "[parameters('LOG_LEVEL')]",
+            "LOG_STORAGE_ACCOUNT": "[parameters('LOG_STORAGE_ACCOUNT')]",
+            "LOG_STORAGE_KEY": "[listKeys(concat('Microsoft.Storage/storageAccounts/', parameters('LOG_STORAGE_ACCOUNT')),'2015-06-15').key1]",
+            "SERVICE_DOC_URL": "[parameters('SERVICE_DOC_URL')]",
+            "SCORING_SERVICES": "[parameters('SCORING_SERVICES')]",
+            "SUPPORTED_ENTITIES": "[parameters('SUPPORTED_ENTITIES')]"
+          }
+        },
+        {
+          "apiVersion": "2015-04-01",
+          "name": "web",
+          "type": "config",
+          "dependsOn": [
+            "[resourceId('Microsoft.Web/sites', parameters('webjobsSiteName'))]"
+          ],
+          "properties": {
+            "alwaysOn": "true"
+          }
+        }
+      ]
+    },
+    {
+      "name": "[parameters('graphWebsiteName')]",
+      "type": "Microsoft.Web/sites",
+      "location": "[parameters('siteLocation')]",
+      "apiVersion": "2015-08-01",
+      "dependsOn": [
+        "[concat('Microsoft.Web/serverfarms/', parameters('hostingPlanName'))]",
+        "[resourceId('Microsoft.Sql/servers/', parameters('DB_SERVER'))]",
+        "[resourceId('Microsoft.Storage/storageAccounts/', parameters('STORAGE_ACCOUNT'))]",
+        "[resourceId('Microsoft.Storage/storageAccounts/', parameters('LOG_STORAGE_ACCOUNT'))]"
+      ],
+      "tags": {
+        "[concat('hidden-related:', resourceGroup().id, '/providers/Microsoft.Web/serverfarms/', parameters('hostingPlanName'))]": "Resource",
+        "displayName": "graph"
+      },
+      "properties": {
+        "name": "[parameters('graphWebsiteName')]",
+        "serverFarmId": "[resourceId('Microsoft.Web/serverfarms/', parameters('hostingPlanName'))]"
+      },
+      "resources": [
+        {
+          "apiVersion": "2015-04-01",
+          "name": "appsettings",
+          "type": "config",
+          "dependsOn": [
+            "[resourceId('Microsoft.Web/sites', parameters('graphWebsiteName'))]"
+          ],
+          "properties": {
+            "WEBSITE_NODE_DEFAULT_VERSION": "4.2.3",
+            "PIPELINE_ROLE": "graph",
+            "DEPLOYMENT_ROLE": "website",
+            "DB_SERVER": "[concat(parameters('DB_SERVER'), '.database.windows.net')]",
+            "DB_NAME": "[parameters('DB_NAME')]",
+            "DB_PASSWORD": "[parameters('DB_PASSWORD')]",
+            "DB_USER": "[parameters('DB_USER')]",
+            "STORAGE_ACCOUNT": "[parameters('STORAGE_ACCOUNT')]",
+            "STORAGE_KEY": "[listKeys(concat('Microsoft.Storage/storageAccounts/', parameters('STORAGE_ACCOUNT')),'2015-06-15').key1]",
+            "QUEUE_SCORING": "[parameters('QUEUE_SCORING')]",
+            "QUEUE_NEW_IDS": "[parameters('QUEUE_NEW_IDS')]",
+            "QUEUE_TRIGGER_QUERY": "[parameters('QUEUE_TRIGGER_QUERY')]",
+            "LOG_LEVEL": "[parameters('LOG_LEVEL')]",
+            "LOG_STORAGE_ACCOUNT": "[parameters('LOG_STORAGE_ACCOUNT')]",
+            "LOG_STORAGE_KEY": "[listKeys(concat('Microsoft.Storage/storageAccounts/', parameters('LOG_STORAGE_ACCOUNT')),'2015-06-15').key1]",
+            "SERVICE_DOC_URL": "[parameters('SERVICE_DOC_URL')]",
+            "SCORING_SERVICES": "[parameters('SCORING_SERVICES')]",
+            "SUPPORTED_ENTITIES": "[parameters('SUPPORTED_ENTITIES')]"
+          }
+        }
+      ]
+    },
+    {
+      "name": "[parameters('consoleWebsiteName')]",
+      "type": "Microsoft.Web/sites",
+      "location": "[parameters('siteLocation')]",
+      "apiVersion": "2015-08-01",
+      "dependsOn": [
+        "[concat('Microsoft.Web/serverfarms/', parameters('hostingPlanName'))]",
+        "[resourceId('Microsoft.Sql/servers/', parameters('DB_SERVER'))]",
+        "[resourceId('Microsoft.Storage/storageAccounts/', parameters('STORAGE_ACCOUNT'))]",
+        "[resourceId('Microsoft.Storage/storageAccounts/', parameters('LOG_STORAGE_ACCOUNT'))]"
+      ],
+      "tags": {
+        "[concat('hidden-related:', resourceGroup().id, '/providers/Microsoft.Web/serverfarms/', parameters('hostingPlanName'))]": "Resource",
+        "displayName": "console"
+      },
+      "properties": {
+        "name": "[parameters('consoleWebsiteName')]",
+        "serverFarmId": "[resourceId('Microsoft.Web/serverfarms/', parameters('hostingPlanName'))]"
+      },
+      "resources": [
+        {
+          "apiVersion": "2015-04-01",
+          "name": "appsettings",
+          "type": "config",
+          "dependsOn": [
+            "[resourceId('Microsoft.Web/sites', parameters('consoleWebsiteName'))]"
+          ],
+          "properties": {
+            "WEBSITE_NODE_DEFAULT_VERSION": "4.2.3",
+            "PIPELINE_ROLE": "console",
+            "DEPLOYMENT_ROLE": "website",
+            "DB_SERVER": "[concat(parameters('DB_SERVER'), '.database.windows.net')]",
+            "DB_NAME": "[parameters('DB_NAME')]",
+            "DB_PASSWORD": "[parameters('DB_PASSWORD')]",
+            "DB_USER": "[parameters('DB_USER')]",
+            "STORAGE_ACCOUNT": "[parameters('STORAGE_ACCOUNT')]",
+            "STORAGE_KEY": "[listKeys(concat('Microsoft.Storage/storageAccounts/', parameters('STORAGE_ACCOUNT')),'2015-06-15').key1]",
+            "QUEUE_SCORING": "[parameters('QUEUE_SCORING')]",
+            "QUEUE_NEW_IDS": "[parameters('QUEUE_NEW_IDS')]",
+            "QUEUE_TRIGGER_QUERY": "[parameters('QUEUE_TRIGGER_QUERY')]",
+            "LOG_LEVEL": "[parameters('LOG_LEVEL')]",
+            "LOG_STORAGE_ACCOUNT": "[parameters('LOG_STORAGE_ACCOUNT')]",
+            "LOG_STORAGE_KEY": "[listKeys(concat('Microsoft.Storage/storageAccounts/', parameters('LOG_STORAGE_ACCOUNT')),'2015-06-15').key1]",
+            "SERVICE_DOC_URL": "[parameters('SERVICE_DOC_URL')]",
+            "SCORING_SERVICES": "[parameters('SCORING_SERVICES')]",
+            "SUPPORTED_ENTITIES": "[parameters('SUPPORTED_ENTITIES')]",
+            "GOOGLE_CLIENT_ID": "[parameters('GOOGLE_CLIENT_ID')]",
+            "GOOGLE_CLIENT_SECRET": "[parameters('GOOGLE_CLIENT_SECRET')]",
+            "GOOGLE_CALLBACK_URL": "[concat('https://', parameters('consoleWebsiteName'), '.azurewebsites.net/.auth/login/google/callback')]",
+            "GOOGLE_ADMIN_ACCOUNT": "[parameters('GOOGLE_ADMIN_ACCOUNT')]"
+          }
+        }
+      ]
+    }
+  ]
+}

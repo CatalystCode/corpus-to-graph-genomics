@@ -1,0 +1,32 @@
+
+.anode-tests-result .testResult{
+    margin-bottom: 4px;
+    padding: 3px;
+}
+
+.anode-tests-result .testSuccess {
+    background-color: #c2ebcc;
+}
+
+.anode-tests-result .testFailed {
+    background-color: #ebb6c2;
+}
+
+.anode-tests-result .testRunning {
+    background-color: #ffe887;
+}
+
+.anode-tests-result .testError {
+    background-color: #dbdbdb;
+}
+
+
+.anode-tests-result .testTitle {
+    cursor: pointer;
+}
+
+.anode-tests-result .assetions {
+    border-left: 1px solid #808080;
+    padding-left: 10px;
+    margin-top: 5px;
+}

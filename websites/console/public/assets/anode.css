@@ -1,0 +1,104 @@
+body 
+{
+  font-family: arial;
+  font-size: 14px;
+  margin: 0;
+  line-height:1.8em;
+  color: #3d3d3d;
+}
+
+.main
+{
+}
+
+/* header */
+
+header
+{
+  font-size: 15px;
+  min-height: 3em;
+  background-color: #eeeeee;
+  border-bottom: 1px #cccccc solid;
+}
+
+.header
+{
+    padding: 0.7em 0 0 10em;
+}
+
+.header > a
+{
+  font-weight: bold;
+  margin-right: 45px;
+  color: black;
+  text-transform: uppercase;
+}
+
+.header > a.login,
+.header > a.logout
+{
+  background-color: #d27e74;
+  position: absolute;
+  right: 100px;
+  min-width: 74px;
+  padding: 1px 1em 0 1em;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+
+}
+
+.header > a.logout
+{
+  background-color: #a16c67;
+}
+
+footer
+{
+  clear: both;
+  position: absolute;
+  left: 0px;
+  height: 2.5em;
+  width: 100%;
+  background-color: #eeeeee;
+  border-top: 1px #cccccc solid;
+}
+
+.footer
+{
+  padding: 0.4em 0 0 10em;
+}
+
+.footer > a
+{
+  font-size: 14px;
+  font-weight: normal;
+  margin-right: 30px;
+  color: #555555;
+}
+
+.content 
+{ 
+    padding: 5em 13em 3em 25em;
+}
+
+.sidebar
+{
+    margin: 6em 0 0 125px;
+    width: 195px;
+    float: left;
+}
+
+.logo
+{
+  height: 215px;
+  background-image: url('logo.png');
+}
+
+.tagline
+{
+  font-size: 10pt;
+  line-height:1.5em;
+  color: #888888;
+}

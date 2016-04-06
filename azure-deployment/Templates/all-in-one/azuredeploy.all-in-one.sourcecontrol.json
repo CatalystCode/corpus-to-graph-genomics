@@ -1,0 +1,284 @@
+﻿{
+  "$schema": "http://schema.management.azure.com/schemas/2014-04-01-preview/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "DB_SERVER": {
+      "type": "string",
+      "minLength": 1
+    },
+    "DB_NAME": {
+      "type": "string",
+      "minLength": 1
+    },
+    "DB_PASSWORD": {
+      "type": "securestring",
+      "minLength": 1
+    },
+    "DB_USER": {
+      "type": "string",
+      "minLength": 1
+    },
+    "STORAGE_ACCOUNT": {
+      "type": "string",
+      "minLength": 1
+    },
+    "QUEUE_SCORING": {
+      "type": "string",
+      "minLength": 1
+    },
+    "QUEUE_NEW_IDS": {
+      "type": "string",
+      "minLength": 1
+    },
+    "QUEUE_TRIGGER_QUERY": {
+      "type": "string",
+      "minLength": 1
+    },
+    "LOG_LEVEL": {
+      "type": "string",
+      "minLength": 1
+    },
+    "LOG_STORAGE_ACCOUNT": {
+      "type": "string",
+      "minLength": 1
+    },
+    "SERVICE_DOC_URL": {
+      "type": "string",
+      "minLength": 1
+    },
+    "SCORING_SERVICES": {
+      "type": "string",
+      "minLength": 1
+    },
+    "SUPPORTED_ENTITIES": {
+      "type": "string"
+    },
+    "GOOGLE_CLIENT_ID": {
+      "type": "string",
+      "minLength": 1
+    },
+    "GOOGLE_CLIENT_SECRET": {
+      "type": "string",
+      "minLength": 1
+    },
+    "GOOGLE_ADMIN_ACCOUNT": {
+      "type": "string",
+      "minLength": 1
+    },
+    "webjobsSiteName": {
+      "type": "string",
+      "metadata": {
+        "description": "The name of the web app that you wish to create."
+      }
+    },
+    "hostingPlanName": {
+      "type": "string",
+      "metadata": {
+        "description": "The name of the App Service plan to use for hosting the web app."
+      }
+    },
+    "siteLocation": {
+      "type": "string",
+      "metadata": {
+        "description": "The location to use for creating the web app and hosting plan. It must be one of the Azure locations that support web apps."
+      }
+    },
+    "graphWebsiteName": {
+      "type": "string",
+      "metadata": {
+        "description": "The name for the Graph API website."
+      }
+    },
+    "consoleWebsiteName": {
+      "type": "string",
+      "metadata": {
+        "description": "The name for the console website."
+      }
+    },
+    "sku": {
+      "type": "string",
+      "allowedValues": [
+        "Free",
+        "Shared",
+        "Basic",
+        "Standard"
+      ],
+      "defaultValue": "Free",
+      "metadata": {
+        "description": "The pricing tier for the hosting plan."
+      }
+    },
+    "workerSize": {
+      "type": "string",
+      "allowedValues": [
+        "0",
+        "1",
+        "2"
+      ],
+      "defaultValue": "0",
+      "metadata": {
+        "description": "The instance size of the hosting plan (small, medium, or large)."
+      }
+    },
+    "repoURL": {
+      "type": "string",
+      "defaultValue": "https://github.com/morsh/azure-web-job-sample.git",
+      "metadata": {
+        "description": "The URL for the GitHub repository that contains the project to deploy."
+      }
+    },
+    "branch": {
+      "type": "string",
+      "defaultValue": "master",
+      "metadata": {
+        "description": "The branch of the GitHub repository to use."
+      }
+    },
+    "databaseCollation": {
+      "type": "string",
+      "minLength": 1,
+      "defaultValue": "SQL_Latin1_General_CP1_CI_AS"
+    },
+    "databaseEdition": {
+      "type": "string",
+      "defaultValue": "Basic",
+      "allowedValues": [
+        "Basic",
+        "Standard",
+        "Premium"
+      ]
+    },
+    "databaseRequestedServiceObjectiveName": {
+      "type": "string",
+      "defaultValue": "Basic",
+      "allowedValues": [
+        "Basic",
+        "S0",
+        "S1",
+        "S2",
+        "P1",
+        "P2",
+        "P3"
+      ],
+      "metadata": {
+        "description": "Describes the performance level for Edition"
+      }
+    },
+    "pipelineStorageType": {
+      "type": "string",
+      "defaultValue": "Standard_LRS",
+      "allowedValues": [
+        "Standard_LRS",
+        "Standard_ZRS",
+        "Standard_GRS",
+        "Standard_RAGRS",
+        "Premium_LRS"
+      ]
+    }
+  },
+  "resources": [
+    {
+      "apiVersion": "2015-04-01",
+      "name": "[parameters('hostingPlanName')]",
+      "type": "Microsoft.Web/serverfarms",
+      "location": "[parameters('siteLocation')]",
+      "properties": {
+        "name": "[parameters('hostingPlanName')]",
+        "sku": "[parameters('sku')]",
+        "workerSize": "[parameters('workerSize')]",
+        "numberOfWorkers": 1
+      }
+    },
+    {
+      "apiVersion": "2015-04-01",
+      "name": "[parameters('webjobsSiteName')]",
+      "type": "Microsoft.Web/sites",
+      "location": "[parameters('siteLocation')]",
+      "dependsOn": [
+        "[resourceId('Microsoft.Web/serverfarms', parameters('hostingPlanName'))]"
+      ],
+      "properties": {
+        "serverFarmId": "[parameters('hostingPlanName')]"
+      },
+      "resources": [
+        {
+          "apiVersion": "2015-04-01",
+          "name": "web",
+          "type": "sourcecontrols",
+          "dependsOn": [
+            "[resourceId('Microsoft.Web/Sites', parameters('webjobsSiteName'))]"
+          ],
+          "properties": {
+            "RepoUrl": "[parameters('repoURL')]",
+            "branch": "[parameters('branch')]",
+            "IsManualIntegration": false
+          }
+        }
+      ]
+    },
+    {
+      "name": "[parameters('graphWebsiteName')]",
+      "type": "Microsoft.Web/sites",
+      "location": "[parameters('siteLocation')]",
+      "apiVersion": "2015-08-01",
+      "dependsOn": [
+        "[concat('Microsoft.Web/serverfarms/', parameters('hostingPlanName'))]"
+      ],
+      "tags": {
+        "[concat('hidden-related:', resourceGroup().id, '/providers/Microsoft.Web/serverfarms/', parameters('hostingPlanName'))]": "Resource",
+        "displayName": "graph"
+      },
+      "properties": {
+        "name": "[parameters('graphWebsiteName')]",
+        "serverFarmId": "[resourceId('Microsoft.Web/serverfarms/', parameters('hostingPlanName'))]"
+      },
+      "resources": [
+        {
+          "apiVersion": "2015-04-01",
+          "name": "web",
+          "type": "sourcecontrols",
+          "dependsOn": [
+            "[resourceId('Microsoft.Web/Sites', parameters('graphWebsiteName'))]"
+          ],
+          "properties": {
+            "RepoUrl": "[parameters('repoURL')]",
+            "branch": "[parameters('branch')]",
+            "IsManualIntegration": false
+          }
+        }
+      ]
+    },
+    {
+      "name": "[parameters('consoleWebsiteName')]",
+      "type": "Microsoft.Web/sites",
+      "location": "[parameters('siteLocation')]",
+      "apiVersion": "2015-08-01",
+      "dependsOn": [
+        "[concat('Microsoft.Web/serverfarms/', parameters('hostingPlanName'))]"
+      ],
+      "tags": {
+        "[concat('hidden-related:', resourceGroup().id, '/providers/Microsoft.Web/serverfarms/', parameters('hostingPlanName'))]": "Resource",
+        "displayName": "console"
+      },
+      "properties": {
+        "name": "[parameters('consoleWebsiteName')]",
+        "serverFarmId": "[resourceId('Microsoft.Web/serverfarms/', parameters('hostingPlanName'))]"
+      },
+      "resources": [
+        {
+          "apiVersion": "2015-04-01",
+          "name": "web",
+          "type": "sourcecontrols",
+          "dependsOn": [
+            "[resourceId('Microsoft.Web/Sites', parameters('consoleWebsiteName'))]"
+          ],
+          "properties": {
+            "RepoUrl": "[parameters('repoURL')]",
+            "branch": "[parameters('branch')]",
+            "IsManualIntegration": false
+          }
+        }
+      ]
+    }
+  ]
+}

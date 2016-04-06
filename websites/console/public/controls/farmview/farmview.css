@@ -1,0 +1,57 @@
+
+.farmview-control {
+    margin: 5px 0px 5px 0px;
+}
+
+
+.farmview-instanceStatusContainer{
+    float: left;
+}
+
+.farmview-instanceStatus {
+    width: 20px; height: 20px; border: 1px solid #808080; margin: 1px 1px;
+}
+
+.farmview-instanceReady {
+    background-color: #008000;
+}
+
+.farmview-instanceProcessing {
+    background-image: url('processing.gif');
+    background-size: 20px;
+}
+
+.farmview-clear {
+    clear: both;
+}
+
+.farmview-tooltip {
+    background-color: #000000;
+    display: none;
+    z-index: 10;
+    padding: 10px;
+    font-family: courier;
+    font-size: 0.8em;
+    color: white;
+    box-shadow: 5px 5px 5px gray;
+}
+
+.farmview-tooltip-arrow {
+    position: relative;
+    top: -22px;
+    width: 38px;
+    left: -17px;
+    height: 12px;
+    background: url("black-arrow-top.png") top center no-repeat;
+}
+.farmview-tooltip-button{
+    text-align: center;
+}
+
+.farmview-tooltip-content input[type='button'] {
+    margin: 8px auto 3px auto;
+    padding: 4px 6px 4px 6px;
+    border: 1px solid white;
+    color: white;
+    background-color: transparent;
+}
