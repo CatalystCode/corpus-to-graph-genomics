@@ -2,6 +2,8 @@
 A pipeline that processes documents from a public repository (NCBI - National Center for Biotechnology Information), 
 performs entity extraction + scoring on them and outputs the data in the form of a graph.
 
+This repository is an example on how to use [Corpus to Graph Pipeline](https://github.com/CatalystCode/corpus-to-graph-pipeline)
+
 ## Solution Architecture
 ![Architecture Diagram](https://raw.githubusercontent.com/CatalystCode/corpus-to-graph-pipeline/master/docs/images/architecture.png "Solution Architecture")
 
@@ -47,11 +49,11 @@ There are 3 web jobs in the bundle
 |__Parser__    |Processes each document in *New IDs Queue* into <br>sentences and entities and pushes them into *Scoring Queue*
 |__Scoring__   |Scores each sentence in *Scoring Queue* via the *Scoring Service*
 
-To get more information on the message api between the web jobs and the queues see [Document Processing Pipeline - Message API](docs/queues.md)
+To get more information on the message api between the web jobs and the queues see [Corpus to Graph Pipeline - Message API](https://raw.githubusercontent.com/CatalystCode/corpus-to-graph-pipeline/master/docs/queues.md)
 
 ## Logging
 The web jobs output their logs into two mediums:
-* __nodejs console__ - which is accessible via *Azure Portal > Relevant Web App > Web Jobs > worker > Logs Url*
+* __nodejs console__ - Using the nodejs common console.log\console.info etc...
 * __console web app__ - see [Console](#console---managing-and-monitoring)
 
 ## Console - Managing and Monitoring
