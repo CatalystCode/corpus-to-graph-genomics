@@ -10,7 +10,7 @@ if (!fs.existsSync(path.join(loadModulesPath, 'load-modules.js')))
 var loadModules = require(path.join(loadModulesPath, 'load-modules.js'));
 var rootPath = loadModules.getRootPath();
 
-var scheduledRunner = require('corpus2graph-pipeline').runners.scheduled;
+var scheduledRunner = require('corpus-to-graph-pipeline').runners.scheduled;
 
 // Loading internal modules
 var config = require(path.join(rootPath, 'domain-logic/config'));

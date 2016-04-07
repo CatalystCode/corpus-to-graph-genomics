@@ -3,9 +3,9 @@ var request = require('request');
 var moment = require("moment");
 
 var constants = require('./constants');
-var corpus2graphPipeline = require('corpus2graph-pipeline');
-var pipelineConstants = corpus2graphPipeline.constants;
-var Database = corpus2graphPipeline.database;
+var corpusToGraphPipeline = require('corpus-to-graph-pipeline');
+var pipelineConstants = corpusToGraphPipeline.constants;
+var Database = corpusToGraphPipeline.database;
 
 var NCBIService = require('./ncbiService');
 

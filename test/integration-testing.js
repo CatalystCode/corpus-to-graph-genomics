@@ -11,8 +11,8 @@ var exec = require('child_process').exec;
 var moment = require('moment');
 var azure = require('azure-storage');
 
-var corpus2graphPipeline = require('corpus2graph-pipeline');
-var constants = corpus2graphPipeline.constants;
+var corpusToGraphPipeline = require('corpus-to-graph-pipeline');
+var constants = corpusToGraphPipeline.constants;
 var log = require('../domain-logic/log');
 var utils = require('./utils.js');
 

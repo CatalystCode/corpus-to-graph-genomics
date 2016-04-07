@@ -3,7 +3,7 @@ var router = express.Router();
 var fs = require('fs');
 var path = require('path');
 
-var Database = require('corpus2graph-pipeline').database;
+var Database = require('corpus-to-graph-pipeline').database;
 var apiConstants = require('../../domain-logic/pipeline-logic/lib/constants');
 var config = require('../../domain-logic/config');
 

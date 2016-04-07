@@ -1,7 +1,7 @@
 # Document Processing Pipeline - Message API
 [This document is part of [Document Processing Pipeline](../README.md)]
 
-Corpus2Graph pipeline components
+Corpus to Graph pipeline components
 
 # Trigger New Document ID Check
 * Push the following message to the trigger queue to initiate a new check
