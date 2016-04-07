@@ -1,9 +1,11 @@
-# Document Processing Pipeline
-A pipeline that processes documents from a public repository, 
+# Corpus to Graph Genomics Processing Pipeline
+A pipeline that processes documents from a public repository (NCBI - National Center for Biotechnology Information), 
 performs entity extraction + scoring on them and outputs the data in the form of a graph.
 
+This repository is an example on how to use [Corpus to Graph Pipeline](https://github.com/CatalystCode/corpus-to-graph-pipeline)
+
 ## Solution Architecture
-![Architecture Diagram](docs/architecture.png "Solution Architecture")
+![Architecture Diagram](https://raw.githubusercontent.com/CatalystCode/corpus-to-graph-pipeline/master/docs/images/architecture.png "Solution Architecture")
 
 The elements in play in this solution are as follows:
 
@@ -29,10 +31,10 @@ The elements in play in this solution are as follows:
     * [Running Tests from Mac\Linux](#running-tests-from-maclinux)
 * [Deployment](#deployment)
     * [Running locally](#running-locally)
-        * [Local Environment Prerequisites](#local-environment-prerequisites)
+    * [Local Environment Prerequisites](#local-environment-prerequisites)
     * [Azure Deployment](#azure-deployment)
-        * [Deploy with ARM](#deploy-with-arm)
-            * [Deployment parameters](#deployment-parameters)
+    * [Deploy with ARM](#deploy-with-arm)
+    * [Deployment parameters](#deployment-parameters)
     * [Slim Deployment](#slim-deployment)
 * [License](#license)
 
@@ -42,15 +44,16 @@ There are 3 web jobs in the bundle
 
 | Web Job      | Description                           |
 | ------------ | ------------------------------------- |
+|__Trigger__   |A schedules web job that triggers a daily check for new document Ids
 |__Query__     |Query documents according to date range provided through <br>*Trigger Queue* and insert all unprocessed documents to *New IDs Queue*
 |__Parser__    |Processes each document in *New IDs Queue* into <br>sentences and entities and pushes them into *Scoring Queue*
 |__Scoring__   |Scores each sentence in *Scoring Queue* via the *Scoring Service*
 
-To get more information on the message api between the web jobs and the queues see [Document Processing Pipeline - Message API](docs/queues.md)
+To get more information on the message api between the web jobs and the queues see [Corpus to Graph Pipeline - Message API](https://raw.githubusercontent.com/CatalystCode/corpus-to-graph-pipeline/master/docs/queues.md)
 
 ## Logging
 The web jobs output their logs into two mediums:
-* __nodejs console__ - which is accessible via *Azure Portal > Relevant Web App > Web Jobs > worker > Logs Url*
+* __nodejs console__ - Using the nodejs common console.log\console.info etc...
 * __console web app__ - see [Console](#console---managing-and-monitoring)
 
 ## Console - Managing and Monitoring
@@ -86,7 +89,8 @@ run :
 (in that order) on your sql database manually and then run the integration tests. 
 
 # Deployment
-The deployment files are available under azure-deployment folder and use ARM template deployment to perform deploy the environment and continuous deployment.
+The deployment files are available under azure-deployment folder.
+It uses ARM template to deploy the environment and connect it to git with continuous deployment.
 
 ## Running Locally
 Create a `setenv.private.cmd` file at the root of your repository. You can copy it from `env.template.cmd` as a template.
@@ -128,17 +132,18 @@ azure account list
 azure account show
 azure account set c37fee37-d7f6-45bc-a4f2-852780bda058
 ```
-To deploy the template to azure, use the following:
-```
+To deploy the template to azure, use the following (You can also use azure-deployment\Templates\scalable\deploy.cmd):
+```cli
+cd azure-deployment\Templates\scalable\
 azure group create -n resource-group-name -l "West US"
-azure group deployment create -f azure-deployment\Templates\azuredeploy.json -e azure-deployment\Templates\parameters.prod.private.json resource-group-name deployment-name
+azure group deployment create -f azuredeploy.json -e parameters.private.json resource-group-name deployment-name
 ```
 
 To deploy continuous integration run
 ```
-azure group deployment create -f azure-deployment\Templates\azuredeploy.sourcecontrol.json -e azure-deployment\Templates\parameters.prod.private.json resource-group-name deployment-sourcecontrol-name
+azure group deployment create -f azuredeploy.sourcecontrol.json -e parameters.private.json resource-group-name deployment-sourcecontrol-name
 ```
-> **Notice 1**: The deployment templates have been divided into two since currently, deploying node continuous deployment with ARM can appear to fail*
+> **Notice 1**: The deployment templates have been divided into two since currently, deploying node continuous deployment with ARM can seem to fail*
 
 > **Notice 2**: Even though continuous deployment may seem to fail, this might be the result of network errors with npm and might actually work*
 
