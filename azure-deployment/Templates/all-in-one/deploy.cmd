@@ -27,7 +27,7 @@ SET parameters_file=%2
 IF [%parameters_file%]==[] SET /p parameters_file="Enter parameters file:"
 IF [%parameters_file%]==[] echo "No parameters file was provided" && exit /b
 
-SET deployment_name=deployment-%date:~7,2%%date:~4,2%%date:~10,4%
+SET deployment_name=deployment-aio-%date:~7,2%%date:~4,2%%date:~10,4%
 
 echo Creating resource group %resource_group_name% in West US
 
