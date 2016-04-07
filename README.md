@@ -29,10 +29,10 @@ The elements in play in this solution are as follows:
     * [Running Tests from Mac\Linux](#running-tests-from-maclinux)
 * [Deployment](#deployment)
     * [Running locally](#running-locally)
-        * [Local Environment Prerequisites](#local-environment-prerequisites)
+    * [Local Environment Prerequisites](#local-environment-prerequisites)
     * [Azure Deployment](#azure-deployment)
-        * [Deploy with ARM](#deploy-with-arm)
-            * [Deployment parameters](#deployment-parameters)
+    * [Deploy with ARM](#deploy-with-arm)
+    * [Deployment parameters](#deployment-parameters)
     * [Slim Deployment](#slim-deployment)
 * [License](#license)
 
