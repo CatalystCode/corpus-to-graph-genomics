@@ -212,15 +212,14 @@ docRouter(router, "/api/pipeline", function (router) {
       response: { representations: ['application/json'] }
     }
   );
-  
+
   router.post('/updatemodel', function(req, res) {
       var service = req.body.service.toUpperCase();
       var path = req.body.path;
 
       if (!scoringServices[service]) return res.json({ err: 'service ' + service + ' does not exists' });
-      var urlElements = url.parse(scoringServices[service].url);
+      var urlElements = url.parse(scoringServices[service]);
       var address = urlElements.protocol + "//" + urlElements.hostname + '/updatemodel'; 
-    
       var opts = {
         url: address,
         method: 'POST',
