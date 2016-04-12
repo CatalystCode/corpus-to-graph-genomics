@@ -1,6 +1,8 @@
 ﻿var fs = require('fs');
+var url = require('url');
 var lr = require('readline');
 var child_process = require('child_process');
+var request = require('request');
 
 var azure = require('azure-storage');
 var tedious = require('tedious');
@@ -153,7 +155,8 @@ function runDBScript(dbScript, db) {
   var configSql = require('../domain-logic/config').sql;
   var cmd = 'sqlcmd -U ' + configSql.userName + 
               ' -S ' + configSql.server + 
-              ' -P ' + configSql.password + 
+              ' -P ' + configSql.password +
+              ' -l 120' + 
               ' -d ' + configSql.options.database + 
               ' -i "' + dbScript + '"';
 
@@ -228,6 +231,46 @@ function checkForErrorsInLog(since, cb) {
   }, 5000);
 }
 
+var scoringServices = null;
+function updateModel(modelUri, cb) {
+  var path = modelUri;
+  
+  // Getting scoring services from configuration
+  if (!scoringServices) {
+    scoringServices = [];
+    var scoringServicesVar = require('../domain-logic/config').services.scoringConfig;
+    scoringServicesVar.split(';').forEach(function(scoringService){
+      var elements = scoringService.split('::');
+      scoringServices.push({
+        id: elements[0],
+        url: elements[1]
+      });
+    });
+  }
+
+  if (!scoringServices.length) return cb('no services exist');
+  var urlParts = url.parse(scoringServices[0].url);
+  var address = urlParts.protocol + "//" + urlParts.hostname + '/updatemodel'; 
+
+  var opts = {
+    url: address,
+    method: 'POST',
+    json: {
+      "path": path
+    }
+  };
+  
+  console.info('Updating model to:');
+  console.info(path);
+
+  return request(opts, function(err, resp, body) {
+    if (err) return cb(err);
+    
+    console.info('update model request sent successfully');
+    return cb();
+  });
+}
+
 module.exports = {
   setEnvironmentVariables: setEnvironmentVariables,
   deleteCreateQueue: deleteCreateQueue,
@@ -237,4 +280,5 @@ module.exports = {
   waitForLogMessage: waitForLogMessage,
   countLogMessages: countLogMessages,
   checkForErrorsInLog: checkForErrorsInLog,
+  updateModel: updateModel
 };

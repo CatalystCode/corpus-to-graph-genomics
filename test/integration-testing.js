@@ -16,14 +16,21 @@ var constants = corpusToGraphPipeline.constants;
 var log = require('../domain-logic/log');
 var utils = require('./utils.js');
 
+var TEST_PREFIX = 'TEST > ';
 var DATE_TO_CHECK = '2007-10-10';
 var DOCUMENT_SRC_TO_MONITOR = 2;
 var DOCUMENT_ID_TO_MONITOR = '2000354';
+var TEST_CONTAINER_NAME = 'test';
+var modelFile1 = path.join(__dirname, 'data', 'scoring_model_1_1_1.pkl');
+var modelFile2 = path.join(__dirname, 'data', 'scoring_model_1_1_2.pkl');
+var modelUri1 = '';
+var modelUri2 = '';
 
 process.env.PIPELINE_ROLE = 'testing';
 
 var config;
 var queueService;
+var blobService;
 var workers = [];
 var logMessages = [];
 
@@ -44,6 +51,47 @@ function doneSuccessfully(done) {
     return done();
   }, 1000);
 }
+
+// Start a worker process and monitor its health 
+function activateWorker(role, environmentSet, runAppJSPath) {
+  var worker = exec('set PIPELINE_ROLE=' + role + '&&' + environmentSet + '&& node ' + runAppJSPath);
+  workers.push(worker);
+  worker.on('close', function (code) {
+    console.error(role + ' worker closing code: ' + code);
+  });
+  worker.on("exit", function(exitCode) {
+    console.log('process exited with code ' + exitCode);
+  });
+
+  worker.stdout.on("data", function(chunk) { /* Discard data from child processes - This is used to releive the stdout buffer */  });
+
+  worker.stdout.on("end", function() {
+    console.log("finished collecting data chunks from stdout");
+  });
+}
+
+function killAllWorkers() {
+  var worker = null;
+  while (worker = workers.pop()) { worker.kill(); }
+}
+
+// Overriding log messags to hide log messages of azure-logging 
+var unhook = (function hook_stdout() {
+  var $old_write = process.stdout.write
+
+  process.stdout.write = function() {
+    if (arguments && arguments.length) {
+      var msg = arguments[0];
+      if (!msg.startsWith('[90mlog    ci-testing') || msg.indexOf(TEST_PREFIX) >= 0) {
+        $old_write.apply(process.stdout, arguments);
+      }
+    }
+  }
+
+  return function() {
+    process.stdout.write = $old_write;
+  }
+})();
 
 describe('Whole Pipeline', function () {
   
@@ -162,6 +210,53 @@ describe('Whole Pipeline', function () {
           }
         ], cb);
       },
+      
+      // Uploading the new model to blob storage
+      function (cb) {
+        blobService = azure.createBlobService(config.storage.account, config.storage.key)
+            .withFilter(new azure.ExponentialRetryPolicyFilter());
+            
+        modelUri1 = 'http://' + config.storage.account + '.blob.core.windows.net/' + TEST_CONTAINER_NAME + '/';
+        modelUri2 = 'http://' + config.storage.account + '.blob.core.windows.net/' + TEST_CONTAINER_NAME + '/';
+            
+        return blobService.createContainerIfNotExists(TEST_CONTAINER_NAME, { publicAccessLevel: 'blob' }, 
+          function(err, result, response) {
+            
+            if (err) return cb(err);
+            
+            // Uploading both models into blob storage
+            async.parallel([
+              function (cb) {
+                // the file will be over-written in case it exists
+                var blobName1 = path.basename(modelFile1);
+                return blobService.createBlockBlobFromLocalFile(TEST_CONTAINER_NAME, blobName1, modelFile1, 
+                  function (err, result, response) {
+                    if (err) return cb(err);
+                    
+                    modelUri1 += blobName1;
+                    return cb();
+                  });
+              },
+              
+              function (cb) {
+                var blobName2 = path.basename(modelFile2);
+                return blobService.createBlockBlobFromLocalFile(TEST_CONTAINER_NAME, blobName2, modelFile2, 
+                  function (err, result, response) {
+                    if (err) return cb(err);
+                    
+                    modelUri2 += blobName2;
+                    return cb();
+                  });
+              }
+            ], cb);
+            
+          });
+      },
+      
+      // Setting base model for scoring
+      function (cb) {
+        utils.updateModel(modelUri1, cb);
+      },
 
       // Starting all three workers in pipeline
       // Each test will monitor it's own data through the pipeline.
@@ -169,31 +264,10 @@ describe('Whole Pipeline', function () {
         
         // If one of the workers throws an error, log the error message
         var runAppJSPath = path.join(__dirname, '..', 'webjob', 'continuous', 'app.js');
-        var queryWorker = exec('set PIPELINE_ROLE=query&& set WORKERS=1&& node ' + runAppJSPath, function (err, stdout, stderr) {
-          if (err) return console.error('Error in Query worker', err);
-        });
-        var parserWorker = exec('set PIPELINE_ROLE=parser&& set WORKERS=1&& node ' + runAppJSPath, function (err, stdout, stderr) {
-          if (err) return console.error('Error in Parser worker', err);
-        });
-        var scorerWorker = exec('set PIPELINE_ROLE=scoring&& set WORKERS=1&& node ' + runAppJSPath, function (err, stdout, stderr) {
-          if (err) return console.error('Error in Scorer worker', err);
-        });
-        
-        workers.push(queryWorker);
-        workers.push(parserWorker);
-        workers.push(scorerWorker);
-        
-        // If one of the workers close, it logs an error message which will
-        // be monitored by the tests and cause failure
-        queryWorker.on('close', function (code) {
-          console.error('Query ID worker closing code: ' + code);
-        });
-        parserWorker.on('close', function (code) {
-          console.error('Parser worker closing code: ' + code);
-        });
-        scorerWorker.on('close', function (code) {
-          console.error('Scorer worker closing code: ' + code);
-        });
+        var environmentSet = 'set WORKERS=1';
+        var queryWorker = activateWorker('query', environmentSet, runAppJSPath);
+        var parserWorker = activateWorker('parser', environmentSet, runAppJSPath);
+        var scorerWorker = activateWorker('scoring', environmentSet, runAppJSPath);
         
         return cb();
       }
@@ -208,7 +282,7 @@ describe('Whole Pipeline', function () {
   });
   
   // Testing happy flow
-  it('Processing and Scoring', function (done) {
+  it(TEST_PREFIX + 'Processing and Scoring', function (done) {
 
     // After recreating all queues, trigger a pipeline happy flow by 
     // pushing a message to the queue to query all documents for 2007-10-10.
@@ -220,7 +294,7 @@ describe('Whole Pipeline', function () {
     // 1 document is supposed to go through the pipeline and is monitored by the test.
     
     async.series([
-
+      
       function (cb) {
         
         console.info('triggering a new process through queue', config.queues.trigger_query);
@@ -341,20 +415,107 @@ describe('Whole Pipeline', function () {
         if (err) return doneWithError(err, done);
       
         console.info('Test completed successfully');
-        return doneSuccessfully(done);
+        return doneSuccessfully(done); 
+
       });
 
     });
 
   });
   
-  it('Re-scoring and Remodeling', function (done) {
-    // FFU
-    return done();
+  it(TEST_PREFIX + 'Re-scoring and Remodeling', function (done) {
+    
+    // The previous test (Processing and Scoring) has braught the database to a 
+    // state where it has 2381 documents; sentences\relations\entities  
+    // pushing a message to the queue to query all documents for 2007-10-10.
+    // There are 2381 documents that day.
+    //
+    // Scenario:
+    // --------------
+    // Send a request to rescore all sentences in the database
+    // All sentences are supposed to double with a new version number
+    
+    // Setting up preliminary requirements for rescore test
+    async.series([
+      
+      // Call api to update to second model
+      function (cb) {
+        utils.updateModel(modelUri2, cb);
+      },
+
+      // Triggering a rescore flow
+      function (cb) {
+        
+        console.info('triggering rescore through queue', config.queues.scoring);
+        
+        var message = {
+          "requestType": constants.queues.action.RESCORE,
+          "data": { }
+        };
+        return queueService.createMessage(config.queues.scoring, JSON.stringify(message), function (error) {
+          if (error) return cb(error);
+          console.info('sent a request to rescore sentences in database');
+          return cb();
+        });
+
+      }
+    ], 
+        
+    // When done queuing message => start monitoring log from scoring web jobs in the pipeline 
+    function (err) {
+      
+      if (err) return doneWithError(err, done);
+      
+      // Periodic check for errors in the pipeline
+      // The monitored errors will only be errors created by the testing process
+      // which means any errors aggregated back from the processes of worker roles.
+      // Errors like periodic SQL connection problems and network issues will not be aggregated.
+      utils.checkForErrorsInLog(startTime, function (error) {
+        
+        if (error) {
+          console.error('Error was found during the testing', error);
+          return done(error);
+        }
+        
+        return;
+      });
+      
+      // Parallel check of all three web jobs.
+      // If one role fails, this will fail the entire test immediately
+      return async.parallel([
+                
+        // Periodic check that all sentences were scored
+        function (cb) {
+          
+          // There are 37 sentences
+          // Checking only for 3 since it makes the test run faster.
+          return utils.waitForTableRowCount({
+            tableName: 'Relations', 
+            where: 'DocId=' + DOCUMENT_ID_TO_MONITOR + ' AND ModelVersion=\'1.1.2\'',
+            expectedCount: 3
+          }, function (err) {
+            if (err) return cb(err);
+            
+            console.info('Scorer worker test completed successfully');
+            return cb();
+          });
+        }
+      ], function (err) {
+        
+        if (err) return doneWithError(err, done);
+      
+        console.info('Test completed successfully');
+        return doneSuccessfully(done);
+      });
+
+    });
+    
   });
   
   // Cleanup
   after(function (done) {
+    
+    killAllWorkers();
     
     // Request deletion of all queues so the recreation of queues for 
     // the next test will take less time
