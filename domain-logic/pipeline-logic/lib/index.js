@@ -15,6 +15,8 @@ var ERRORS = {
   NOT_ACCESSIBLE: 1
 }
 
+var TIMEOUTERR = 'ETIMEDOUT'; 
+
 function pipelineLogic(config, options) {
 
   options = options || {};
@@ -148,7 +150,10 @@ function pipelineLogic(config, options) {
         timeout: config.http.timeoutMsec
     };
     return request(opts, function(err, resp, body) {
-      if (err) return cb(err);
+      if (err) {
+        if (err.code == TIMEOUTERR) console.error('%s is not accessible', urlRequest);
+        return cb(err);
+      }
       
       // TODO: this is a temporary code to 
       // handle unaccessible documents
