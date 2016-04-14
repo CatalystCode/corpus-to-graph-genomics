@@ -517,14 +517,6 @@ describe('Whole Pipeline', function () {
     
     killAllWorkers();
     
-    // Request deletion of all queues so the recreation of queues for 
-    // the next test will take less time
-    if (queueService) {
-      queueService.deleteQueueIfExists(config.queues.trigger_query, function () { });
-      queueService.deleteQueueIfExists(config.queues.new_ids, function () { });
-      queueService.deleteQueueIfExists(config.queues.scoring, function () { });
-    }
-    
     return doneSuccessfully(done);
   });
 })
