@@ -1,12 +1,18 @@
 # Corpus to Graph Genomics Processing Pipeline
-A pipeline that processes documents from a public repository (NCBI - National Center for Biotechnology Information), 
-performs entity extraction + scoring on them and outputs the data in the form of a graph.
+This repository is an example for implementing a pipeline for processing medical documents. This repository can be used as a code sample for implementing a pipeline to process documents of any domain running on the Azure stack. 
 
-This repository is an example on how to use [Corpus to Graph Pipeline](https://github.com/CatalystCode/corpus-to-graph-pipeline)
+Processing steps:
+1. Fetch documents from remote repository
+2. Split documents to sentences and extract relevant entities (miRNA, genes in this case) using a remote entity extraction service
+3. Find and score relations between entities in each sentence using a remote scoring API
+4. Store relations for later use by Geaph API service 
+
+This repository is an example of using the [Corpus to Graph Pipeline](https://github.com/CatalystCode/corpus-to-graph-pipeline) node module.
 
 ## Solution Architecture
 ![Architecture Diagram](https://raw.githubusercontent.com/CatalystCode/corpus-to-graph-pipeline/master/docs/images/architecture.png "Solution Architecture")
 
+[amitu]- rephrase:
 The elements in play in this solution are as follows:
 
 | Element           | Description                           |
