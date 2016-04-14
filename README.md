@@ -1,3 +1,7 @@
+#Comments
+* NCBI maintains multiple database. Is the repository you are using NCBI or NCBI's pubmed? 
+* 
+
 # Corpus to Graph Genomics Processing Pipeline
 A pipeline that processes documents from a public repository (NCBI - National Center for Biotechnology Information), 
 performs entity extraction + scoring on them and outputs the data in the form of a graph.
