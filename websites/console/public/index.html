@@ -1,35 +1,24 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-        "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE HTML>
 <html>
 <head>
     <title>corpus to graph admin console</title>
-
-    <script src="//ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.2.min.js"></script>
-    <script src="scripts/jquery.query.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.2/underscore-min.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-
-    <script src="scripts/anode-console.js"></script>
-    <link rel="stylesheet" type="text/css" href="assets/console.css">
-    <link rel="stylesheet" type="text/css" href="assets/markdown.css">
-
-    <script src="scripts/utils.js"></script>
-
-    <script src="scripts/acli/acli.js"></script>
-    <link rel="stylesheet" type="text/css" href="scripts/acli/acli.css">
-
+    <script src="bower_components/webcomponentsjs/webcomponents.min.js"></script>
+    <link rel="import" href="bower_components/web-cli/web-cli.html">
+    <script src="console.js"></script>
+    <style>
+        .promptImage {
+            vertical-align: middle;
+        }
+        #webCli {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+    </style>
 </head>
 <body>
-
-    <div class="cli-output" id="cliOutput"></div>
-    <div class="cli-pinPanel" id="cliPinPanel">
-        <div class="cli-pinPanel-close"></div>
-        <div class="cli-pinPanel-title">Pin Panel</div>
-    </div>
-    <div class="cli-input-container">
-        <span class="cli-promptText" id="cliPrompt">></span>
-        <input id="cliInput" class="cli-input" type="text">
-    </div>
-
+    <web-cli id="webCli" />
 </body>
 </html>

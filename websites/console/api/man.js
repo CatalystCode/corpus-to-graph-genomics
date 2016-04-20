@@ -30,7 +30,10 @@ docRouter(router, '/api/man', function(router) {
           example: 'man '+filename,
           doc: getDescription(filename),
           params: {},
-          response: { representations : [ 'text/html' ] }
+          response: { representations: ['text/html'] },
+          controller: {
+            cssUrl: '../../plugins/man/markdown.css'
+          }
         });
       });
     });
