@@ -28,7 +28,7 @@ module.exports = function(dirs) {
         console.log(route, '==>', p);
 
         router.use(route, subapp.router || subapp);
-        if (!plugin.console.autoLoad) return;
+        if (!subapp.console.autoLoad) return;
         list.push({'route': 'api'+route, console: subapp.console});
       }
     });
