@@ -1,11 +1,15 @@
 {
-  "name": "miroculus-pipeline",
+  "name": "corpus-to-graph-genomics",
   "version": "1.0.0",
   "description": "A project meant only for editing internal modules. It is not meant to be run.",
   "main": "app.js",
   "author": {
     "name": "mor shemesh",
     "email": "morshe@microsoft.com"
+  },
+  "engines": {
+    "node": "4.2.4",
+    "npm": "3.8.3"
   },
   "dependencies": {
     "async": "^1.5.2",
@@ -50,7 +54,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/CatalystCode/miroculus-pipeline"
+    "url": "git://github.com/CatalystCode/corpus-to-graph-genomics"
   },
   "license": "MIT"
 }

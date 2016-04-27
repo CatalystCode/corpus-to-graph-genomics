@@ -19,8 +19,5 @@
   ],
   "dependencies": {
     "web-cli": "^0.0.12"
-  },
-  "resolutions": {
-    "acli": "^0.0.10"
   }
 }
