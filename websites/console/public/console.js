@@ -16,32 +16,36 @@ $(function () {
     
     var webCli = $('#webCli')[0];
 
-    // listen on envronment variables changes and update the consolde prompt string accordingly.
-    // in this case, we'de like to reflect the change in the app name.
-    webCli.addEventListener('envChanged', function(e) {
-      console.log('envChanged!', e.detail);
-      updatePrompt.call(e.target);
-    });
+  // webCli is ready to be initialized    
+    webCli.onReady = function () {
+
+      // listen on envronment variables changes and update the consolde prompt string accordingly.
+      // in this case, we'de like to reflect the change in the app name.
+      webCli.addEventListener('envChanged', function (e) {
+        console.log('envChanged!', e.detail);
+        updatePrompt();
+      });
+
+      // init the console    
+      webCli.init({
+        environmentVars: environmentVars,
+        plugins: cliData.apis,
+        commands: getLocalCommands()
+      });
+
+      updatePrompt();
+    }
     
-    // init the console    
-    webCli.init({
-      environmentVars: environmentVars,
-      plugins: cliData.apis,
-      commands: getLocalCommands()
-    });
-
-    updatePrompt.call(webCli);
-
     // updates the prompt string    
     function updatePrompt() {
       // this is the cli control 
-      var app = this.env('app');
+      var app = webCli.env('app');
       var image = user.image ? "<img src='" + user.image + "' class='promptImage' width='18px'/>" : '';
       var prompt = image + '[';
       if (user.name) prompt += user.name + '\\';
       if (app) prompt += '' + app + '';
       prompt += ']>';
-      this.prompt(prompt);
+      webCli.prompt(prompt);
     }
 
   });  
