@@ -3,8 +3,6 @@ var config = require('./config');
 
     var express = require('express');
     var path = require('path');
-    var bodyParser = require('body-parser');
-
     var passport = require('passport');
     var flash    = require('connect-flash');
     var morgan       = require('morgan');
@@ -45,7 +43,7 @@ var config = require('./config');
     var subApps = subapp([path.join(__dirname, 'api'), path.join(__dirname, '..', '..', 'domain-logic/console/api')]);
     app.use('/api', subApps.router);
 
-    app.get('/anode', function (req, res) {
+    app.get('/cli', function (req, res) {
         console.log('getting sub apps');
         var resp = {
             apis: subApps.list,

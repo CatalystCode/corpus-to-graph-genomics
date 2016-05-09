@@ -1,4 +1,12 @@
 
+.markdown-body {
+    box-shadow: 0px 5px 10px gray;
+    padding: 10px;
+    width: 90%;
+    margin: 10px 10px 10px 0px;
+    background-color: rgba(233, 235, 154, 0.31);
+}
+
 div.markdown-body {
     font-family: arial;
     font-size: 14px;

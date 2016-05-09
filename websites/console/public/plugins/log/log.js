@@ -9,7 +9,7 @@
 
     this.log = function(err, response){
 
-        if ($.query.get('debug')) debugger;
+        if (queryObject.get('debug')) debugger;
 
         if(err) {
             response.promise.resolve('error trying to get logs: ' + err);

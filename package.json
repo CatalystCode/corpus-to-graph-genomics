@@ -7,6 +7,10 @@
     "name": "mor shemesh",
     "email": "morshe@microsoft.com"
   },
+  "engines": {
+    "node": "4.2.4",
+    "npm": "3.8.3"
+  },
   "dependencies": {
     "async": "^1.5.2",
     "azure-logging": "^0.3.2",
