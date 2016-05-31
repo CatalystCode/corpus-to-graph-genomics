@@ -116,10 +116,10 @@ Developers can leverage this repository in the fields of medicine, knowledge man
     
    [cron-format]: <http://www.nncron.ru/help/EN/working/cron-format.htm>
    
-   [scalable-architecture]: <{{site.baseurl}}/images/2016-04-13-Developing-a-Node.js-Deployable-Pipeline/resource-architecture.png>
-   [all-in-one-architecture]: <{{site.baseurl}}/images/2016-04-13-Developing-a-Node.js-Deployable-Pipeline/resource-architecture-aio.png>
+   [scalable-architecture]: <Images/resource-architecture.png>
+   [all-in-one-architecture]: <Images/resource-architecture-aio.png>
    
-   [scalable-template]: <https://github.com/CatalystCode/corpus-to-graph-genomics/tree/master/azure-deployment/Templates/scalable>
-   [all-in-one-template]: <https://github.com/CatalystCode/corpus-to-graph-genomics/tree/master/azure-deployment/Templates/all-in-one>
+   [scalable-template]: <Templates/scalable>
+   [all-in-one-template]: <Templates/all-in-one>
    
    [architecture]: <https://raw.githubusercontent.com/CatalystCode/corpus-to-graph-pipeline/readme-updates/docs/images/architecture.png>
