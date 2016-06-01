@@ -1,7 +1,7 @@
-# The Problem
-The main challenge with converting a large document repository or **corpus** into a graph of entities and relations, is determining how to reduce the conversion process into a series of encapsulated tasks, taking into account that some tasks require more resources than others. 
-For example, splitting a document into sentences is a light-weight operation compared to extracting entities from all sentences in that document.
+# Azure Deployment - Alternatives & Architecture
+[This document is part of [Document Processing Pipeline](../README.md)]
 
+# The Challenge
 As part of building a pipeline we opted for a solution that was simple, manageable and testable.
 The solution's deployment model needed to be scalable and expose APIs for external consumption.
 
@@ -9,16 +9,11 @@ The solution's deployment model needed to be scalable and expose APIs for extern
 The pipeline can run on any platform and in any hosting environment. 
 We used Node.js and non-native node-modules so that there are no platform-dependant components.
 
-The pipeline consists of the following stages: 
-Daily check of new documents from public repository ==> Turn document into sentences and each sentence into entities ==> Extract and score relations ==> store relation and scoring to the graph database.
-
-Both scoring and entity extraction logic are implemented through exposing a separate interface. 
+Both scoring and entity extraction logic are encapsulated by exposing a separate interface. 
 In our implementation, that interface consumes a **REST API** implemented outside of this repository.
 
-![Pipeline architecture][architecture]
-
 ## ARM Deployment
-We used **ARM templates** for deploying the solution since it can be deployed using the platform-independent **azure cli** command line tool. 
+We used **ARM templates** for deploying the solution since it can be deployed using the platform-independent **[azure cli][azure-cli]** command line tool. 
 The Arm templates can also be deployed directly from Github:
 [Scalable Template][scalable-template]; [All-in-one Template][all-in-one-template].
 
