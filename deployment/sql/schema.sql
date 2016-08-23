@@ -635,6 +635,42 @@ END
 
 
 GO
+
+
+
+
+-- ==========================================================
+-- Create Stored Procedure Template for Windows Azure SQL Database
+-- ==========================================================
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+-- =============================================
+-- Author:		<Author,,Name>
+-- Create date: <Create Date,,>
+-- Description:	<Description,,>
+-- =============================================
+CREATE PROCEDURE ClearTables
+	
+AS
+BEGIN
+	-- SET NOCOUNT ON added to prevent extra result sets from
+	-- interfering with SELECT statements.
+	SET NOCOUNT ON;
+
+    DELETE FROM Relations
+	DELETE FROM Entities
+	DELETE FROM Sentences
+	DELETE FROM Documents
+
+	SELECT 1 as Result
+END
+GO
+
+
+
+
 /****** Object:  StoredProcedure [dbo].[UpsertRelations]    Script Date: 3/29/2016 3:47:55 PM ******/
 SET ANSI_NULLS ON
 GO

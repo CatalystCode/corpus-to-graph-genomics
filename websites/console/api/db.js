@@ -97,19 +97,19 @@ docRouter(router, "/api/db", function (router) {
     }
   );
 
-  router.post('/deleteRelations', function (req, res) {
+  router.post('/clear', function (req, res) {
     var query = req.body.query;
-    return deleteRelations(query, function (err, rows) { 
+    return clearTables(function (err) { 
       if (err) return res.json({ err: err.message }); 
-      res.json(rows);
+      res.json({status: 'success'});
     });
   },
   {
-      id: 'db_deleteRelations',
-      name: 'deleteRelations',
-      usage: 'db deleteRelations',
-      example: 'db deleteRelations"',
-      doc: 'deleted all relations in db',
+      id: 'db_clear',
+      name: 'clear',
+      usage: 'db clear',
+      example: 'db clear"',
+      doc: 'clears all table in db',
       params: {},
       response: { representations: ['application/json'] }
     }
@@ -137,20 +137,22 @@ function getCounters(cb) {
 }
 
 
-function deleteRelations(cb) {
-  var query = 'DELETE FROM Relations';
-  console.log('executing db query:', query);
-  return execQueryInternal(query, cb);
+function clearTables(cb) {
+  console.log('clearing tables');
+  return connect(function (err, connection) {
+      cb = getCloseConnectionCb(connection, cb);
+      if (err) return cb(err);
+      
+      var request = new tedious.Request('ClearTables', getCloseConnectionCb(connection, cb));
+      return connection.callProcedure(request);
+
+    });
 }
+
 
 function execQuery(query, cb) {
   if (!query.toLowerCase().startsWith('select'))
     return cb(new Error('Can not execute queries that do not start with SELECT'));
-
-  return execQueryInternal(query, cb);
-}
-
-function execQueryInternal(query, cb) {
   
   console.log('executing db query:', query);
     
