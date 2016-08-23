@@ -1,5 +1,5 @@
 
-var api = { console: { autoLoad: false} };
+var api = { console: { autoLoad: true} };
 
 var express = require('express'),
   router = api.router = express.Router(),
@@ -96,6 +96,25 @@ docRouter(router, "/api/db", function (router) {
       response: { representations: ['application/json'] }
     }
   );
+
+  router.post('/deleteRelations', function (req, res) {
+    var query = req.body.query;
+    return deleteRelations(query, function (err, rows) { 
+      if (err) return res.json({ err: err.message }); 
+      res.json(rows);
+    });
+  },
+  {
+      id: 'db_deleteRelations',
+      name: 'deleteRelations',
+      usage: 'db deleteRelations',
+      example: 'db deleteRelations"',
+      doc: 'deleted all relations in db',
+      params: {},
+      response: { representations: ['application/json'] }
+    }
+  );
+
 });
 
 
@@ -117,9 +136,21 @@ function getCounters(cb) {
     });
 }
 
+
+function deleteRelations(cb) {
+  var query = 'DELETE FROM Relations';
+  console.log('executing db query:', query);
+  return execQueryInternal(query, cb);
+}
+
 function execQuery(query, cb) {
   if (!query.toLowerCase().startsWith('select'))
     return cb(new Error('Can not execute queries that do not start with SELECT'));
+
+  return execQueryInternal(query, cb);
+}
+
+function execQueryInternal(query, cb) {
   
   console.log('executing db query:', query);
     
@@ -147,6 +178,7 @@ function execQuery(query, cb) {
     return connection.execSql(request);
   });
 }
+
 
 api.execQuery = execQuery;
 api.getCounters = getCounters;
