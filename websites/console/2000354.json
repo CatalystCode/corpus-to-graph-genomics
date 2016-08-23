@@ -1,0 +1,5932 @@
+{
+	"sentences": [
+		{
+			"mentions": [
+				{
+					"from": "45",
+					"id": "925",
+					"to": "47",
+					"type": "gene",
+					"value": "CD8"
+				},
+				{
+					"from": "45",
+					"id": "5580",
+					"to": "47",
+					"type": "gene",
+					"value": "CD8"
+				}
+			],
+			"sentence": "miRNA Profiling of Nave, Effector and Memory CD8 T CellsmicroRNAs have recently emerged as master regulators of gene expression during development and cell differentiation."
+		},
+		{
+			"mentions": [],
+			"sentence": "Although profound changes in gene expression also occur during antigen-induced T cell differentiation, the role of miRNAs in the process is not known."
+		},
+		{
+			"mentions": [
+				{
+					"from": "93",
+					"id": "925",
+					"to": "95",
+					"type": "gene",
+					"value": "CD8"
+				},
+				{
+					"from": "93",
+					"id": "5580",
+					"to": "95",
+					"type": "gene",
+					"value": "CD8"
+				}
+			],
+			"sentence": "We compared the miRNA expression profiles between antigen-specific nave, effector and memory CD8+ T cells using 3 different methods-small RNA cloning, miRNA microarray analysis and real-time PCR."
+		},
+		{
+			"mentions": [
+				{
+					"from": "90",
+					"id": "1128",
+					"to": "92",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "118",
+					"id": "406934",
+					"to": "124",
+					"type": "gene",
+					"value": "miR-142"
+				},
+				{
+					"from": "139",
+					"id": "406949",
+					"to": "145",
+					"type": "gene",
+					"value": "miR-15b"
+				},
+				{
+					"from": "90",
+					"id": "406950",
+					"to": "95",
+					"type": "gene",
+					"value": "miR-16"
+				},
+				{
+					"from": "98",
+					"id": "406991",
+					"to": "103",
+					"type": "gene",
+					"value": "miR-21"
+				},
+				{
+					"from": "106",
+					"id": "1128",
+					"to": "108",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "130",
+					"id": "406942",
+					"to": "136",
+					"type": "gene",
+					"value": "miR-150"
+				},
+				{
+					"from": "151",
+					"id": "406888",
+					"to": "156",
+					"type": "gene",
+					"value": "let-7f"
+				},
+				{
+					"from": "118",
+					"id": "1128",
+					"to": "120",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "106",
+					"id": "406934",
+					"to": "112",
+					"type": "gene",
+					"value": "miR-142"
+				},
+				{
+					"from": "139",
+					"id": "1128",
+					"to": "141",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "98",
+					"id": "1128",
+					"to": "100",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "130",
+					"id": "1128",
+					"to": "132",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "90",
+					"id": "51573",
+					"to": "95",
+					"type": "gene",
+					"value": "miR-16"
+				},
+				{
+					"from": 90,
+					"id": "MIMAT0000069-0",
+					"origin": "miR-16/",
+					"to": 96,
+					"type": "miRNA",
+					"value": "hsa-mir-16"
+				},
+				{
+					"from": 90,
+					"id": "MIMAT0000069-1",
+					"origin": "miR-16/",
+					"to": 96,
+					"type": "miRNA",
+					"value": "hsa-mir-16"
+				},
+				{
+					"from": 90,
+					"id": "MIMAT0004489-2",
+					"origin": "miR-16/",
+					"to": 96,
+					"type": "miRNA",
+					"value": "hsa-mir-16"
+				},
+				{
+					"from": 98,
+					"id": "MIMAT0000076-0",
+					"origin": "miR-21/",
+					"to": 104,
+					"type": "miRNA",
+					"value": "hsa-mir-21"
+				},
+				{
+					"from": 98,
+					"id": "MIMAT0000076-1",
+					"origin": "miR-21/",
+					"to": 104,
+					"type": "miRNA",
+					"value": "hsa-mir-21"
+				},
+				{
+					"from": 98,
+					"id": "MIMAT0004494-2",
+					"origin": "miR-21/",
+					"to": 104,
+					"type": "miRNA",
+					"value": "hsa-mir-21"
+				},
+				{
+					"from": 106,
+					"id": "MIMAT0000434-0",
+					"origin": "miR-142-3p/",
+					"to": 116,
+					"type": "miRNA",
+					"value": "hsa-mir-142-3p"
+				},
+				{
+					"from": 118,
+					"id": "MIMAT0000433-0",
+					"origin": "miR-142-5p/",
+					"to": 128,
+					"type": "miRNA",
+					"value": "hsa-mir-142-5p"
+				},
+				{
+					"from": 130,
+					"id": "MIMAT0000451-0",
+					"origin": "miR-150/",
+					"to": 137,
+					"type": "miRNA",
+					"value": "hsa-mir-150"
+				},
+				{
+					"from": 130,
+					"id": "MIMAT0000451-2",
+					"origin": "miR-150/",
+					"to": 137,
+					"type": "miRNA",
+					"value": "hsa-mir-150"
+				},
+				{
+					"from": 130,
+					"id": "MIMAT0004610-1",
+					"origin": "miR-150/",
+					"to": 137,
+					"type": "miRNA",
+					"value": "hsa-mir-150"
+				},
+				{
+					"from": 139,
+					"id": "MIMAT0000417-0",
+					"origin": "miR-15b/",
+					"to": 146,
+					"type": "miRNA",
+					"value": "hsa-mir-15b"
+				},
+				{
+					"from": 139,
+					"id": "MIMAT0000417-2",
+					"origin": "miR-15b/",
+					"to": 146,
+					"type": "miRNA",
+					"value": "hsa-mir-15b"
+				},
+				{
+					"from": 139,
+					"id": "MIMAT0004586-1",
+					"origin": "miR-15b/",
+					"to": 146,
+					"type": "miRNA",
+					"value": "hsa-mir-15b"
+				},
+				{
+					"from": 151,
+					"id": "MIMAT0000067-0",
+					"origin": "let-7f",
+					"to": 157,
+					"type": "miRNA",
+					"value": "hsa-let-7f"
+				}
+			],
+			"sentence": "Although many miRNAs were expressed in all the T cell subsets, the frequency of 7 miRNAs (miR-16, miR-21, miR-142-3p, miR-142-5p, miR-150, miR-15b and let-7f) alone accounted for ~60% of all miRNAs, and their expression was several fold higher than the other expressed miRNAs."
+		},
+		{
+			"mentions": [],
+			"sentence": "Global downregulation of miRNAs (including 6/7 dominantly expressed miRNAs) was observed in effector T cells compared to nave cells and the miRNA expression levels tended to come back up in memory T cells."
+		},
+		{
+			"mentions": [
+				{
+					"from": "31",
+					"id": "406991",
+					"to": "36",
+					"type": "gene",
+					"value": "miR-21"
+				},
+				{
+					"from": "31",
+					"id": "1128",
+					"to": "33",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": 31,
+					"id": "MIMAT0000076-0",
+					"origin": "miR-21",
+					"to": 37,
+					"type": "miRNA",
+					"value": "hsa-mir-21"
+				},
+				{
+					"from": 31,
+					"id": "MIMAT0000076-1",
+					"origin": "miR-21",
+					"to": 37,
+					"type": "miRNA",
+					"value": "hsa-mir-21"
+				},
+				{
+					"from": 31,
+					"id": "MIMAT0004494-2",
+					"origin": "miR-21",
+					"to": 37,
+					"type": "miRNA",
+					"value": "hsa-mir-21"
+				}
+			],
+			"sentence": "However, a few miRNAs, notably miR-21 were higher in effector and memory T cells compared to nave T cells."
+		},
+		{
+			"mentions": [],
+			"sentence": "These results suggest that concomitant with profound changes in gene expression, miRNA profile also changes dynamically during T cell differentiation."
+		},
+		{
+			"mentions": [],
+			"sentence": "Sequence analysis of the cloned mature miRNAs revealed an extensive degree of end polymorphism."
+		},
+		{
+			"mentions": [
+				{
+					"from": "123",
+					"id": "1128",
+					"to": "125",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "123",
+					"id": "406934",
+					"to": "129",
+					"type": "gene",
+					"value": "miR-142"
+				},
+				{
+					"from": "83",
+					"id": "23405",
+					"to": "87",
+					"type": "gene",
+					"value": "dicer"
+				},
+				{
+					"from": "76",
+					"id": "29102",
+					"to": "81",
+					"type": "gene",
+					"value": "drosha"
+				},
+				{
+					"from": 123,
+					"id": "MIMAT0000433-1",
+					"origin": "miR-142/suggesting a possible novel mechanism to generate new miRNA and/or to diversify miRNA target selection.",
+					"to": 130,
+					"type": "miRNA",
+					"value": "hsa-mir-142"
+				},
+				{
+					"from": 123,
+					"id": "MIMAT0000434-2",
+					"origin": "miR-142/suggesting a possible novel mechanism to generate new miRNA and/or to diversify miRNA target selection.",
+					"to": 130,
+					"type": "miRNA",
+					"value": "hsa-mir-142"
+				}
+			],
+			"sentence": "While 3'end polymorphisms dominated, heterogeneity at both ends, resembling drosha/dicer processing shift was also seen in miR-142, suggesting a possible novel mechanism to generate new miRNA and/or to diversify miRNA target selection."
+		},
+		{
+			"mentions": [],
+			"sentence": "Overall, our results suggest that dynamic changes in the expression of miRNAs may be important for the regulation of gene expression during antigen-induced T cell differentiation."
+		},
+		{
+			"mentions": [],
+			"sentence": "Our study also suggests possible novel mechanisms for miRNA biogenesis and function.During an immune response, antigen-specific nave T cells proliferate enormously and develop into effector T cells capable of immediate effector functions such as cytotoxicity and cytokine production."
+		},
+		{
+			"mentions": [],
+			"sentence": "After clearance of antigen, most of the effector T cells are eliminated by activation-induced cell death, but some antigen experienced cells differentiate into relatively quiescent memory T cells which persist over long periods of time and mount a rapid and augmented response upon rechallenge with the antigen."
+		},
+		{
+			"mentions": [],
+			"sentence": "While nave and memory T cells are quiescent and express molecules needed for trafficking from blood to lymphoid organs, effector cells are actively dividing, produce various effector cytokines and cytotoxic molecules, and express molecules needed for trafficking into tissue sites of infection."
+		},
+		{
+			"mentions": [],
+			"sentence": "Thus, major changes in gene expression characterize these differentiation states, with gene expression getting enormously upregulated in effector T cells, but decreasing in memory T cells."
+		},
+		{
+			"mentions": [],
+			"sentence": "Although transcriptional regulation of gene expression has been well studied, the role of microRNAs in the process of T cell differentiation is unclear.RNA interference mediated by microRNAs has emerged as an important mechanism for global regulation of gene expression in plants and animals, including humans (reviewed in ref)."
+		},
+		{
+			"mentions": [],
+			"sentence": "miRNAs are small RNAs that regulate gene expression by translational repression and/or mRNA degradation."
+		},
+		{
+			"mentions": [
+				{
+					"from": "118",
+					"id": "29102",
+					"to": "123",
+					"type": "gene",
+					"value": "drosha"
+				},
+				{
+					"from": "140",
+					"id": "1978",
+					"to": "141",
+					"type": "gene",
+					"value": "bp"
+				},
+				{
+					"from": "125",
+					"id": "54487",
+					"to": "129",
+					"type": "gene",
+					"value": "DGCR8"
+				},
+				{
+					"from": "140",
+					"id": "3240",
+					"to": "141",
+					"type": "gene",
+					"value": "bp"
+				},
+				{
+					"from": "140",
+					"id": "1748",
+					"to": "141",
+					"type": "gene",
+					"value": "bp"
+				},
+				{
+					"from": "140",
+					"id": "474256",
+					"to": "141",
+					"type": "gene",
+					"value": "bp"
+				}
+			],
+			"sentence": "miRNAs are genomically encoded and are transcribed in the nucleus as long primary miRNAs, which are then processed by drosha-DGCR8 into ~70 bp pre miRNA."
+		},
+		{
+			"mentions": [
+				{
+					"from": "48",
+					"id": "57510",
+					"to": "57",
+					"type": "gene",
+					"value": "exportin 5"
+				},
+				{
+					"from": "130",
+					"id": "4907",
+					"to": "131",
+					"type": "gene",
+					"value": "nt"
+				},
+				{
+					"from": "48",
+					"id": "7514",
+					"to": "55",
+					"type": "gene",
+					"value": "exportin"
+				},
+				{
+					"from": "115",
+					"id": "23405",
+					"to": "119",
+					"type": "gene",
+					"value": "dicer"
+				},
+				{
+					"from": "130",
+					"id": "4922",
+					"to": "131",
+					"type": "gene",
+					"value": "nt"
+				}
+			],
+			"sentence": "The pre-miRNA is exported out of the nucleus by exportin 5 and is further processed in the cytoplasm by the enzyme dicer into ~22 nt double stranded mature miRNA."
+		},
+		{
+			"mentions": [
+				{
+					"from": "71",
+					"id": "59342",
+					"to": "74",
+					"type": "gene",
+					"value": "RISC"
+				}
+			],
+			"sentence": "One strand of the miRNA associates with RNA induced silencing complex (RISC) to mediate gene silencing."
+		},
+		{
+			"mentions": [],
+			"sentence": "Generally the miRNA is imperfectly complementary to the 3'UTR sequence of the target mRNA and forms a bulge upon binding."
+		},
+		{
+			"mentions": [
+				{
+					"from": "11",
+					"id": "4907",
+					"to": "12",
+					"type": "gene",
+					"value": "nt"
+				},
+				{
+					"from": "11",
+					"id": "4922",
+					"to": "12",
+					"type": "gene",
+					"value": "nt"
+				}
+			],
+			"sentence": "The 5' 2-7 nt of the miRNA strand is perfectly complementary (seed region) and defines the target specificity of the miRNA."
+		},
+		{
+			"mentions": [],
+			"sentence": "A single miRNA can regulate many target mRNAs containing binding sites for that miRNA .A number of miRNA profiling studies have shown that the expression of miRNA changes during hematopoietic development and carcinogenesis, suggesting that miRNAs might be important players in these processes."
+		},
+		{
+			"mentions": [],
+			"sentence": "Although the exact functional consequence of expression of a given miRNA is largely unknown, recent studies have clearly demonstrated the importance of individual miRNAs in hematopoietic cell development and function."
+		},
+		{
+			"mentions": [
+				{
+					"from": "56",
+					"id": "207",
+					"to": "56",
+					"type": "gene",
+					"value": "B"
+				},
+				{
+					"from": "14",
+					"id": "406995",
+					"to": "21",
+					"type": "gene",
+					"value": "miR-181a"
+				},
+				{
+					"from": "56",
+					"id": "2185",
+					"to": "56",
+					"type": "gene",
+					"value": "B"
+				},
+				{
+					"from": "14",
+					"id": "1128",
+					"to": "16",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "56",
+					"id": "2206",
+					"to": "56",
+					"type": "gene",
+					"value": "B"
+				},
+				{
+					"from": "105",
+					"id": "55038",
+					"to": "128",
+					"type": "gene",
+					"value": "hematopoietic progenitor"
+				},
+				{
+					"from": 14,
+					"id": "MIMAT0000256-0",
+					"origin": "miR-181a",
+					"to": 22,
+					"type": "miRNA",
+					"value": "hsa-mir-181a"
+				},
+				{
+					"from": 14,
+					"id": "MIMAT0000256-1",
+					"origin": "miR-181a",
+					"to": 22,
+					"type": "miRNA",
+					"value": "hsa-mir-181a"
+				},
+				{
+					"from": 14,
+					"id": "MIMAT0004558-2",
+					"origin": "miR-181a",
+					"to": 22,
+					"type": "miRNA",
+					"value": "hsa-mir-181a"
+				}
+			],
+			"sentence": "For instance, miR-181a has been shown to regulate T and B cell development when ectopically expressed in hematopoietic progenitor cells."
+		},
+		{
+			"mentions": [
+				{
+					"from": "50",
+					"id": "1128",
+					"to": "52",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "50",
+					"id": "406995",
+					"to": "57",
+					"type": "gene",
+					"value": "miR-181a"
+				},
+				{
+					"from": 50,
+					"id": "MIMAT0000256-0",
+					"origin": "miR-181a",
+					"to": 58,
+					"type": "miRNA",
+					"value": "hsa-mir-181a"
+				},
+				{
+					"from": 50,
+					"id": "MIMAT0000256-1",
+					"origin": "miR-181a",
+					"to": 58,
+					"type": "miRNA",
+					"value": "hsa-mir-181a"
+				},
+				{
+					"from": 50,
+					"id": "MIMAT0004558-2",
+					"origin": "miR-181a",
+					"to": 58,
+					"type": "miRNA",
+					"value": "hsa-mir-181a"
+				}
+			],
+			"sentence": "A more recent paper has further demonstrated that miR-181a could modulate T cell sensitivity to antigen stimulation."
+		},
+		{
+			"mentions": [
+				{
+					"from": "26",
+					"id": "1128",
+					"to": "28",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "46",
+					"id": "2185",
+					"to": "46",
+					"type": "gene",
+					"value": "B"
+				},
+				{
+					"from": "46",
+					"id": "207",
+					"to": "46",
+					"type": "gene",
+					"value": "B"
+				},
+				{
+					"from": "46",
+					"id": "2206",
+					"to": "46",
+					"type": "gene",
+					"value": "B"
+				},
+				{
+					"from": "26",
+					"id": "406942",
+					"to": "32",
+					"type": "gene",
+					"value": "miR-150"
+				},
+				{
+					"from": 26,
+					"id": "MIMAT0000451-0",
+					"origin": "miR-150",
+					"to": 33,
+					"type": "miRNA",
+					"value": "hsa-mir-150"
+				},
+				{
+					"from": 26,
+					"id": "MIMAT0000451-2",
+					"origin": "miR-150",
+					"to": 33,
+					"type": "miRNA",
+					"value": "hsa-mir-150"
+				},
+				{
+					"from": 26,
+					"id": "MIMAT0004610-1",
+					"origin": "miR-150",
+					"to": 33,
+					"type": "miRNA",
+					"value": "hsa-mir-150"
+				}
+			],
+			"sentence": "Another study showed that miR-150 could block B cell development when expressed prematurely."
+		},
+		{
+			"mentions": [
+				{
+					"from": "11",
+					"id": "1128",
+					"to": "13",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "11",
+					"id": "406947",
+					"to": "17",
+					"type": "gene",
+					"value": "miR-155"
+				},
+				{
+					"from": 11,
+					"id": "MIMAT0000646-0",
+					"origin": "miR-155",
+					"to": 18,
+					"type": "miRNA",
+					"value": "hsa-mir-155"
+				},
+				{
+					"from": 11,
+					"id": "MIMAT0000646-1",
+					"origin": "miR-155",
+					"to": 18,
+					"type": "miRNA",
+					"value": "hsa-mir-155"
+				},
+				{
+					"from": 11,
+					"id": "MIMAT0004658-2",
+					"origin": "miR-155",
+					"to": 18,
+					"type": "miRNA",
+					"value": "hsa-mir-155"
+				}
+			],
+			"sentence": "Similarly, miR-155 has been shown to regulate germinal center reaction as well as helper T cell response."
+		},
+		{
+			"mentions": [],
+			"sentence": "Although these studies suggest that miRNAs have important roles in immune cell development and function, a comprehensive analysis of miRNA expression during antigen-specific T cell differentiation is still lacking."
+		},
+		{
+			"mentions": [
+				{
+					"from": "107",
+					"id": "925",
+					"to": "109",
+					"type": "gene",
+					"value": "CD8"
+				},
+				{
+					"from": "107",
+					"id": "5580",
+					"to": "109",
+					"type": "gene",
+					"value": "CD8"
+				}
+			],
+			"sentence": "Thus in this study, we analyzed the miRNA expression profile in antigen-specific nave, effector and memory CD8 T cells using the method we have described earlier to derive these cell types."
+		},
+		{
+			"mentions": [],
+			"sentence": "We report that a few miRNAs are dominantly expressed and that their expression pattern changes during the differentiation process."
+		},
+		{
+			"mentions": [
+				{
+					"from": "287",
+					"id": "925",
+					"to": "289",
+					"type": "gene",
+					"value": "CD8"
+				},
+				{
+					"from": "287",
+					"id": "5580",
+					"to": "289",
+					"type": "gene",
+					"value": "CD8"
+				}
+			],
+			"sentence": "We also note a high degree of heterogeneity in the mature miRNA ends in the T cell subsets.To determine if the expression profile of microRNAs changes during T cell differentiation, small RNAs were cloned and sequenced from pure populations of antigen-specific nave, effector and memory CD8 T cells, generated as described earlier."
+		},
+		{
+			"mentions": [],
+			"sentence": "In total, 1498 small RNAs were cloned and their length ranged from 15 to 35 nucleotides, with a peak at 21 to 23 nucleotides."
+		},
+		{
+			"mentions": [],
+			"sentence": "The cloned sequences were queried using BLASTN against miRBase (v.10.0)."
+		},
+		{
+			"mentions": [],
+			"sentence": "With respect to the annotated sequence of a particular miRNA, one single nucleotide internal mismatch and up to 3 nucleotide mismatch at the 3' end were allowed to designate the sequence as the miRNA."
+		},
+		{
+			"mentions": [],
+			"sentence": "Up to 3 nucleotide addition or deletion at both ends were also allowed, as long as these nucleotides completely matched the miRNA genomic sequence."
+		},
+		{
+			"mentions": [],
+			"sentence": "Of 1498 cloned sequences, 837 (343 in nave, 240 in effector and 254 in memory T cells) clones corresponded to previously annotated miRNAs."
+		},
+		{
+			"mentions": [],
+			"sentence": "Many of the miRNAs were cloned multiple times and the total number of individual microRNAs cloned in nave, effector and memory T cells constituted 69, 51 and 54 respectively."
+		},
+		{
+			"mentions": [
+				{
+					"from": "243",
+					"id": "6205",
+					"to": "244",
+					"type": "gene",
+					"value": "S1"
+				},
+				{
+					"from": "243",
+					"id": "6267",
+					"to": "244",
+					"type": "gene",
+					"value": "S1"
+				},
+				{
+					"from": "243",
+					"id": "5707",
+					"to": "244",
+					"type": "gene",
+					"value": "S1"
+				},
+				{
+					"from": "243",
+					"id": "5719",
+					"to": "244",
+					"type": "gene",
+					"value": "S1"
+				},
+				{
+					"from": "243",
+					"id": "8241",
+					"to": "244",
+					"type": "gene",
+					"value": "S1"
+				}
+			],
+			"sentence": "The distribution of various microRNAs, the number of clones isolated for each miRNA (miRNA frequency) as well as their representation as a percent of total miRNA pool for each of the different T cell subsets are depicted in Supplemental Table S1."
+		},
+		{
+			"mentions": [],
+			"sentence": "Although a total of 94 known miRNAs were cloned at varying frequencies, some miRNAs dominated in all subsets."
+		},
+		{
+			"mentions": [
+				{
+					"from": "251",
+					"id": "5707",
+					"to": "252",
+					"type": "gene",
+					"value": "S1"
+				},
+				{
+					"from": "258",
+					"id": "11067",
+					"to": "262",
+					"type": "gene",
+					"value": "Fig 1"
+				},
+				{
+					"from": "87",
+					"id": "1128",
+					"to": "89",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "38",
+					"id": "1128",
+					"to": "40",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "78",
+					"id": "406942",
+					"to": "84",
+					"type": "gene",
+					"value": "miR-150"
+				},
+				{
+					"from": "66",
+					"id": "1128",
+					"to": "68",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "197",
+					"id": "406991",
+					"to": "202",
+					"type": "gene",
+					"value": "miR-21"
+				},
+				{
+					"from": "46",
+					"id": "406991",
+					"to": "51",
+					"type": "gene",
+					"value": "miR-21"
+				},
+				{
+					"from": "38",
+					"id": "51573",
+					"to": "43",
+					"type": "gene",
+					"value": "miR-16"
+				},
+				{
+					"from": "182",
+					"id": "1128",
+					"to": "184",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "99",
+					"id": "406888",
+					"to": "104",
+					"type": "gene",
+					"value": "let-7f"
+				},
+				{
+					"from": "174",
+					"id": "1128",
+					"to": "176",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "251",
+					"id": "6267",
+					"to": "252",
+					"type": "gene",
+					"value": "S1"
+				},
+				{
+					"from": "251",
+					"id": "5719",
+					"to": "252",
+					"type": "gene",
+					"value": "S1"
+				},
+				{
+					"from": "543",
+					"id": "259307",
+					"to": "545",
+					"type": "gene",
+					"value": "Fig"
+				},
+				{
+					"from": "327",
+					"id": "5580",
+					"to": "329",
+					"type": "gene",
+					"value": "CD8"
+				},
+				{
+					"from": "174",
+					"id": "51573",
+					"to": "179",
+					"type": "gene",
+					"value": "miR-16"
+				},
+				{
+					"from": "258",
+					"id": "259307",
+					"to": "262",
+					"type": "gene",
+					"value": "Fig 1"
+				},
+				{
+					"from": "87",
+					"id": "406949",
+					"to": "93",
+					"type": "gene",
+					"value": "miR-15b"
+				},
+				{
+					"from": "182",
+					"id": "406934",
+					"to": "188",
+					"type": "gene",
+					"value": "miR-142"
+				},
+				{
+					"from": "38",
+					"id": "406950",
+					"to": "43",
+					"type": "gene",
+					"value": "miR-16"
+				},
+				{
+					"from": "197",
+					"id": "1128",
+					"to": "199",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "54",
+					"id": "406934",
+					"to": "60",
+					"type": "gene",
+					"value": "miR-142"
+				},
+				{
+					"from": "54",
+					"id": "1128",
+					"to": "56",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "258",
+					"id": "57120",
+					"to": "262",
+					"type": "gene",
+					"value": "Fig 1"
+				},
+				{
+					"from": "46",
+					"id": "1128",
+					"to": "48",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "327",
+					"id": "925",
+					"to": "329",
+					"type": "gene",
+					"value": "CD8"
+				},
+				{
+					"from": "251",
+					"id": "8241",
+					"to": "252",
+					"type": "gene",
+					"value": "S1"
+				},
+				{
+					"from": "543",
+					"id": "11067",
+					"to": "545",
+					"type": "gene",
+					"value": "Fig"
+				},
+				{
+					"from": "78",
+					"id": "1128",
+					"to": "80",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "66",
+					"id": "406934",
+					"to": "72",
+					"type": "gene",
+					"value": "miR-142"
+				},
+				{
+					"from": "543",
+					"id": "57120",
+					"to": "545",
+					"type": "gene",
+					"value": "Fig"
+				},
+				{
+					"from": "174",
+					"id": "406950",
+					"to": "179",
+					"type": "gene",
+					"value": "miR-16"
+				},
+				{
+					"from": "251",
+					"id": "6205",
+					"to": "252",
+					"type": "gene",
+					"value": "S1"
+				},
+				{
+					"from": 38,
+					"id": "MIMAT0000069-0",
+					"origin": "miR-16/",
+					"to": 44,
+					"type": "miRNA",
+					"value": "hsa-mir-16"
+				},
+				{
+					"from": 38,
+					"id": "MIMAT0000069-1",
+					"origin": "miR-16/",
+					"to": 44,
+					"type": "miRNA",
+					"value": "hsa-mir-16"
+				},
+				{
+					"from": 38,
+					"id": "MIMAT0004489-2",
+					"origin": "miR-16/",
+					"to": 44,
+					"type": "miRNA",
+					"value": "hsa-mir-16"
+				},
+				{
+					"from": 46,
+					"id": "MIMAT0000076-0",
+					"origin": "miR-21/",
+					"to": 52,
+					"type": "miRNA",
+					"value": "hsa-mir-21"
+				},
+				{
+					"from": 46,
+					"id": "MIMAT0000076-1",
+					"origin": "miR-21/",
+					"to": 52,
+					"type": "miRNA",
+					"value": "hsa-mir-21"
+				},
+				{
+					"from": 46,
+					"id": "MIMAT0004494-2",
+					"origin": "miR-21/",
+					"to": 52,
+					"type": "miRNA",
+					"value": "hsa-mir-21"
+				},
+				{
+					"from": 54,
+					"id": "MIMAT0000434-0",
+					"origin": "miR-142-3p/",
+					"to": 64,
+					"type": "miRNA",
+					"value": "hsa-mir-142-3p"
+				},
+				{
+					"from": 66,
+					"id": "MIMAT0000433-0",
+					"origin": "miR-142-5p/",
+					"to": 76,
+					"type": "miRNA",
+					"value": "hsa-mir-142-5p"
+				},
+				{
+					"from": 78,
+					"id": "MIMAT0000451-0",
+					"origin": "miR-150/",
+					"to": 85,
+					"type": "miRNA",
+					"value": "hsa-mir-150"
+				},
+				{
+					"from": 78,
+					"id": "MIMAT0000451-2",
+					"origin": "miR-150/",
+					"to": 85,
+					"type": "miRNA",
+					"value": "hsa-mir-150"
+				},
+				{
+					"from": 78,
+					"id": "MIMAT0004610-1",
+					"origin": "miR-150/",
+					"to": 85,
+					"type": "miRNA",
+					"value": "hsa-mir-150"
+				},
+				{
+					"from": 87,
+					"id": "MIMAT0000417-0",
+					"origin": "miR-15b/",
+					"to": 94,
+					"type": "miRNA",
+					"value": "hsa-mir-15b"
+				},
+				{
+					"from": 87,
+					"id": "MIMAT0000417-2",
+					"origin": "miR-15b/",
+					"to": 94,
+					"type": "miRNA",
+					"value": "hsa-mir-15b"
+				},
+				{
+					"from": 87,
+					"id": "MIMAT0004586-1",
+					"origin": "miR-15b/",
+					"to": 94,
+					"type": "miRNA",
+					"value": "hsa-mir-15b"
+				},
+				{
+					"from": 99,
+					"id": "MIMAT0000067-0",
+					"origin": "let-7f",
+					"to": 105,
+					"type": "miRNA",
+					"value": "hsa-let-7f"
+				},
+				{
+					"from": 174,
+					"id": "MIMAT0000069-0",
+					"origin": "miR-16/",
+					"to": 180,
+					"type": "miRNA",
+					"value": "hsa-mir-16"
+				},
+				{
+					"from": 174,
+					"id": "MIMAT0000069-1",
+					"origin": "miR-16/",
+					"to": 180,
+					"type": "miRNA",
+					"value": "hsa-mir-16"
+				},
+				{
+					"from": 174,
+					"id": "MIMAT0004489-2",
+					"origin": "miR-16/",
+					"to": 180,
+					"type": "miRNA",
+					"value": "hsa-mir-16"
+				},
+				{
+					"from": 182,
+					"id": "MIMAT0000434-0",
+					"origin": "miR-142-3p/",
+					"to": 192,
+					"type": "miRNA",
+					"value": "hsa-mir-142-3p"
+				},
+				{
+					"from": 197,
+					"id": "MIMAT0000076-0",
+					"origin": "miR-21",
+					"to": 203,
+					"type": "miRNA",
+					"value": "hsa-mir-21"
+				},
+				{
+					"from": 197,
+					"id": "MIMAT0000076-1",
+					"origin": "miR-21",
+					"to": 203,
+					"type": "miRNA",
+					"value": "hsa-mir-21"
+				},
+				{
+					"from": 197,
+					"id": "MIMAT0004494-2",
+					"origin": "miR-21",
+					"to": 203,
+					"type": "miRNA",
+					"value": "hsa-mir-21"
+				}
+			],
+			"sentence": "Strikingly, clones from seven miRNAs (miR-16, miR-21, miR-142-3p, miR-142-5p, miR-150, miR-15b and let-7f) constituted nearly 60% of the total clones and of these, 3 miRNAs (miR-16, miR-142-3p and miR-21) alone accounted for ~40% of all clones (Table S1 and Fig 1), suggesting that these are the dominantly expressed miRNAs in CD8 T cells.Among the 7 highest expressed miRNAs, 6 showed dramatically reduced frequencies in effector T cells compared to nave T cells, and the expression of these miRNAs tended to increase back in memory T cells (Fig."
+		},
+		{
+			"mentions": [],
+			"sentence": "1, left panel)."
+		},
+		{
+			"mentions": [
+				{
+					"from": "167",
+					"id": "11067",
+					"to": "169",
+					"type": "gene",
+					"value": "Fig"
+				},
+				{
+					"from": "167",
+					"id": "57120",
+					"to": "169",
+					"type": "gene",
+					"value": "Fig"
+				},
+				{
+					"from": "167",
+					"id": "259307",
+					"to": "169",
+					"type": "gene",
+					"value": "Fig"
+				},
+				{
+					"from": "8",
+					"id": "1128",
+					"to": "10",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "8",
+					"id": "406991",
+					"to": "13",
+					"type": "gene",
+					"value": "miR-21"
+				},
+				{
+					"from": 8,
+					"id": "MIMAT0000076-0",
+					"origin": "miR-21",
+					"to": 14,
+					"type": "miRNA",
+					"value": "hsa-mir-21"
+				},
+				{
+					"from": 8,
+					"id": "MIMAT0000076-1",
+					"origin": "miR-21",
+					"to": 14,
+					"type": "miRNA",
+					"value": "hsa-mir-21"
+				},
+				{
+					"from": 8,
+					"id": "MIMAT0004494-2",
+					"origin": "miR-21",
+					"to": 14,
+					"type": "miRNA",
+					"value": "hsa-mir-21"
+				}
+			],
+			"sentence": "However miR-21 was an exception, showing reverse kinetics with highest frequency in effector T cells followed by memory T cells and lowest expression in nave T cells (Fig."
+		},
+		{
+			"mentions": [],
+			"sentence": "1, right panel).Although direct cloning has been widely used to profile the miRNA expression level, it may not be a good method for the relative quantitation of low frequency miRNAs, particularly when small-scale sequencing is used as done in this study."
+		},
+		{
+			"mentions": [],
+			"sentence": "Moreover, although it is a good method to determine the relative expression level of miRNAs within a given sample, it may not be ideal for comparison of expression levels between different samples because it is hard to normalize the data between samples."
+		},
+		{
+			"mentions": [],
+			"sentence": "Therefore, we also used a miRNA microarray to further analyze the expression profiles in the different T cell subsets."
+		},
+		{
+			"mentions": [],
+			"sentence": "RNAs from T cell subsets generated in 2 independent experiments were profiled with LNA (locked nucleotide acid)-based miRNA microarray."
+		},
+		{
+			"mentions": [
+				{
+					"from": "100",
+					"id": "259307",
+					"to": "102",
+					"type": "gene",
+					"value": "Fig"
+				},
+				{
+					"from": "100",
+					"id": "57120",
+					"to": "102",
+					"type": "gene",
+					"value": "Fig"
+				},
+				{
+					"from": "100",
+					"id": "11067",
+					"to": "102",
+					"type": "gene",
+					"value": "Fig"
+				}
+			],
+			"sentence": "Essentially similar results were seen in both sets attesting to the reproducibility of the results (Fig."
+		},
+		{
+			"mentions": [
+				{
+					"from": "95",
+					"id": "1128",
+					"to": "97",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "115",
+					"id": "406934",
+					"to": "121",
+					"type": "gene",
+					"value": "miR-142"
+				},
+				{
+					"from": "348",
+					"id": "57120",
+					"to": "350",
+					"type": "gene",
+					"value": "Fig"
+				},
+				{
+					"from": "103",
+					"id": "1128",
+					"to": "105",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "95",
+					"id": "406950",
+					"to": "100",
+					"type": "gene",
+					"value": "miR-16"
+				},
+				{
+					"from": "115",
+					"id": "1128",
+					"to": "117",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "136",
+					"id": "406949",
+					"to": "142",
+					"type": "gene",
+					"value": "miR-15b"
+				},
+				{
+					"from": "148",
+					"id": "406888",
+					"to": "153",
+					"type": "gene",
+					"value": "let-7f"
+				},
+				{
+					"from": "348",
+					"id": "259307",
+					"to": "350",
+					"type": "gene",
+					"value": "Fig"
+				},
+				{
+					"from": "127",
+					"id": "406942",
+					"to": "133",
+					"type": "gene",
+					"value": "miR-150"
+				},
+				{
+					"from": "95",
+					"id": "51573",
+					"to": "100",
+					"type": "gene",
+					"value": "miR-16"
+				},
+				{
+					"from": "136",
+					"id": "1128",
+					"to": "138",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "127",
+					"id": "1128",
+					"to": "129",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "103",
+					"id": "406934",
+					"to": "109",
+					"type": "gene",
+					"value": "miR-142"
+				},
+				{
+					"from": "348",
+					"id": "11067",
+					"to": "350",
+					"type": "gene",
+					"value": "Fig"
+				},
+				{
+					"from": 95,
+					"id": "MIMAT0000069-0",
+					"origin": "miR-16/",
+					"to": 101,
+					"type": "miRNA",
+					"value": "hsa-mir-16"
+				},
+				{
+					"from": 95,
+					"id": "MIMAT0000069-1",
+					"origin": "miR-16/",
+					"to": 101,
+					"type": "miRNA",
+					"value": "hsa-mir-16"
+				},
+				{
+					"from": 95,
+					"id": "MIMAT0004489-2",
+					"origin": "miR-16/",
+					"to": 101,
+					"type": "miRNA",
+					"value": "hsa-mir-16"
+				},
+				{
+					"from": 103,
+					"id": "MIMAT0000434-0",
+					"origin": "miR-142-3p/",
+					"to": 113,
+					"type": "miRNA",
+					"value": "hsa-mir-142-3p"
+				},
+				{
+					"from": 115,
+					"id": "MIMAT0000433-0",
+					"origin": "miR-142-5p/",
+					"to": 125,
+					"type": "miRNA",
+					"value": "hsa-mir-142-5p"
+				},
+				{
+					"from": 127,
+					"id": "MIMAT0000451-0",
+					"origin": "miR-150/",
+					"to": 134,
+					"type": "miRNA",
+					"value": "hsa-mir-150"
+				},
+				{
+					"from": 127,
+					"id": "MIMAT0000451-2",
+					"origin": "miR-150/",
+					"to": 134,
+					"type": "miRNA",
+					"value": "hsa-mir-150"
+				},
+				{
+					"from": 127,
+					"id": "MIMAT0004610-1",
+					"origin": "miR-150/",
+					"to": 134,
+					"type": "miRNA",
+					"value": "hsa-mir-150"
+				},
+				{
+					"from": 136,
+					"id": "MIMAT0000417-0",
+					"origin": "miR-15b/",
+					"to": 143,
+					"type": "miRNA",
+					"value": "hsa-mir-15b"
+				},
+				{
+					"from": 136,
+					"id": "MIMAT0000417-2",
+					"origin": "miR-15b/",
+					"to": 143,
+					"type": "miRNA",
+					"value": "hsa-mir-15b"
+				},
+				{
+					"from": 136,
+					"id": "MIMAT0004586-1",
+					"origin": "miR-15b/",
+					"to": 143,
+					"type": "miRNA",
+					"value": "hsa-mir-15b"
+				},
+				{
+					"from": 148,
+					"id": "MIMAT0000067-0",
+					"origin": "let-7f",
+					"to": 154,
+					"type": "miRNA",
+					"value": "hsa-let-7f"
+				}
+			],
+			"sentence": "2).Analysis of the expression levels in the microarray confirmed that the 6 (out of 7) miRNAs (miR-16, miR-142-3p, miR-142-5p, miR-150, miR-15b and let-7f) that showed the highest frequency in direct cloning, were significantly down regulated in effector cells compared to nave T cells and the expression tended to increase back in memory T cells (Fig 2) as observed in direct cloning method."
+		},
+		{
+			"mentions": [
+				{
+					"from": "134",
+					"id": "259307",
+					"to": "136",
+					"type": "gene",
+					"value": "Fig"
+				},
+				{
+					"from": "134",
+					"id": "57120",
+					"to": "136",
+					"type": "gene",
+					"value": "Fig"
+				},
+				{
+					"from": "150",
+					"id": "6187",
+					"to": "151",
+					"type": "gene",
+					"value": "S2"
+				},
+				{
+					"from": "134",
+					"id": "11067",
+					"to": "136",
+					"type": "gene",
+					"value": "Fig"
+				},
+				{
+					"from": "150",
+					"id": "5708",
+					"to": "151",
+					"type": "gene",
+					"value": "S2"
+				}
+			],
+			"sentence": "Moreover, this pattern of differences was also evident for most of the low frequency miRNAsaround 80% of miRNAs had the same pattern (Fig 2 and Table S2)."
+		},
+		{
+			"mentions": [
+				{
+					"from": "250",
+					"id": "11169",
+					"to": "254",
+					"type": "gene",
+					"value": "and 1"
+				},
+				{
+					"from": "204",
+					"id": "7456",
+					"to": "208",
+					"type": "gene",
+					"value": "was 2"
+				},
+				{
+					"from": "792",
+					"id": "11169",
+					"to": "796",
+					"type": "gene",
+					"value": "and 1"
+				},
+				{
+					"from": "821",
+					"id": "6188",
+					"to": "822",
+					"type": "gene",
+					"value": "S3"
+				},
+				{
+					"from": "301",
+					"id": "6187",
+					"to": "302",
+					"type": "gene",
+					"value": "S2"
+				},
+				{
+					"from": "821",
+					"id": "5709",
+					"to": "822",
+					"type": "gene",
+					"value": "S3"
+				},
+				{
+					"from": "301",
+					"id": "5708",
+					"to": "302",
+					"type": "gene",
+					"value": "S2"
+				}
+			],
+			"sentence": "In fact, although the same amount of total RNA was used for each sample (so that all the microarray data are actually normalized to total RNA amount), the total miRNA hybridization signal in nave T cells was 2.98 fold higher than in effector T cells and 1.45 fold higher than in memory T cells (Table S2), suggesting that the total amount of miRNAs in effector T cells is only ~33% of that in nave T cells, and the miRNA expression increased in memory T cells to constitute ~69% of that in nave T cells.Because it is hard to normalize the data between samples in direct cloning, to more rigorously reanalyze the direct cloning data, the cloning data was normalized according to total hybridization signal from the array (by dividing the cloning frequency in effector and memory cells by 2.98 and 1.45 respectively, Table S3)."
+		},
+		{
+			"mentions": [
+				{
+					"from": "109",
+					"id": "2185",
+					"to": "109",
+					"type": "gene",
+					"value": "B"
+				},
+				{
+					"from": "109",
+					"id": "2206",
+					"to": "109",
+					"type": "gene",
+					"value": "B"
+				},
+				{
+					"from": "100",
+					"id": "259307",
+					"to": "102",
+					"type": "gene",
+					"value": "Fig"
+				},
+				{
+					"from": "109",
+					"id": "207",
+					"to": "109",
+					"type": "gene",
+					"value": "B"
+				},
+				{
+					"from": "100",
+					"id": "57120",
+					"to": "102",
+					"type": "gene",
+					"value": "Fig"
+				},
+				{
+					"from": "100",
+					"id": "11067",
+					"to": "102",
+					"type": "gene",
+					"value": "Fig"
+				}
+			],
+			"sentence": "When examined in this way, the expression level in both assays showed a good degree of correlation (Fig 3 A, B)."
+		},
+		{
+			"mentions": [
+				{
+					"from": "84",
+					"id": "1128",
+					"to": "86",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "84",
+					"id": "407035",
+					"to": "89",
+					"type": "gene",
+					"value": "miR-31"
+				},
+				{
+					"from": "73",
+					"id": "1128",
+					"to": "75",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "73",
+					"id": "406991",
+					"to": "78",
+					"type": "gene",
+					"value": "miR-21"
+				},
+				{
+					"from": 73,
+					"id": "MIMAT0000076-0",
+					"origin": "miR-21/",
+					"to": 79,
+					"type": "miRNA",
+					"value": "hsa-mir-21"
+				},
+				{
+					"from": 73,
+					"id": "MIMAT0000076-1",
+					"origin": "miR-21/",
+					"to": 79,
+					"type": "miRNA",
+					"value": "hsa-mir-21"
+				},
+				{
+					"from": 73,
+					"id": "MIMAT0004494-2",
+					"origin": "miR-21/",
+					"to": 79,
+					"type": "miRNA",
+					"value": "hsa-mir-21"
+				},
+				{
+					"from": 84,
+					"id": "MIMAT0000089-0",
+					"origin": "miR-31/most miRNAs are down regulated in effector T cells compared to nave T cell/tend to increase back in memory T cells.We also confirmed the T cell subset-specific differences in miRNA expression in a real-time PCR assay.",
+					"to": 90,
+					"type": "miRNA",
+					"value": "hsa-mir-31"
+				},
+				{
+					"from": 84,
+					"id": "MIMAT0000089-1",
+					"origin": "miR-31/most miRNAs are down regulated in effector T cells compared to nave T cell/tend to increase back in memory T cells.We also confirmed the T cell subset-specific differences in miRNA expression in a real-time PCR assay.",
+					"to": 90,
+					"type": "miRNA",
+					"value": "hsa-mir-31"
+				},
+				{
+					"from": 84,
+					"id": "MIMAT0004504-2",
+					"origin": "miR-31/most miRNAs are down regulated in effector T cells compared to nave T cell/tend to increase back in memory T cells.We also confirmed the T cell subset-specific differences in miRNA expression in a real-time PCR assay.",
+					"to": 90,
+					"type": "miRNA",
+					"value": "hsa-mir-31"
+				}
+			],
+			"sentence": "Taken together, our results suggest that except for a few miRNAs such as miR-21 and miR-31, most miRNAs are down regulated in effector T cells compared to nave T cell and tend to increase back in memory T cells.We also confirmed the T cell subset-specific differences in miRNA expression in a real-time PCR assay."
+		},
+		{
+			"mentions": [
+				{
+					"from": "131",
+					"id": "10006",
+					"to": "133",
+					"type": "gene",
+					"value": "ABI"
+				},
+				{
+					"from": "175",
+					"id": "10585",
+					"to": "176",
+					"type": "gene",
+					"value": "RT"
+				}
+			],
+			"sentence": "Because the extensive 3' end heterogeneity that we noted in miRNAs cloned from T cells (discussed later) might affect detection by ABI Taqman microRNA assay, we used a 3'RACE RT-PCR based real-time PCR."
+		},
+		{
+			"mentions": [
+				{
+					"from": "124",
+					"id": "57120",
+					"to": "126",
+					"type": "gene",
+					"value": "Fig"
+				},
+				{
+					"from": "124",
+					"id": "11067",
+					"to": "126",
+					"type": "gene",
+					"value": "Fig"
+				},
+				{
+					"from": "124",
+					"id": "259307",
+					"to": "126",
+					"type": "gene",
+					"value": "Fig"
+				},
+				{
+					"from": "133",
+					"id": "2185",
+					"to": "133",
+					"type": "gene",
+					"value": "B"
+				},
+				{
+					"from": "133",
+					"id": "2206",
+					"to": "133",
+					"type": "gene",
+					"value": "B"
+				},
+				{
+					"from": "133",
+					"id": "207",
+					"to": "133",
+					"type": "gene",
+					"value": "B"
+				}
+			],
+			"sentence": "The PCR results for the 6 highly expressed miRNAs correlated well with both the array data and the normalized cloning data (Fig 3 A, B and C)."
+		},
+		{
+			"mentions": [
+				{
+					"from": "180",
+					"id": "406891",
+					"to": "184",
+					"type": "gene",
+					"value": "let-7"
+				},
+				{
+					"from": "24",
+					"id": "406888",
+					"to": "29",
+					"type": "gene",
+					"value": "let-7f"
+				},
+				{
+					"from": 24,
+					"id": "MIMAT0000067-0",
+					"origin": "let-7f",
+					"to": 30,
+					"type": "miRNA",
+					"value": "hsa-let-7f"
+				},
+				{
+					"from": 180,
+					"id": "hsa-let-7",
+					"origin": "let-7",
+					"to": 185,
+					"type": "miRNA",
+					"value": "hsa-let-7"
+				}
+			],
+			"sentence": "However, examination of let-7f (one of the 7 highest expressed miRNAs) was excluded in this assay because of the difficulty in designing primers that can distinguish the different let-7 family members without ambiguity."
+		},
+		{
+			"mentions": [
+				{
+					"from": "95",
+					"id": "5719",
+					"to": "96",
+					"type": "gene",
+					"value": "S1"
+				},
+				{
+					"from": "91",
+					"id": "259307",
+					"to": "93",
+					"type": "gene",
+					"value": "Fig"
+				},
+				{
+					"from": "95",
+					"id": "5707",
+					"to": "96",
+					"type": "gene",
+					"value": "S1"
+				},
+				{
+					"from": "95",
+					"id": "6205",
+					"to": "96",
+					"type": "gene",
+					"value": "S1"
+				},
+				{
+					"from": "91",
+					"id": "57120",
+					"to": "93",
+					"type": "gene",
+					"value": "Fig"
+				},
+				{
+					"from": "91",
+					"id": "11067",
+					"to": "93",
+					"type": "gene",
+					"value": "Fig"
+				},
+				{
+					"from": "95",
+					"id": "8241",
+					"to": "96",
+					"type": "gene",
+					"value": "S1"
+				},
+				{
+					"from": "95",
+					"id": "6267",
+					"to": "96",
+					"type": "gene",
+					"value": "S1"
+				}
+			],
+			"sentence": "We also performed real-time PCR for another 14 miRNAs that were expressed at lower levels (Fig S1)."
+		},
+		{
+			"mentions": [],
+			"sentence": "We arbitrarily determined the correlation according to their movement in the same direction among the 3 methods."
+		},
+		{
+			"mentions": [
+				{
+					"from": "18",
+					"id": "9896",
+					"to": "22",
+					"type": "gene",
+					"value": "Fig 4"
+				}
+			],
+			"sentence": "The venn diagram (Fig 4) depicts the extent of correlation among the 3 methods for all 20 miRNAs tested by real-time PCR."
+		},
+		{
+			"mentions": [
+				{
+					"from": "95",
+					"id": "5079",
+					"to": "99",
+					"type": "gene",
+					"value": "all 3"
+				}
+			],
+			"sentence": "Differential expression of 9 miRNAs in nave, effector and memory T cells could be confirmed by all 3 methods (overlap in the diagram)."
+		},
+		{
+			"mentions": [],
+			"sentence": "The expression levels of 9 other miRNAs correlated in 2 assays and only 2 miRNAs did not correlate in any 2 methods."
+		},
+		{
+			"mentions": [
+				{
+					"from": "210",
+					"id": "1128",
+					"to": "212",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "182",
+					"id": "1128",
+					"to": "184",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "182",
+					"id": "406942",
+					"to": "188",
+					"type": "gene",
+					"value": "miR-150"
+				},
+				{
+					"from": "210",
+					"id": "406947",
+					"to": "216",
+					"type": "gene",
+					"value": "miR-155"
+				},
+				{
+					"from": 182,
+					"id": "MIMAT0000451-0",
+					"origin": "miR-150/upregulation of ",
+					"to": 189,
+					"type": "miRNA",
+					"value": "hsa-mir-150"
+				},
+				{
+					"from": 182,
+					"id": "MIMAT0000451-2",
+					"origin": "miR-150/upregulation of ",
+					"to": 189,
+					"type": "miRNA",
+					"value": "hsa-mir-150"
+				},
+				{
+					"from": 182,
+					"id": "MIMAT0004610-1",
+					"origin": "miR-150/upregulation of ",
+					"to": 189,
+					"type": "miRNA",
+					"value": "hsa-mir-150"
+				},
+				{
+					"from": 210,
+					"id": "MIMAT0000646-0",
+					"origin": "miR-155",
+					"to": 217,
+					"type": "miRNA",
+					"value": "hsa-mir-155"
+				},
+				{
+					"from": 210,
+					"id": "MIMAT0000646-1",
+					"origin": "miR-155",
+					"to": 217,
+					"type": "miRNA",
+					"value": "hsa-mir-155"
+				},
+				{
+					"from": 210,
+					"id": "MIMAT0004658-2",
+					"origin": "miR-155",
+					"to": 217,
+					"type": "miRNA",
+					"value": "hsa-mir-155"
+				}
+			],
+			"sentence": "Overall, our results clearly show that miRNA expression is dynamically regulated during antigen-specific T cell differentiation.Changes in miRNA expression such as downregulation of miR-150 and upregulation of miR-155 has been reported previously following a brief stimulation of T cells with CD3."
+		},
+		{
+			"mentions": [],
+			"sentence": "However, we found a striking global downregulation of miRNA in antigen stimulated T cell that had fully differentiated into effector T cells, seven days after stimulation."
+		},
+		{
+			"mentions": [],
+			"sentence": "It is of interest to further examine the temporal pattern of miRNA changes at different times after antigen stimulation.We also cloned what appears to be a novel miRNA, not annotated in the latest version of miRBase (v.10.0)."
+		},
+		{
+			"mentions": [
+				{
+					"from": "70",
+					"id": "79187",
+					"to": "72",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "70",
+					"id": "22877",
+					"to": "72",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "70",
+					"id": "406904",
+					"to": "72",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "70",
+					"id": "29116",
+					"to": "72",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "70",
+					"id": "83856",
+					"to": "72",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "70",
+					"id": "220972",
+					"to": "72",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "70",
+					"id": "1128",
+					"to": "72",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": 70,
+					"id": "hsa-mir-699a",
+					"origin": "miR-699a",
+					"to": 78,
+					"type": "miRNA",
+					"value": "hsa-mir-699a"
+				}
+			],
+			"sentence": "A sequence (ACUUGUGUGUGCAUGUAUAUGU) that appears to be a homologue of miR-699a (AGUUGUGUGUGCAUGUUCAUGU) was cloned once in both nave and memory T cells."
+		},
+		{
+			"mentions": [
+				{
+					"from": "194",
+					"id": "57713",
+					"to": "225",
+					"type": "gene",
+					"value": "Scm-like with four mbt domains 2"
+				},
+				{
+					"from": "194",
+					"id": "6375",
+					"to": "196",
+					"type": "gene",
+					"value": "Scm"
+				},
+				{
+					"from": "213",
+					"id": "5657",
+					"to": "215",
+					"type": "gene",
+					"value": "mbt"
+				},
+				{
+					"from": "101",
+					"id": "4907",
+					"to": "102",
+					"type": "gene",
+					"value": "nt"
+				},
+				{
+					"from": "213",
+					"id": "84456",
+					"to": "215",
+					"type": "gene",
+					"value": "mbt"
+				},
+				{
+					"from": "126",
+					"id": "4922",
+					"to": "127",
+					"type": "gene",
+					"value": "nt"
+				},
+				{
+					"from": "126",
+					"id": "4907",
+					"to": "127",
+					"type": "gene",
+					"value": "nt"
+				},
+				{
+					"from": "186",
+					"id": "57713",
+					"to": "191",
+					"type": "gene",
+					"value": "sfmbt2"
+				},
+				{
+					"from": "101",
+					"id": "4922",
+					"to": "102",
+					"type": "gene",
+					"value": "nt"
+				}
+			],
+			"sentence": "Interestingly, this sequence was found to perfectly match two regions in the of murine chromosome 2: nt 10386237-10386258 and nt 10389511-10389532, which is located in intron 10 of gene sfmbt2 (Scm-like with four mbt domains 2)."
+		},
+		{
+			"mentions": [
+				{
+					"from": "92",
+					"id": "11067",
+					"to": "94",
+					"type": "gene",
+					"value": "Fig"
+				},
+				{
+					"from": "92",
+					"id": "57120",
+					"to": "94",
+					"type": "gene",
+					"value": "Fig"
+				},
+				{
+					"from": "92",
+					"id": "259307",
+					"to": "94",
+					"type": "gene",
+					"value": "Fig"
+				}
+			],
+			"sentence": "The sequence forms a typical stem loop structure that appears to be the precursor of miRNA (Fig."
+		},
+		{
+			"mentions": [
+				{
+					"from": "5",
+					"id": "207",
+					"to": "5",
+					"type": "gene",
+					"value": "B"
+				},
+				{
+					"from": "5",
+					"id": "2185",
+					"to": "5",
+					"type": "gene",
+					"value": "B"
+				},
+				{
+					"from": "5",
+					"id": "2206",
+					"to": "5",
+					"type": "gene",
+					"value": "B"
+				}
+			],
+			"sentence": "5 A, B)."
+		},
+		{
+			"mentions": [
+				{
+					"from": "70",
+					"id": "259307",
+					"to": "72",
+					"type": "gene",
+					"value": "Fig"
+				},
+				{
+					"from": "70",
+					"id": "57120",
+					"to": "72",
+					"type": "gene",
+					"value": "Fig"
+				},
+				{
+					"from": "70",
+					"id": "11067",
+					"to": "72",
+					"type": "gene",
+					"value": "Fig"
+				}
+			],
+			"sentence": "Its expression in murine T cells was also confirmed by real-time PCR (Fig."
+		},
+		{
+			"mentions": [],
+			"sentence": "5 C)."
+		},
+		{
+			"mentions": [
+				{
+					"from": "53",
+					"id": "29116",
+					"to": "55",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "53",
+					"id": "83856",
+					"to": "55",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "53",
+					"id": "220972",
+					"to": "55",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "53",
+					"id": "1128",
+					"to": "55",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "53",
+					"id": "79187",
+					"to": "55",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "53",
+					"id": "22877",
+					"to": "55",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "53",
+					"id": "406904",
+					"to": "55",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": 49,
+					"id": "hsa-mir-669d",
+					"origin": "mmu-miR-669d",
+					"to": 61,
+					"type": "miRNA",
+					"value": "hsa-mir-669d"
+				}
+			],
+			"sentence": "Therefore, we have designated the novel miRNA as mmu-miR-669d.A detailed analysis of the cloning data revealed that compared to the mature miRNA sequences annotated in the miRBase, the miRNAs in T cells exhibit an extensive degree of polymorphism at the ends."
+		},
+		{
+			"mentions": [],
+			"sentence": "Although some clones in each miRNA contained the exact match for the annotated mature miRNA sequence, the majority of the clones within a given miRNA did not match the sequence in the miRBase (release 10.0)."
+		},
+		{
+			"mentions": [
+				{
+					"from": "45",
+					"id": "406991",
+					"to": "50",
+					"type": "gene",
+					"value": "miR-21"
+				},
+				{
+					"from": "45",
+					"id": "1128",
+					"to": "47",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": 45,
+					"id": "MIMAT0000076-0",
+					"origin": "miR-21",
+					"to": 51,
+					"type": "miRNA",
+					"value": "hsa-mir-21"
+				},
+				{
+					"from": 45,
+					"id": "MIMAT0000076-1",
+					"origin": "miR-21",
+					"to": 51,
+					"type": "miRNA",
+					"value": "hsa-mir-21"
+				},
+				{
+					"from": 45,
+					"id": "MIMAT0004494-2",
+					"origin": "miR-21",
+					"to": 51,
+					"type": "miRNA",
+					"value": "hsa-mir-21"
+				}
+			],
+			"sentence": "For example, the most prevalent sequence for miR-21 we found was UAGCUUAUCAGACUGAUGUUGAC, while in the miRBase it is UAGCUUAUCAGACUGAUGUUGA."
+		},
+		{
+			"mentions": [
+				{
+					"from": "135",
+					"id": "406934",
+					"to": "141",
+					"type": "gene",
+					"value": "miR-142"
+				},
+				{
+					"from": "135",
+					"id": "1128",
+					"to": "137",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "38",
+					"id": "406934",
+					"to": "44",
+					"type": "gene",
+					"value": "miR-142"
+				},
+				{
+					"from": "38",
+					"id": "1128",
+					"to": "40",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": 38,
+					"id": "MIMAT0000434-0",
+					"origin": "miR-142-3p",
+					"to": 48,
+					"type": "miRNA",
+					"value": "hsa-mir-142-3p"
+				},
+				{
+					"from": 135,
+					"id": "MIMAT0000433-0",
+					"origin": "miR-142-5p/it was CCCAUAAAGUAGAAAGCACUAC in our study/while in the miRBase it is CAUAAAGUAGAAAGCACUACU.",
+					"to": 145,
+					"type": "miRNA",
+					"value": "hsa-mir-142-5p"
+				}
+			],
+			"sentence": "Similarly, the prevalent sequence for miR-142-3p was GUAGUGUUUCCUACUUUAUGGA while in the miRBase it is UGUAGUGUUUCCUACUUUAUGGA and for miR-142-5p, it was CCCAUAAAGUAGAAAGCACUAC in our study, while in the miRBase it is CAUAAAGUAGAAAGCACUACU."
+		},
+		{
+			"mentions": [],
+			"sentence": "Also the most prevalent sequence varied between different T cell subsets."
+		},
+		{
+			"mentions": [
+				{
+					"from": "376",
+					"id": "6191",
+					"to": "377",
+					"type": "gene",
+					"value": "S4"
+				},
+				{
+					"from": "376",
+					"id": "5700",
+					"to": "377",
+					"type": "gene",
+					"value": "S4"
+				},
+				{
+					"from": "326",
+					"id": "1128",
+					"to": "328",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "45",
+					"id": "1128",
+					"to": "47",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "376",
+					"id": "6192",
+					"to": "377",
+					"type": "gene",
+					"value": "S4"
+				},
+				{
+					"from": "45",
+					"id": "406991",
+					"to": "50",
+					"type": "gene",
+					"value": "miR-21"
+				},
+				{
+					"from": "326",
+					"id": "406934",
+					"to": "332",
+					"type": "gene",
+					"value": "miR-142"
+				},
+				{
+					"from": 45,
+					"id": "MIMAT0000076-0",
+					"origin": "miR-21",
+					"to": 51,
+					"type": "miRNA",
+					"value": "hsa-mir-21"
+				},
+				{
+					"from": 45,
+					"id": "MIMAT0000076-1",
+					"origin": "miR-21",
+					"to": 51,
+					"type": "miRNA",
+					"value": "hsa-mir-21"
+				},
+				{
+					"from": 45,
+					"id": "MIMAT0004494-2",
+					"origin": "miR-21",
+					"to": 51,
+					"type": "miRNA",
+					"value": "hsa-mir-21"
+				},
+				{
+					"from": 326,
+					"id": "MIMAT0000434-0",
+					"origin": "miR-142-3p/which had 20 variations (Tables 1/S4).",
+					"to": 336,
+					"type": "miRNA",
+					"value": "hsa-mir-142-3p"
+				}
+			],
+			"sentence": "For example, the most prevalent sequence for miR-21 in nave T cells was UAGCUUAUCAGACUGAUGUUGA (57% of total), while in effector and memory cells it is UAGCUUAUCAGACUGAUGUUGAC (64% of total, Table 1).Overall, most of the mature miRNAs that were cloned in high frequency had more than 3 variations, with the extreme example of miR-142-3p, which had 20 variations (Tables 1 and S4)."
+		},
+		{
+			"mentions": [
+				{
+					"from": "233",
+					"id": "6191",
+					"to": "234",
+					"type": "gene",
+					"value": "S4"
+				},
+				{
+					"from": "233",
+					"id": "6192",
+					"to": "234",
+					"type": "gene",
+					"value": "S4"
+				},
+				{
+					"from": "233",
+					"id": "5700",
+					"to": "234",
+					"type": "gene",
+					"value": "S4"
+				}
+			],
+			"sentence": "The polymorphisms included: 3' end deletion (~36% of total); 3' end extensions (~15% of total, with preferential incorporation of A or U residues), majority of which were untemplated; and 5' end variation (~4% of total, Tables 1 and S4)."
+		},
+		{
+			"mentions": [],
+			"sentence": "Such variations have also been noted previously ."
+		},
+		{
+			"mentions": [
+				{
+					"from": "215",
+					"id": "6191",
+					"to": "216",
+					"type": "gene",
+					"value": "S4"
+				},
+				{
+					"from": "215",
+					"id": "6192",
+					"to": "216",
+					"type": "gene",
+					"value": "S4"
+				},
+				{
+					"from": "215",
+					"id": "5700",
+					"to": "216",
+					"type": "gene",
+					"value": "S4"
+				}
+			],
+			"sentence": "However, the polymorphism that we observed appears to be more dramatic than previously reported in C. elegans: we observed 3' end heterogeneity in 51% of the 834 annotated miRNA sequences cloned in our study (Table S4) as opposed to the 15% reported for C. elegans ."
+		},
+		{
+			"mentions": [
+				{
+					"from": "58",
+					"id": "5700",
+					"to": "59",
+					"type": "gene",
+					"value": "S4"
+				},
+				{
+					"from": "58",
+					"id": "6191",
+					"to": "59",
+					"type": "gene",
+					"value": "S4"
+				},
+				{
+					"from": "58",
+					"id": "6192",
+					"to": "59",
+					"type": "gene",
+					"value": "S4"
+				}
+			],
+			"sentence": "Similarly, we found 4% heterogeneity at the 5' end (Table S4) compared to 0.5% reported in C. elegans."
+		},
+		{
+			"mentions": [
+				{
+					"from": "101",
+					"id": "6191",
+					"to": "102",
+					"type": "gene",
+					"value": "S4"
+				},
+				{
+					"from": "101",
+					"id": "6192",
+					"to": "102",
+					"type": "gene",
+					"value": "S4"
+				},
+				{
+					"from": "101",
+					"id": "5700",
+					"to": "102",
+					"type": "gene",
+					"value": "S4"
+				}
+			],
+			"sentence": "And for most miRNAs cloned with high frequency, we found two or more dominant variants (Tables 1 and S4), while the majority of the miRNAs contain a single dominant sequence in C. elegans.Compared to 3' ends, the 5' ends were more homogenous."
+		},
+		{
+			"mentions": [],
+			"sentence": "However, we did observe variations in 4% of total clones at the 5' end."
+		},
+		{
+			"mentions": [
+				{
+					"from": "242",
+					"id": "6192",
+					"to": "243",
+					"type": "gene",
+					"value": "S4"
+				},
+				{
+					"from": "214",
+					"id": "1128",
+					"to": "216",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "214",
+					"id": "407015",
+					"to": "220",
+					"type": "gene",
+					"value": "miR-26a"
+				},
+				{
+					"from": "197",
+					"id": "406991",
+					"to": "202",
+					"type": "gene",
+					"value": "miR-21"
+				},
+				{
+					"from": "205",
+					"id": "1128",
+					"to": "207",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "242",
+					"id": "6191",
+					"to": "243",
+					"type": "gene",
+					"value": "S4"
+				},
+				{
+					"from": "242",
+					"id": "5700",
+					"to": "243",
+					"type": "gene",
+					"value": "S4"
+				},
+				{
+					"from": "197",
+					"id": "1128",
+					"to": "199",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "226",
+					"id": "406888",
+					"to": "231",
+					"type": "gene",
+					"value": "let-7f"
+				},
+				{
+					"from": "205",
+					"id": "406949",
+					"to": "211",
+					"type": "gene",
+					"value": "miR-15b"
+				},
+				{
+					"from": 197,
+					"id": "MIMAT0000076-0",
+					"origin": "miR-21/",
+					"to": 203,
+					"type": "miRNA",
+					"value": "hsa-mir-21"
+				},
+				{
+					"from": 197,
+					"id": "MIMAT0000076-1",
+					"origin": "miR-21/",
+					"to": 203,
+					"type": "miRNA",
+					"value": "hsa-mir-21"
+				},
+				{
+					"from": 197,
+					"id": "MIMAT0004494-2",
+					"origin": "miR-21/",
+					"to": 203,
+					"type": "miRNA",
+					"value": "hsa-mir-21"
+				},
+				{
+					"from": 205,
+					"id": "MIMAT0000417-0",
+					"origin": "miR-15b/",
+					"to": 212,
+					"type": "miRNA",
+					"value": "hsa-mir-15b"
+				},
+				{
+					"from": 205,
+					"id": "MIMAT0000417-2",
+					"origin": "miR-15b/",
+					"to": 212,
+					"type": "miRNA",
+					"value": "hsa-mir-15b"
+				},
+				{
+					"from": 205,
+					"id": "MIMAT0004586-1",
+					"origin": "miR-15b/",
+					"to": 212,
+					"type": "miRNA",
+					"value": "hsa-mir-15b"
+				},
+				{
+					"from": 214,
+					"id": "MIMAT0000082-0",
+					"origin": "miR-26a/",
+					"to": 221,
+					"type": "miRNA",
+					"value": "hsa-mir-26a"
+				},
+				{
+					"from": 214,
+					"id": "MIMAT0000082-1",
+					"origin": "miR-26a/",
+					"to": 221,
+					"type": "miRNA",
+					"value": "hsa-mir-26a"
+				},
+				{
+					"from": 214,
+					"id": "MIMAT0004499-2",
+					"origin": "miR-26a/",
+					"to": 221,
+					"type": "miRNA",
+					"value": "hsa-mir-26a"
+				},
+				{
+					"from": 226,
+					"id": "MIMAT0000067-0",
+					"origin": "let-7f",
+					"to": 232,
+					"type": "miRNA",
+					"value": "hsa-let-7f"
+				}
+			],
+			"sentence": "An interesting 5' end variation that we observed appeared to be 5' end degradation product3 or more nucleotides were deleted in the 5' end while the 3' end remained intact (examples can be seen in miR-21, miR-15b, miR-26a and let-7f in Table S4)."
+		},
+		{
+			"mentions": [
+				{
+					"from": "333",
+					"id": "29102",
+					"to": "338",
+					"type": "gene",
+					"value": "drosha"
+				},
+				{
+					"from": "278",
+					"id": "1128",
+					"to": "280",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "340",
+					"id": "23405",
+					"to": "344",
+					"type": "gene",
+					"value": "dicer"
+				},
+				{
+					"from": "278",
+					"id": "406934",
+					"to": "284",
+					"type": "gene",
+					"value": "miR-142"
+				},
+				{
+					"from": 278,
+					"id": "MIMAT0000433-1",
+					"origin": "miR-142/which appeared to be the result of a shift in drosha/dicer processing: 1/2 or 3 nucleotide deletions in the 5' end associated with a corresponding increase in the number of templated nucleotides at the 3' end.",
+					"to": 285,
+					"type": "miRNA",
+					"value": "hsa-mir-142"
+				},
+				{
+					"from": 278,
+					"id": "MIMAT0000434-2",
+					"origin": "miR-142/which appeared to be the result of a shift in drosha/dicer processing: 1/2 or 3 nucleotide deletions in the 5' end associated with a corresponding increase in the number of templated nucleotides at the 3' end.",
+					"to": 285,
+					"type": "miRNA",
+					"value": "hsa-mir-142"
+				},
+				{
+					"from": 278,
+					"id": "hsa-mir-2",
+					"origin": "miR-142/which appeared to be the result of a shift in drosha/dicer processing: 1/2 or 3 nucleotide deletions in the 5' end associated with a corresponding increase in the number of templated nucleotides at the 3' end.",
+					"to": 285,
+					"type": "miRNA",
+					"value": "hsa-mir-2"
+				}
+			],
+			"sentence": "This may imply that degradation of these mature miRNAs starts from the 5' end, which might be an efficient way to eliminate miRNA activity quickly, since the 5' end is the seed sequence that determines target gene selection.Of particular interest was the variations observed in miR-142, which appeared to be the result of a shift in drosha/dicer processing: 1, 2 or 3 nucleotide deletions in the 5' end associated with a corresponding increase in the number of templated nucleotides at the 3' end."
+		},
+		{
+			"mentions": [
+				{
+					"from": "43",
+					"id": "1128",
+					"to": "45",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "43",
+					"id": "406934",
+					"to": "49",
+					"type": "gene",
+					"value": "miR-142"
+				},
+				{
+					"from": "58",
+					"id": "406934",
+					"to": "64",
+					"type": "gene",
+					"value": "miR-142"
+				},
+				{
+					"from": "58",
+					"id": "1128",
+					"to": "60",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": 43,
+					"id": "MIMAT0000433-0",
+					"origin": "miR-142-5p/",
+					"to": 53,
+					"type": "miRNA",
+					"value": "hsa-mir-142-5p"
+				},
+				{
+					"from": 58,
+					"id": "MIMAT0000434-0",
+					"origin": "miR-142-3p",
+					"to": 68,
+					"type": "miRNA",
+					"value": "hsa-mir-142-3p"
+				}
+			],
+			"sentence": "This pattern of variation was seen in both miR-142-5p and miR-142-3p at a high frequency (Table 1)."
+		},
+		{
+			"mentions": [
+				{
+					"from": "109",
+					"id": "29102",
+					"to": "114",
+					"type": "gene",
+					"value": "drosha"
+				},
+				{
+					"from": "116",
+					"id": "23405",
+					"to": "120",
+					"type": "gene",
+					"value": "dicer"
+				},
+				{
+					"from": "39",
+					"id": "4922",
+					"to": "40",
+					"type": "gene",
+					"value": "nt"
+				},
+				{
+					"from": "39",
+					"id": "4907",
+					"to": "40",
+					"type": "gene",
+					"value": "nt"
+				}
+			],
+			"sentence": "Since changes at the 5' seed sequence (nt 2-7) is thought to affect the miRNA target specificity, a shift in drosha/dicer processing might represent a novel mechanism to generate new miRNAs.Taken together, our results suggest that a given miRNA hairpin may generate more than one product, and therefore designation of a particular sequence for a given mature miRNA may not sufficiently describe all the miRNA forms present inside the cell."
+		},
+		{
+			"mentions": [],
+			"sentence": "Although the relative biological significance of each species within a given miRNA remains to be determined, such variations might possibly affect the stability/subcellular localization, functional efficacy or miRNA target-specificity (particularly with changes in the 5' end affecting the miRNA \"seed\" region)."
+		},
+		{
+			"mentions": [],
+			"sentence": "However, we cannot rule out the possibility that some of the variations noted may represent cloning artifacts, although this appears unlikely (see Discussion)As mentioned earlier, the miRNA variation at the 3' end appears to be more frequent than previously thought."
+		},
+		{
+			"mentions": [],
+			"sentence": "This may affect determination of miRNA expression by some assays that depend on the exact match of the 3' terminus as the basis for high efficiency detection."
+		},
+		{
+			"mentions": [],
+			"sentence": "The real-time PCR employing stem-loop primers that match the 3' end of miRNA to improve the reverse transcription efficiency is one of the most popular assays to profile and detect miRNA expression."
+		},
+		{
+			"mentions": [
+				{
+					"from": "80",
+					"id": "1128",
+					"to": "82",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "129",
+					"id": "51573",
+					"to": "136",
+					"type": "gene",
+					"value": "miR-16-1"
+				},
+				{
+					"from": "80",
+					"id": "406950",
+					"to": "85",
+					"type": "gene",
+					"value": "miR-16"
+				},
+				{
+					"from": "129",
+					"id": "406950",
+					"to": "136",
+					"type": "gene",
+					"value": "miR-16-1"
+				},
+				{
+					"from": "72",
+					"id": "406950",
+					"to": "77",
+					"type": "gene",
+					"value": "miR-16"
+				},
+				{
+					"from": "261",
+					"id": "10006",
+					"to": "263",
+					"type": "gene",
+					"value": "ABI"
+				},
+				{
+					"from": "80",
+					"id": "51573",
+					"to": "85",
+					"type": "gene",
+					"value": "miR-16"
+				},
+				{
+					"from": "72",
+					"id": "51573",
+					"to": "77",
+					"type": "gene",
+					"value": "miR-16"
+				},
+				{
+					"from": "129",
+					"id": "1128",
+					"to": "131",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "72",
+					"id": "1128",
+					"to": "74",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": 72,
+					"id": "MIMAT0000069-0",
+					"origin": "miR-16/",
+					"to": 78,
+					"type": "miRNA",
+					"value": "hsa-mir-16"
+				},
+				{
+					"from": 72,
+					"id": "MIMAT0000069-1",
+					"origin": "miR-16/",
+					"to": 78,
+					"type": "miRNA",
+					"value": "hsa-mir-16"
+				},
+				{
+					"from": 72,
+					"id": "MIMAT0004489-2",
+					"origin": "miR-16/",
+					"to": 78,
+					"type": "miRNA",
+					"value": "hsa-mir-16"
+				},
+				{
+					"from": 80,
+					"id": "MIMAT0000069-0",
+					"origin": "miR-16",
+					"to": 86,
+					"type": "miRNA",
+					"value": "hsa-mir-16"
+				},
+				{
+					"from": 80,
+					"id": "MIMAT0000069-1",
+					"origin": "miR-16",
+					"to": 86,
+					"type": "miRNA",
+					"value": "hsa-mir-16"
+				},
+				{
+					"from": 80,
+					"id": "MIMAT0004489-2",
+					"origin": "miR-16",
+					"to": 86,
+					"type": "miRNA",
+					"value": "hsa-mir-16"
+				},
+				{
+					"from": 129,
+					"id": "MIMAT0000069-1",
+					"origin": "miR-16-1",
+					"to": 137,
+					"type": "miRNA",
+					"value": "hsa-mir-16-1"
+				},
+				{
+					"from": 129,
+					"id": "MIMAT0004489-2",
+					"origin": "miR-16-1",
+					"to": 137,
+					"type": "miRNA",
+					"value": "hsa-mir-16-1"
+				}
+			],
+			"sentence": "To test if the 3' end variation affects the detection efficacy, we used miR-16, miR-16+1(one nucleotide extension at 3' end) and miR-16-1 (one nucleotide deletion at 3' end) oligonucleotides as templates in the stem-loop primer-based real time PCR developed by ABI (Applied Biosystems, US)."
+		},
+		{
+			"mentions": [],
+			"sentence": "Since the exact match of 3' terminal of miRNA is the basis for high efficiency of this method, 3'end variations should negatively affect detection by this method."
+		},
+		{
+			"mentions": [],
+			"sentence": "Indeed, the efficacy of stem-loop based real time PCR was decreased by 2 cycles in one nucleotide deletion variation, showing that it is only 25% efficient compared to the correctly matched template."
+		},
+		{
+			"mentions": [
+				{
+					"from": "90",
+					"id": "11067",
+					"to": "92",
+					"type": "gene",
+					"value": "Fig"
+				},
+				{
+					"from": "90",
+					"id": "57120",
+					"to": "92",
+					"type": "gene",
+					"value": "Fig"
+				},
+				{
+					"from": "90",
+					"id": "259307",
+					"to": "92",
+					"type": "gene",
+					"value": "Fig"
+				}
+			],
+			"sentence": "Surprisingly however, the efficacy did not change with one nucleotide template extension (Fig."
+		},
+		{
+			"mentions": [],
+			"sentence": "6).This is the first report that comprehensively analyzes the miRNA expression profile during antigen-specific T cell differentiation."
+		},
+		{
+			"mentions": [
+				{
+					"from": "72",
+					"id": "925",
+					"to": "74",
+					"type": "gene",
+					"value": "CD8"
+				},
+				{
+					"from": "72",
+					"id": "5580",
+					"to": "74",
+					"type": "gene",
+					"value": "CD8"
+				}
+			],
+			"sentence": "Our results indicate that only a few miRNAs are dominantly expressed in CD8 T cells and that their expression is dynamically regulated during the differentiation process."
+		},
+		{
+			"mentions": [],
+			"sentence": "Moreover, the level of miRNA expression appears to inversely correlate with the activation status of the cells."
+		},
+		{
+			"mentions": [],
+			"sentence": "For example the level of miRNA expression was highest in the non-replicating and functionally quiescent nave T cells, but was dramatically reduced in the actively dividing and functionally competent effector T cells and their expression once again increased when the antigen-stimulated T cells were converted into the relatively quiescent memory T cells."
+		},
+		{
+			"mentions": [
+				{
+					"from": "135",
+					"id": "23405",
+					"to": "139",
+					"type": "gene",
+					"value": "dicer"
+				}
+			],
+			"sentence": "Theses results suggest that miRNAs may modulate the differentiation status of antigen-stimulated T cells.Recent studies in conditional dicer-deficient mice and mice deficient for individual miRNAs have highlighted the importance of miRNAs in regulating T cell development, homeostasis and function."
+		},
+		{
+			"mentions": [],
+			"sentence": "However, a comprehensive study of miRNA profiles during antigen-specific T cell differentiation has not been reported."
+		},
+		{
+			"mentions": [
+				{
+					"from": "84",
+					"id": "925",
+					"to": "86",
+					"type": "gene",
+					"value": "CD8"
+				},
+				{
+					"from": "84",
+					"id": "5580",
+					"to": "86",
+					"type": "gene",
+					"value": "CD8"
+				}
+			],
+			"sentence": "Our direct cloning results show that although over 90 known miRNAs were cloned from CD8 T cells, only 7 miRNAs were dominantly expressed and constituted ~60% of the total miRNA pool."
+		},
+		{
+			"mentions": [],
+			"sentence": "This is also consistent with previous studies showing that some miRNAs are dominantly expressed in specific cell types and tissues ."
+		},
+		{
+			"mentions": [
+				{
+					"from": "202",
+					"id": "925",
+					"to": "204",
+					"type": "gene",
+					"value": "CD8"
+				},
+				{
+					"from": "202",
+					"id": "5580",
+					"to": "204",
+					"type": "gene",
+					"value": "CD8"
+				}
+			],
+			"sentence": "Since the miRNA-mediated repression of gene expression is dependent on the miRNA amounts as well as the target mRNA levels, the dominantly expressed miRNAs may control the abundantly expressed genes in CD8 T cells."
+		},
+		{
+			"mentions": [],
+			"sentence": "However, we are not suggesting that the other miRNAs expressed at low frequencies are functionally unimportant.A recent study has shown that regulation of miRNA expression characterizes the stage-specific development of thymocytes."
+		},
+		{
+			"mentions": [],
+			"sentence": "We also found that the miRNA expression levels dynamically change between nave, effector and memory T cell subsets."
+		},
+		{
+			"mentions": [],
+			"sentence": "A striking global downregulation of miRNA was seen in effector T cells."
+		},
+		{
+			"mentions": [
+				{
+					"from": "26",
+					"id": "5079",
+					"to": "30",
+					"type": "gene",
+					"value": "all 3"
+				},
+				{
+					"from": "98",
+					"id": "10585",
+					"to": "99",
+					"type": "gene",
+					"value": "RT"
+				}
+			],
+			"sentence": "This trend was evident in all 3 methods examined: direct cloning, microarray profiling as well as RT-PCR."
+		},
+		{
+			"mentions": [],
+			"sentence": "According to total microarray hybridization signal, the total miRNA level is down regulated 2.98 fold in effector compared to naive T cells."
+		},
+		{
+			"mentions": [],
+			"sentence": "Interestingly, the changes in miRNA expression we observed appear to inversely correlate with the degree of cellular activation."
+		},
+		{
+			"mentions": [],
+			"sentence": "Antigen stimulation of nave T cells results in a massive upregulation of gene expression that is needed for effector T cells to divide actively, gain functional competence and change migratory properties, and effector T cell is the cell type where we found the least overall miRNA."
+		},
+		{
+			"mentions": [
+				{
+					"from": "297",
+					"id": "93621",
+					"to": "313",
+					"type": "gene",
+					"value": "T cell activation"
+				}
+			],
+			"sentence": "Since the upregulation of gene expression occurs at both the protein and mRNA levels, while the miRNA-mediated effect is largely thought to be mediated by translational repression, it is possible that the abundantly expressed miRNAs may primarily control the key transcription factors involved in T cell activation."
+		},
+		{
+			"mentions": [],
+			"sentence": "Massive downregulation of miRNA expression has also been reported in cancer cells ."
+		},
+		{
+			"mentions": [],
+			"sentence": "Although the global decrease in miRNA level has been hypothesized to reflect the dedifferentiated status of cancer cells , our results suggest that it may indeed reflect the quantum of protein synthesis needed for cellular activity because effector cells are more differentiated compared to nave T cells."
+		},
+		{
+			"mentions": [],
+			"sentence": "In contrast to the general trend for downregulation in effector T cells, a few miRNAs were higher in effector T cells compared to nave T cells."
+		},
+		{
+			"mentions": [],
+			"sentence": "Indeed several genes, including those associated with lymph node trafficking, expressed in nave T cells are silenced in effector T cells."
+		},
+		{
+			"mentions": [
+				{
+					"from": "207",
+					"id": "925",
+					"to": "209",
+					"type": "gene",
+					"value": "CD8"
+				},
+				{
+					"from": "207",
+					"id": "5580",
+					"to": "209",
+					"type": "gene",
+					"value": "CD8"
+				}
+			],
+			"sentence": "Further functional studies are needed to test if miRNAs upregulated in effector T cells suppress the expression of nave T cell-specific genes in effector cells.Two recent studies have also profiled miRNA in CD8 T cells and our results are consistent with both the studies."
+		},
+		{
+			"mentions": [
+				{
+					"from": "76",
+					"id": "79157",
+					"to": "77",
+					"type": "gene",
+					"value": "et"
+				},
+				{
+					"from": "79",
+					"id": "1946",
+					"to": "80",
+					"type": "gene",
+					"value": "al"
+				},
+				{
+					"from": "76",
+					"id": "1906",
+					"to": "77",
+					"type": "gene",
+					"value": "et"
+				},
+				{
+					"from": "56",
+					"id": "925",
+					"to": "58",
+					"type": "gene",
+					"value": "CD8"
+				},
+				{
+					"from": "56",
+					"id": "5580",
+					"to": "58",
+					"type": "gene",
+					"value": "CD8"
+				},
+				{
+					"from": "76",
+					"id": "5833",
+					"to": "77",
+					"type": "gene",
+					"value": "et"
+				}
+			],
+			"sentence": "For example, cloning miRNAs from single positive thymic CD8 T cells, Nelson et al also found that a few miRNAs prevailed in frequency."
+		},
+		{
+			"mentions": [
+				{
+					"from": "156",
+					"id": "1128",
+					"to": "158",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "156",
+					"id": "406934",
+					"to": "162",
+					"type": "gene",
+					"value": "miR-142"
+				},
+				{
+					"from": 156,
+					"id": "MIMAT0000434-0",
+					"origin": "miR-142-3p",
+					"to": 166,
+					"type": "miRNA",
+					"value": "hsa-mir-142-3p"
+				}
+			],
+			"sentence": "In fact, the highly expressed miRNAs were also similar to this study, in that 7 miRNAs appeared in both studies among the 10 highest expressed miRNAs, with miR-142-3p showing the highest frequency in both."
+		},
+		{
+			"mentions": [
+				{
+					"from": "82",
+					"id": "407021",
+					"to": "88",
+					"type": "gene",
+					"value": "miR-29a"
+				},
+				{
+					"from": "82",
+					"id": "1128",
+					"to": "84",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "34",
+					"id": "1128",
+					"to": "36",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "47",
+					"id": "407012",
+					"to": "52",
+					"type": "gene",
+					"value": "miR-24"
+				},
+				{
+					"from": "34",
+					"id": "406995",
+					"to": "41",
+					"type": "gene",
+					"value": "miR-181a"
+				},
+				{
+					"from": "94",
+					"id": "1128",
+					"to": "96",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "94",
+					"id": "406934",
+					"to": "100",
+					"type": "gene",
+					"value": "miR-142"
+				},
+				{
+					"from": "47",
+					"id": "1128",
+					"to": "49",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": 34,
+					"id": "MIMAT0000256-0",
+					"origin": "miR-181a/",
+					"to": 42,
+					"type": "miRNA",
+					"value": "hsa-mir-181a"
+				},
+				{
+					"from": 34,
+					"id": "MIMAT0000256-1",
+					"origin": "miR-181a/",
+					"to": 42,
+					"type": "miRNA",
+					"value": "hsa-mir-181a"
+				},
+				{
+					"from": 34,
+					"id": "MIMAT0004558-2",
+					"origin": "miR-181a/",
+					"to": 42,
+					"type": "miRNA",
+					"value": "hsa-mir-181a"
+				},
+				{
+					"from": 47,
+					"id": "MIMAT0000080-0",
+					"origin": "miR-24",
+					"to": 53,
+					"type": "miRNA",
+					"value": "hsa-mir-24"
+				},
+				{
+					"from": 82,
+					"id": "MIMAT0000086-0",
+					"origin": "miR-29a/",
+					"to": 89,
+					"type": "miRNA",
+					"value": "hsa-mir-29a"
+				},
+				{
+					"from": 82,
+					"id": "MIMAT0000086-1",
+					"origin": "miR-29a/",
+					"to": 89,
+					"type": "miRNA",
+					"value": "hsa-mir-29a"
+				},
+				{
+					"from": 82,
+					"id": "MIMAT0004503-2",
+					"origin": "miR-29a/",
+					"to": 89,
+					"type": "miRNA",
+					"value": "hsa-mir-29a"
+				},
+				{
+					"from": 94,
+					"id": "MIMAT0000433-0",
+					"origin": "miR-142-5p",
+					"to": 104,
+					"type": "miRNA",
+					"value": "hsa-mir-142-5p"
+				}
+			],
+			"sentence": "However, compared to their study, miR-181a and miR-24 were lower in frequency and miR-29a and miR-142-5p were higher in our study."
+		},
+		{
+			"mentions": [
+				{
+					"from": "92",
+					"id": "1128",
+					"to": "94",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "9",
+					"id": "79157",
+					"to": "10",
+					"type": "gene",
+					"value": "et"
+				},
+				{
+					"from": "69",
+					"id": "925",
+					"to": "71",
+					"type": "gene",
+					"value": "CD8"
+				},
+				{
+					"from": "9",
+					"id": "5833",
+					"to": "10",
+					"type": "gene",
+					"value": "et"
+				},
+				{
+					"from": "12",
+					"id": "1946",
+					"to": "13",
+					"type": "gene",
+					"value": "al"
+				},
+				{
+					"from": "69",
+					"id": "5580",
+					"to": "71",
+					"type": "gene",
+					"value": "CD8"
+				},
+				{
+					"from": "92",
+					"id": "406934",
+					"to": "98",
+					"type": "gene",
+					"value": "miR-142"
+				},
+				{
+					"from": "9",
+					"id": "1906",
+					"to": "10",
+					"type": "gene",
+					"value": "et"
+				},
+				{
+					"from": 92,
+					"id": "MIMAT0000433-1",
+					"origin": "miR-142",
+					"to": 99,
+					"type": "miRNA",
+					"value": "hsa-mir-142"
+				},
+				{
+					"from": 92,
+					"id": "MIMAT0000434-2",
+					"origin": "miR-142",
+					"to": 99,
+					"type": "miRNA",
+					"value": "hsa-mir-142"
+				}
+			],
+			"sentence": "Landgraf et al  profiling miRNA expression in human peripheral blood CD8 T cells also found miR-142 to be the highest expressed miRNA."
+		},
+		{
+			"mentions": [
+				{
+					"from": "52",
+					"id": "1128",
+					"to": "54",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "116",
+					"id": "407054",
+					"to": "121",
+					"type": "gene",
+					"value": "miR-98"
+				},
+				{
+					"from": "169",
+					"id": "1128",
+					"to": "171",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "87",
+					"id": "1128",
+					"to": "89",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "157",
+					"id": "1128",
+					"to": "159",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "99",
+					"id": "1128",
+					"to": "101",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "157",
+					"id": "406942",
+					"to": "163",
+					"type": "gene",
+					"value": "miR-150"
+				},
+				{
+					"from": "87",
+					"id": "406949",
+					"to": "93",
+					"type": "gene",
+					"value": "miR-15b"
+				},
+				{
+					"from": "52",
+					"id": "406948",
+					"to": "58",
+					"type": "gene",
+					"value": "miR-15a"
+				},
+				{
+					"from": "78",
+					"id": "1128",
+					"to": "80",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "78",
+					"id": "406948",
+					"to": "84",
+					"type": "gene",
+					"value": "miR-15a"
+				},
+				{
+					"from": "116",
+					"id": "1128",
+					"to": "118",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "169",
+					"id": "407015",
+					"to": "175",
+					"type": "gene",
+					"value": "miR-26a"
+				},
+				{
+					"from": "99",
+					"id": "51573",
+					"to": "104",
+					"type": "gene",
+					"value": "miR-16"
+				},
+				{
+					"from": "149",
+					"id": "406891",
+					"to": "153",
+					"type": "gene",
+					"value": "let-7"
+				},
+				{
+					"from": "99",
+					"id": "406950",
+					"to": "104",
+					"type": "gene",
+					"value": "miR-16"
+				},
+				{
+					"from": "108",
+					"id": "406991",
+					"to": "113",
+					"type": "gene",
+					"value": "miR-21"
+				},
+				{
+					"from": "108",
+					"id": "1128",
+					"to": "110",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": 52,
+					"id": "MIMAT0000068-0",
+					"origin": "miR-15a",
+					"to": 59,
+					"type": "miRNA",
+					"value": "hsa-mir-15a"
+				},
+				{
+					"from": 52,
+					"id": "MIMAT0000068-1",
+					"origin": "miR-15a",
+					"to": 59,
+					"type": "miRNA",
+					"value": "hsa-mir-15a"
+				},
+				{
+					"from": 52,
+					"id": "MIMAT0004488-2",
+					"origin": "miR-15a",
+					"to": 59,
+					"type": "miRNA",
+					"value": "hsa-mir-15a"
+				},
+				{
+					"from": 78,
+					"id": "MIMAT0000068-0",
+					"origin": "miR-15a/",
+					"to": 85,
+					"type": "miRNA",
+					"value": "hsa-mir-15a"
+				},
+				{
+					"from": 78,
+					"id": "MIMAT0000068-1",
+					"origin": "miR-15a/",
+					"to": 85,
+					"type": "miRNA",
+					"value": "hsa-mir-15a"
+				},
+				{
+					"from": 78,
+					"id": "MIMAT0004488-2",
+					"origin": "miR-15a/",
+					"to": 85,
+					"type": "miRNA",
+					"value": "hsa-mir-15a"
+				},
+				{
+					"from": 87,
+					"id": "MIMAT0000417-0",
+					"origin": "miR-15b/",
+					"to": 94,
+					"type": "miRNA",
+					"value": "hsa-mir-15b"
+				},
+				{
+					"from": 87,
+					"id": "MIMAT0000417-2",
+					"origin": "miR-15b/",
+					"to": 94,
+					"type": "miRNA",
+					"value": "hsa-mir-15b"
+				},
+				{
+					"from": 87,
+					"id": "MIMAT0004586-1",
+					"origin": "miR-15b/",
+					"to": 94,
+					"type": "miRNA",
+					"value": "hsa-mir-15b"
+				},
+				{
+					"from": 99,
+					"id": "MIMAT0000069-0",
+					"origin": "miR-16",
+					"to": 105,
+					"type": "miRNA",
+					"value": "hsa-mir-16"
+				},
+				{
+					"from": 99,
+					"id": "MIMAT0000069-1",
+					"origin": "miR-16",
+					"to": 105,
+					"type": "miRNA",
+					"value": "hsa-mir-16"
+				},
+				{
+					"from": 99,
+					"id": "MIMAT0004489-2",
+					"origin": "miR-16",
+					"to": 105,
+					"type": "miRNA",
+					"value": "hsa-mir-16"
+				},
+				{
+					"from": 108,
+					"id": "MIMAT0000076-0",
+					"origin": "miR-21/",
+					"to": 114,
+					"type": "miRNA",
+					"value": "hsa-mir-21"
+				},
+				{
+					"from": 108,
+					"id": "MIMAT0000076-1",
+					"origin": "miR-21/",
+					"to": 114,
+					"type": "miRNA",
+					"value": "hsa-mir-21"
+				},
+				{
+					"from": 108,
+					"id": "MIMAT0004494-2",
+					"origin": "miR-21/",
+					"to": 114,
+					"type": "miRNA",
+					"value": "hsa-mir-21"
+				},
+				{
+					"from": 116,
+					"id": "MIMAT0000096-0",
+					"origin": "miR-98",
+					"to": 122,
+					"type": "miRNA",
+					"value": "hsa-mir-98"
+				},
+				{
+					"from": 116,
+					"id": "MIMAT0000096-1",
+					"origin": "miR-98",
+					"to": 122,
+					"type": "miRNA",
+					"value": "hsa-mir-98"
+				},
+				{
+					"from": 116,
+					"id": "MIMAT0022842-2",
+					"origin": "miR-98",
+					"to": 122,
+					"type": "miRNA",
+					"value": "hsa-mir-98"
+				},
+				{
+					"from": 149,
+					"id": "hsa-let-7",
+					"origin": "let-7",
+					"to": 154,
+					"type": "miRNA",
+					"value": "hsa-let-7"
+				},
+				{
+					"from": 157,
+					"id": "MIMAT0000451-0",
+					"origin": "miR-150/",
+					"to": 164,
+					"type": "miRNA",
+					"value": "hsa-mir-150"
+				},
+				{
+					"from": 157,
+					"id": "MIMAT0000451-2",
+					"origin": "miR-150/",
+					"to": 164,
+					"type": "miRNA",
+					"value": "hsa-mir-150"
+				},
+				{
+					"from": 157,
+					"id": "MIMAT0004610-1",
+					"origin": "miR-150/",
+					"to": 164,
+					"type": "miRNA",
+					"value": "hsa-mir-150"
+				},
+				{
+					"from": 169,
+					"id": "MIMAT0000082-0",
+					"origin": "miR-26a",
+					"to": 176,
+					"type": "miRNA",
+					"value": "hsa-mir-26a"
+				},
+				{
+					"from": 169,
+					"id": "MIMAT0000082-1",
+					"origin": "miR-26a",
+					"to": 176,
+					"type": "miRNA",
+					"value": "hsa-mir-26a"
+				},
+				{
+					"from": 169,
+					"id": "MIMAT0004499-2",
+					"origin": "miR-26a",
+					"to": 176,
+					"type": "miRNA",
+					"value": "hsa-mir-26a"
+				}
+			],
+			"sentence": "Similarly, they also found high level expression of miR-15a family (including miR-15a, miR-15b and miR-16), miR-21, miR-98 family (including all the let-7), miR-150 and miR-26a.Although many methods can be used to profile miRNA expression, direct small RNA cloning is the only method that provides actual visualization of mature miRNAs."
+		},
+		{
+			"mentions": [],
+			"sentence": "In our study, direct cloning revealed that mature miRNAs exhibit an extensive degree of end polymorphism in mouse T cells."
+		},
+		{
+			"mentions": [
+				{
+					"from": "276",
+					"id": "1128",
+					"to": "278",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "276",
+					"id": "406934",
+					"to": "282",
+					"type": "gene",
+					"value": "miR-142"
+				},
+				{
+					"from": 276,
+					"id": "MIMAT0000433-1",
+					"origin": "miR-142/while the majority of miRNAs had identical 5' end.",
+					"to": 283,
+					"type": "miRNA",
+					"value": "hsa-mir-142"
+				},
+				{
+					"from": 276,
+					"id": "MIMAT0000434-2",
+					"origin": "miR-142/while the majority of miRNAs had identical 5' end.",
+					"to": 283,
+					"type": "miRNA",
+					"value": "hsa-mir-142"
+				}
+			],
+			"sentence": "Although we can not rule out the possibility that some of the observed polymorphism may reflect artifacts of the cloning procedure, this appears to be unlikely because many variant sequences were cloned multiple times and a high frequency of 5' end variation was only seen in miR-142, while the majority of miRNAs had identical 5' end."
+		},
+		{
+			"mentions": [
+				{
+					"from": "70",
+					"id": "1906",
+					"to": "71",
+					"type": "gene",
+					"value": "et"
+				},
+				{
+					"from": "70",
+					"id": "5833",
+					"to": "71",
+					"type": "gene",
+					"value": "et"
+				},
+				{
+					"from": "73",
+					"id": "1946",
+					"to": "74",
+					"type": "gene",
+					"value": "al"
+				},
+				{
+					"from": "70",
+					"id": "79157",
+					"to": "71",
+					"type": "gene",
+					"value": "et"
+				}
+			],
+			"sentence": "Moreover, although not described in detail except for a study by Ruby et al in C elegans, miRNA end polymorphism has also been observed by others using small RNA cloning approach and also other methods like RNA-primed Array-based Klenow Extension (RAKE)."
+		},
+		{
+			"mentions": [],
+			"sentence": "Our data show that the ends of mature miRNAs are much more polymorphic than reported in C. elegans."
+		},
+		{
+			"mentions": [],
+			"sentence": "We found 2 or more main variations for most mature miRNAs in the mouse T cells while one dominant sequence characterizes most mature miRNAs in C. elegans."
+		},
+		{
+			"mentions": [],
+			"sentence": "Although not alluded to by the authors, a careful examination of northern blot results of some published reports also reveal multiple bands for one miRNA."
+		},
+		{
+			"mentions": [
+				{
+					"from": "40",
+					"id": "29116",
+					"to": "42",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "40",
+					"id": "406904",
+					"to": "42",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "40",
+					"id": "22877",
+					"to": "42",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "40",
+					"id": "1128",
+					"to": "42",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "40",
+					"id": "79187",
+					"to": "42",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "40",
+					"id": "83856",
+					"to": "42",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "40",
+					"id": "220972",
+					"to": "42",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": 40,
+					"id": "hsa-mir-84",
+					"origin": "miR-84",
+					"to": 46,
+					"type": "miRNA",
+					"value": "hsa-mir-84"
+				}
+			],
+			"sentence": "One convincing example in C. elegans is miR-84."
+		},
+		{
+			"mentions": [
+				{
+					"from": "12",
+					"id": "11067",
+					"to": "14",
+					"type": "gene",
+					"value": "Fig"
+				},
+				{
+					"from": "12",
+					"id": "57120",
+					"to": "14",
+					"type": "gene",
+					"value": "Fig"
+				},
+				{
+					"from": "12",
+					"id": "259307",
+					"to": "14",
+					"type": "gene",
+					"value": "Fig"
+				}
+			],
+			"sentence": "As shown in Fig."
+		},
+		{
+			"mentions": [
+				{
+					"from": "37",
+					"id": "406904",
+					"to": "39",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "161",
+					"id": "29116",
+					"to": "163",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "37",
+					"id": "22877",
+					"to": "39",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "37",
+					"id": "83856",
+					"to": "39",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "161",
+					"id": "83856",
+					"to": "163",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "37",
+					"id": "1128",
+					"to": "39",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "37",
+					"id": "220972",
+					"to": "39",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "37",
+					"id": "29116",
+					"to": "39",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "168",
+					"id": "3038",
+					"to": "172",
+					"type": "gene",
+					"value": "has 3"
+				},
+				{
+					"from": "161",
+					"id": "22877",
+					"to": "163",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "161",
+					"id": "406904",
+					"to": "163",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "161",
+					"id": "1128",
+					"to": "163",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "161",
+					"id": "79187",
+					"to": "163",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "161",
+					"id": "220972",
+					"to": "163",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "37",
+					"id": "79187",
+					"to": "39",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": 37,
+					"id": "hsa-mir-84",
+					"origin": "miR-84",
+					"to": 43,
+					"type": "miRNA",
+					"value": "hsa-mir-84"
+				},
+				{
+					"from": 161,
+					"id": "hsa-mir-84",
+					"origin": "miR-84",
+					"to": 167,
+					"type": "miRNA",
+					"value": "hsa-mir-84"
+				}
+			],
+			"sentence": "3 in the paper by Lau and coworkers, miR-84 is the only miRNA (out of 15 that were tested) that shows 3 clearly visible bands in northern blots, indicating that miR-84 has 3 main variations."
+		},
+		{
+			"mentions": [
+				{
+					"from": "72",
+					"id": "8241",
+					"to": "73",
+					"type": "gene",
+					"value": "S1"
+				},
+				{
+					"from": "135",
+					"id": "3038",
+					"to": "139",
+					"type": "gene",
+					"value": "has 3"
+				},
+				{
+					"from": "128",
+					"id": "22877",
+					"to": "130",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "128",
+					"id": "220972",
+					"to": "130",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "72",
+					"id": "5719",
+					"to": "73",
+					"type": "gene",
+					"value": "S1"
+				},
+				{
+					"from": "128",
+					"id": "79187",
+					"to": "130",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "72",
+					"id": "6205",
+					"to": "73",
+					"type": "gene",
+					"value": "S1"
+				},
+				{
+					"from": "72",
+					"id": "5707",
+					"to": "73",
+					"type": "gene",
+					"value": "S1"
+				},
+				{
+					"from": "128",
+					"id": "83856",
+					"to": "130",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "128",
+					"id": "1128",
+					"to": "130",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "128",
+					"id": "406904",
+					"to": "130",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "72",
+					"id": "6267",
+					"to": "73",
+					"type": "gene",
+					"value": "S1"
+				},
+				{
+					"from": "128",
+					"id": "29116",
+					"to": "130",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": 128,
+					"id": "hsa-mir-84",
+					"origin": "miR-84",
+					"to": 134,
+					"type": "miRNA",
+					"value": "hsa-mir-84"
+				}
+			],
+			"sentence": "Similarly, an examination of the deep sequencing data depicted in Table S1 in the report by Ruby and coworkers  also shows that miR-84 has 3 main variations."
+		},
+		{
+			"mentions": [],
+			"sentence": "Thus, some miRNAs in C. elegans also have more than 1 dominant variation, suggesting that multiple dominant sequences for one miRNA is a conserved phenomenon, although it happens to a lower extent in C. elegans.Clearly, the changes in the 5' end seed sequence can affect target selection."
+		},
+		{
+			"mentions": [],
+			"sentence": "However, the biological significance of the 3' end polymorphism we observed is not immediately apparent, although the extent of their occurrence suggests that it could be important in miRNA biology."
+		},
+		{
+			"mentions": [],
+			"sentence": "For example, it may possibly affect the stability/subcellular localization and/or miRNA functional efficacy."
+		},
+		{
+			"mentions": [],
+			"sentence": "It has been reported in plants that untemplated 3' end extension appears to be a signal for mature miRNA degradation."
+		},
+		{
+			"mentions": [],
+			"sentence": "It is possible that it might be the same in mammals."
+		},
+		{
+			"mentions": [],
+			"sentence": "Whatever the significance, our study shows that designation of one sequence for a give miRNA may not be accurate to describe all miRNA species in a cell."
+		},
+		{
+			"mentions": [],
+			"sentence": "Moreover as we have shown, the 3' end variation can affect the detection efficiency of real-time PCR assay employing stem-loop primer and thus should be taken into consideration when designing a detection method for miRNAs."
+		},
+		{
+			"mentions": [],
+			"sentence": "The method RAKE that requires the exact match of the 3' end also appears to be affected ."
+		},
+		{
+			"mentions": [],
+			"sentence": "Additionally, the real picture of mature miRNA sequence might help generate more accurate models in bioinformatic calculations such as target prediction.It is intriguing how the end polymorphism is generated."
+		},
+		{
+			"mentions": [
+				{
+					"from": "161",
+					"id": "29102",
+					"to": "166",
+					"type": "gene",
+					"value": "drosha"
+				},
+				{
+					"from": "172",
+					"id": "23405",
+					"to": "176",
+					"type": "gene",
+					"value": "dicer"
+				}
+			],
+			"sentence": "Since a majority of mature miRNAs have identical 5' ends, irrespective of whether they are derived from the 5' or 3' chains of the hairpin, it appears that both drosha and dicer can set a precise 5' end."
+		},
+		{
+			"mentions": [
+				{
+					"from": "74",
+					"id": "29102",
+					"to": "79",
+					"type": "gene",
+					"value": "drosha"
+				},
+				{
+					"from": "81",
+					"id": "23405",
+					"to": "85",
+					"type": "gene",
+					"value": "dicer"
+				}
+			],
+			"sentence": "Thus, the majority of end polymorphisms is likely generated downstream of drosha/dicer processing."
+		},
+		{
+			"mentions": [
+				{
+					"from": "208",
+					"id": "406934",
+					"to": "214",
+					"type": "gene",
+					"value": "miR-142"
+				},
+				{
+					"from": "152",
+					"id": "1128",
+					"to": "154",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "223",
+					"id": "1128",
+					"to": "225",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "152",
+					"id": "406934",
+					"to": "158",
+					"type": "gene",
+					"value": "miR-142"
+				},
+				{
+					"from": "223",
+					"id": "406934",
+					"to": "229",
+					"type": "gene",
+					"value": "miR-142"
+				},
+				{
+					"from": "208",
+					"id": "1128",
+					"to": "210",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": 152,
+					"id": "MIMAT0000433-1",
+					"origin": "miR-142",
+					"to": 159,
+					"type": "miRNA",
+					"value": "hsa-mir-142"
+				},
+				{
+					"from": 152,
+					"id": "MIMAT0000434-2",
+					"origin": "miR-142",
+					"to": 159,
+					"type": "miRNA",
+					"value": "hsa-mir-142"
+				},
+				{
+					"from": 208,
+					"id": "MIMAT0000433-0",
+					"origin": "miR-142-5p/",
+					"to": 218,
+					"type": "miRNA",
+					"value": "hsa-mir-142-5p"
+				},
+				{
+					"from": 223,
+					"id": "MIMAT0000434-0",
+					"origin": "miR-142-3p",
+					"to": 233,
+					"type": "miRNA",
+					"value": "hsa-mir-142-3p"
+				}
+			],
+			"sentence": "It is reasonable to predict that there are enzymes with end modification activity that could generate mature miRNA end polymorphism.End polymorphism in miR-142 was very different compared to other miRNAsboth miR-142-5p and miR-142-3p were the only miRNAs that showed a high frequency of 5' end changes."
+		},
+		{
+			"mentions": [
+				{
+					"from": "56",
+					"id": "29102",
+					"to": "61",
+					"type": "gene",
+					"value": "drosha"
+				},
+				{
+					"from": "63",
+					"id": "23405",
+					"to": "67",
+					"type": "gene",
+					"value": "dicer"
+				}
+			],
+			"sentence": "This polymorphism appears to result from a shift in the drosha/dicer processing, in that 1-3 nucleotide deletions at the 5' end were associated with a corresponding number of templated nucleotide extensions at the 3' end."
+		},
+		{
+			"mentions": [
+				{
+					"from": "101",
+					"id": "29102",
+					"to": "106",
+					"type": "gene",
+					"value": "drosha"
+				}
+			],
+			"sentence": "It has recently been proposed that the distance from the stem-flanking ssRNA junction determines the drosha cleavage site and the cleavage occurs approximately 11bp from the junction."
+		},
+		{
+			"mentions": [
+				{
+					"from": "0",
+					"id": "23405",
+					"to": "4",
+					"type": "gene",
+					"value": "Dicer"
+				},
+				{
+					"from": "45",
+					"id": "29102",
+					"to": "50",
+					"type": "gene",
+					"value": "drosha"
+				}
+			],
+			"sentence": "Dicer then measures from the terminal set by drosha for further processing."
+		},
+		{
+			"mentions": [
+				{
+					"from": "117",
+					"id": "1128",
+					"to": "119",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "156",
+					"id": "23405",
+					"to": "160",
+					"type": "gene",
+					"value": "dicer"
+				},
+				{
+					"from": "149",
+					"id": "29102",
+					"to": "154",
+					"type": "gene",
+					"value": "drosha"
+				},
+				{
+					"from": "57",
+					"id": "29102",
+					"to": "62",
+					"type": "gene",
+					"value": "drosha"
+				},
+				{
+					"from": "117",
+					"id": "406934",
+					"to": "123",
+					"type": "gene",
+					"value": "miR-142"
+				},
+				{
+					"from": "64",
+					"id": "23405",
+					"to": "68",
+					"type": "gene",
+					"value": "dicer"
+				},
+				{
+					"from": 117,
+					"id": "MIMAT0000433-1",
+					"origin": "miR-142",
+					"to": 124,
+					"type": "miRNA",
+					"value": "hsa-mir-142"
+				},
+				{
+					"from": 117,
+					"id": "MIMAT0000434-2",
+					"origin": "miR-142",
+					"to": 124,
+					"type": "miRNA",
+					"value": "hsa-mir-142"
+				}
+			],
+			"sentence": "Although most miRNA 5' ends were intact, suggesting that drosha/dicer processing is precise, the changes observed in miR-142 suggest that a shift in drosha/dicer processing can sometimes occur at a relatively high frequency."
+		},
+		{
+			"mentions": [],
+			"sentence": "Since 5' end changes can alter target specificity, this may also represent a novel mechanism to generate additional miRNAs."
+		},
+		{
+			"mentions": [],
+			"sentence": "Further studies are needed to verify this hypothesis."
+		},
+		{
+			"mentions": [
+				{
+					"from": "31",
+					"id": "23405",
+					"to": "35",
+					"type": "gene",
+					"value": "dicer"
+				},
+				{
+					"from": "24",
+					"id": "29102",
+					"to": "29",
+					"type": "gene",
+					"value": "drosha"
+				}
+			],
+			"sentence": "Although how a shift in drosha/dicer processing occurs is not known, A to I editing may be involved."
+		},
+		{
+			"mentions": [
+				{
+					"from": "26",
+					"id": "140738",
+					"to": "28",
+					"type": "gene",
+					"value": "pri"
+				},
+				{
+					"from": "71",
+					"id": "103",
+					"to": "74",
+					"type": "gene",
+					"value": "ADAR"
+				},
+				{
+					"from": "26",
+					"id": "5541",
+					"to": "28",
+					"type": "gene",
+					"value": "pri"
+				},
+				{
+					"from": "30",
+					"id": "1128",
+					"to": "32",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "26",
+					"id": "100616101",
+					"to": "28",
+					"type": "gene",
+					"value": "pri"
+				},
+				{
+					"from": "30",
+					"id": "406934",
+					"to": "36",
+					"type": "gene",
+					"value": "miR-142"
+				},
+				{
+					"from": "26",
+					"id": "5555",
+					"to": "28",
+					"type": "gene",
+					"value": "pri"
+				},
+				{
+					"from": "26",
+					"id": "5241",
+					"to": "28",
+					"type": "gene",
+					"value": "pri"
+				}
+			],
+			"sentence": "It has been reported that pri-miR-142 is under heavy A to I editing by ADAR."
+		},
+		{
+			"mentions": [
+				{
+					"from": "102",
+					"id": "1128",
+					"to": "104",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "55",
+					"id": "103",
+					"to": "58",
+					"type": "gene",
+					"value": "ADAR"
+				},
+				{
+					"from": "0",
+					"id": "1128",
+					"to": "2",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "181",
+					"id": "103",
+					"to": "184",
+					"type": "gene",
+					"value": "ADAR"
+				},
+				{
+					"from": "102",
+					"id": "406934",
+					"to": "108",
+					"type": "gene",
+					"value": "miR-142"
+				},
+				{
+					"from": "0",
+					"id": "406934",
+					"to": "6",
+					"type": "gene",
+					"value": "miR-142"
+				},
+				{
+					"from": 0,
+					"id": "MIMAT0000433-1",
+					"origin": "miR-142",
+					"to": 7,
+					"type": "miRNA",
+					"value": "hsa-mir-142"
+				},
+				{
+					"from": 0,
+					"id": "MIMAT0000434-2",
+					"origin": "miR-142",
+					"to": 7,
+					"type": "miRNA",
+					"value": "hsa-mir-142"
+				},
+				{
+					"from": 102,
+					"id": "hsa-mir-142-specific",
+					"origin": "miR-142-specific/not a result of a general effect on the level of miRNA in ADAR mutant mice.",
+					"to": 118,
+					"type": "miRNA",
+					"value": "hsa-mir-142-specific"
+				}
+			],
+			"sentence": "miR-142 expression level increased significantly after ADAR was mutated and this change appears to be miR-142-specific and not a result of a general effect on the level of miRNA in ADAR mutant mice."
+		},
+		{
+			"mentions": [
+				{
+					"from": "105",
+					"id": "29102",
+					"to": "110",
+					"type": "gene",
+					"value": "drosha"
+				},
+				{
+					"from": "112",
+					"id": "54487",
+					"to": "116",
+					"type": "gene",
+					"value": "DGCR8"
+				}
+			],
+			"sentence": "Thus, it is possible that the A to I editing may change the stem loop structure or affect the ability of drosha-DGCR8 to cleave precisely."
+		},
+		{
+			"mentions": [
+				{
+					"from": "74",
+					"id": "1128",
+					"to": "76",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "159",
+					"id": "6192",
+					"to": "160",
+					"type": "gene",
+					"value": "S4"
+				},
+				{
+					"from": "74",
+					"id": "406934",
+					"to": "80",
+					"type": "gene",
+					"value": "miR-142"
+				},
+				{
+					"from": "159",
+					"id": "5700",
+					"to": "160",
+					"type": "gene",
+					"value": "S4"
+				},
+				{
+					"from": "159",
+					"id": "6191",
+					"to": "160",
+					"type": "gene",
+					"value": "S4"
+				},
+				{
+					"from": 74,
+					"id": "MIMAT0000433-0",
+					"origin": "miR-142-5p/while it was barely detected in other miRNAs in this study (Tables 1/S4).In summary/our study documents the changes in miRNA expression during T cell differentiation/points to the extensive degree of polymorphism in mature miRNA ends.",
+					"to": 84,
+					"type": "miRNA",
+					"value": "hsa-mir-142-5p"
+				}
+			],
+			"sentence": "Interestingly, 2 (out of 34) instances of A to I editing could be seen in miR-142-5p, while it was barely detected in other miRNAs in this study (Tables 1 and S4).In summary, our study documents the changes in miRNA expression during T cell differentiation and points to the extensive degree of polymorphism in mature miRNA ends."
+		},
+		{
+			"mentions": [
+				{
+					"from": "209",
+					"id": "51639",
+					"to": "211",
+					"type": "gene",
+					"value": "P14"
+				},
+				{
+					"from": "209",
+					"id": "28956",
+					"to": "211",
+					"type": "gene",
+					"value": "P14"
+				},
+				{
+					"from": "213",
+					"id": "6962",
+					"to": "215",
+					"type": "gene",
+					"value": "TCR"
+				},
+				{
+					"from": "209",
+					"id": "10263",
+					"to": "211",
+					"type": "gene",
+					"value": "P14"
+				},
+				{
+					"from": "209",
+					"id": "10923",
+					"to": "211",
+					"type": "gene",
+					"value": "P14"
+				},
+				{
+					"from": "209",
+					"id": "6280",
+					"to": "211",
+					"type": "gene",
+					"value": "P14"
+				},
+				{
+					"from": "209",
+					"id": "11102",
+					"to": "211",
+					"type": "gene",
+					"value": "P14"
+				},
+				{
+					"from": "209",
+					"id": "1029",
+					"to": "211",
+					"type": "gene",
+					"value": "P14"
+				}
+			],
+			"sentence": "Further studies on the differentially expressed miRNAs should aid in the understanding of T cell differentiation process and may ultimately pave the way to manipulate the process of adaptive immunity.TCR-LCMV-P14/TCR transgenic (specific for LCMV gp33-41) mice were purchased from the Taconic Farms, Germantown, NY."
+		},
+		{
+			"mentions": [
+				{
+					"from": "5",
+					"id": "925",
+					"to": "7",
+					"type": "gene",
+					"value": "CD8"
+				},
+				{
+					"from": "154",
+					"id": "2993",
+					"to": "155",
+					"type": "gene",
+					"value": "MN"
+				},
+				{
+					"from": "102",
+					"id": "5580",
+					"to": "104",
+					"type": "gene",
+					"value": "CD8"
+				},
+				{
+					"from": "154",
+					"id": "768",
+					"to": "155",
+					"type": "gene",
+					"value": "MN"
+				},
+				{
+					"from": "102",
+					"id": "925",
+					"to": "104",
+					"type": "gene",
+					"value": "CD8"
+				},
+				{
+					"from": "154",
+					"id": "4330",
+					"to": "155",
+					"type": "gene",
+					"value": "MN"
+				},
+				{
+					"from": "123",
+					"id": "3815",
+					"to": "125",
+					"type": "gene",
+					"value": "kit"
+				},
+				{
+					"from": "5",
+					"id": "5580",
+					"to": "7",
+					"type": "gene",
+					"value": "CD8"
+				}
+			],
+			"sentence": "Nave CD8 T cells were purified from splenocytes of mice by negative selection using the murine T cell CD8 subset isolation kit (R&D systems, Minneapolis, MN) according to the manufacturer's instructions."
+		},
+		{
+			"mentions": [
+				{
+					"from": "56",
+					"id": "6402",
+					"to": "60",
+					"type": "gene",
+					"value": "CD62L"
+				},
+				{
+					"from": "64",
+					"id": "969",
+					"to": "67",
+					"type": "gene",
+					"value": "CD69"
+				}
+			],
+			"sentence": "The isolated cells were >90% pure, and 95% of them were CD62L+, CD69- (not shown)."
+		},
+		{
+			"mentions": [],
+			"sentence": "The method to generate effector and memory T cell has been described ."
+		},
+		{
+			"mentions": [
+				{
+					"from": "26",
+					"id": "28956",
+					"to": "28",
+					"type": "gene",
+					"value": "P14"
+				},
+				{
+					"from": "26",
+					"id": "11102",
+					"to": "28",
+					"type": "gene",
+					"value": "P14"
+				},
+				{
+					"from": "26",
+					"id": "51639",
+					"to": "28",
+					"type": "gene",
+					"value": "P14"
+				},
+				{
+					"from": "26",
+					"id": "6280",
+					"to": "28",
+					"type": "gene",
+					"value": "P14"
+				},
+				{
+					"from": "61",
+					"id": "7066",
+					"to": "62",
+					"type": "gene",
+					"value": "ml"
+				},
+				{
+					"from": "61",
+					"id": "112744",
+					"to": "62",
+					"type": "gene",
+					"value": "ml"
+				},
+				{
+					"from": "26",
+					"id": "10923",
+					"to": "28",
+					"type": "gene",
+					"value": "P14"
+				},
+				{
+					"from": "26",
+					"id": "1029",
+					"to": "28",
+					"type": "gene",
+					"value": "P14"
+				},
+				{
+					"from": "59",
+					"id": "2207",
+					"to": "59",
+					"type": "gene",
+					"value": "g"
+				},
+				{
+					"from": "59",
+					"id": "2770",
+					"to": "59",
+					"type": "gene",
+					"value": "g"
+				},
+				{
+					"from": "61",
+					"id": "51761",
+					"to": "62",
+					"type": "gene",
+					"value": "ml"
+				},
+				{
+					"from": "26",
+					"id": "10263",
+					"to": "28",
+					"type": "gene",
+					"value": "P14"
+				},
+				{
+					"from": "189",
+					"id": "26269",
+					"to": "191",
+					"type": "gene",
+					"value": "FBS"
+				},
+				{
+					"from": "189",
+					"id": "64319",
+					"to": "191",
+					"type": "gene",
+					"value": "FBS"
+				},
+				{
+					"from": "189",
+					"id": "26232",
+					"to": "191",
+					"type": "gene",
+					"value": "FBS"
+				}
+			],
+			"sentence": "Briefly, splenocytes from P14 mice were stimulated with 10 g/ml of gp33-41 peptide (KAVYNFATC, synthesized at BioSource International) for 1 hour and cultured in RPMI supplemented with 10% FBS."
+		},
+		{
+			"mentions": [
+				{
+					"from": "91",
+					"id": "51761",
+					"to": "92",
+					"type": "gene",
+					"value": "ml"
+				},
+				{
+					"from": "91",
+					"id": "7066",
+					"to": "92",
+					"type": "gene",
+					"value": "ml"
+				},
+				{
+					"from": "88",
+					"id": "63940",
+					"to": "89",
+					"type": "gene",
+					"value": "ng"
+				},
+				{
+					"from": "88",
+					"id": "4900",
+					"to": "89",
+					"type": "gene",
+					"value": "ng"
+				},
+				{
+					"from": "91",
+					"id": "112744",
+					"to": "92",
+					"type": "gene",
+					"value": "ml"
+				}
+			],
+			"sentence": "Two days later, the cells were washed and cultured in fresh medium supplemented with 20 ng/ml of either rIL-2 or rIL-15 (R&D Systems) and cultured for 7 days."
+		},
+		{
+			"mentions": [],
+			"sentence": "The cells were then harvested and viable T cells were recovered by Histopaque (Sigma) gradient centrifugation."
+		},
+		{
+			"mentions": [
+				{
+					"from": "53",
+					"id": "925",
+					"to": "55",
+					"type": "gene",
+					"value": "CD8"
+				},
+				{
+					"from": "98",
+					"id": "3559",
+					"to": "101",
+					"type": "gene",
+					"value": "CD25"
+				},
+				{
+					"from": "98",
+					"id": "3669",
+					"to": "101",
+					"type": "gene",
+					"value": "CD25"
+				},
+				{
+					"from": "145",
+					"id": "3669",
+					"to": "148",
+					"type": "gene",
+					"value": "CD25"
+				},
+				{
+					"from": "233",
+					"id": "3815",
+					"to": "235",
+					"type": "gene",
+					"value": "kit"
+				},
+				{
+					"from": "53",
+					"id": "5580",
+					"to": "55",
+					"type": "gene",
+					"value": "CD8"
+				},
+				{
+					"from": "126",
+					"id": "3600",
+					"to": "130",
+					"type": "gene",
+					"value": "IL-15"
+				},
+				{
+					"from": "145",
+					"id": "3559",
+					"to": "148",
+					"type": "gene",
+					"value": "CD25"
+				},
+				{
+					"from": "80",
+					"id": "3558",
+					"to": "83",
+					"type": "gene",
+					"value": "IL-2"
+				},
+				{
+					"from": "137",
+					"id": "6402",
+					"to": "141",
+					"type": "gene",
+					"value": "CD62L"
+				},
+				{
+					"from": "90",
+					"id": "6402",
+					"to": "94",
+					"type": "gene",
+					"value": "CD62L"
+				}
+			],
+			"sentence": "Almost all viable cells after 7 days of culture were CD8+ and those cultured in IL-2 were CD62L-, CD25+ and those cultured in IL-15 were CD62L+, CD25- (not shown).Total RNA and small RNA fractions were isolated using Qiagen miRNeasy kit according to the manufacturer's instruction."
+		},
+		{
+			"mentions": [],
+			"sentence": "The cloning method has been described previously."
+		},
+		{
+			"mentions": [
+				{
+					"from": "111",
+					"id": "51761",
+					"to": "113",
+					"type": "gene",
+					"value": "ATP"
+				}
+			],
+			"sentence": "Briefly, small RNAs were ligated to 3' adenylated linker (5'-rAppCTGGTATCTGTGTAT GGddC-3') in a buffer without ATP, followed by 5' linker (5'-ACCACAGAGAAACC GrCrArG-3') ligation prior to gel purification."
+		},
+		{
+			"mentions": [],
+			"sentence": "The ligated short RNAs were then separated on 15% urea polyacrylamide gels and purified."
+		},
+		{
+			"mentions": [
+				{
+					"from": "89",
+					"id": "116448",
+					"to": "93",
+					"type": "gene",
+					"value": "oligo"
+				},
+				{
+					"from": "154",
+					"id": "116448",
+					"to": "158",
+					"type": "gene",
+					"value": "oligo"
+				}
+			],
+			"sentence": "After reverse transcription and amplification using 5'-GACTAGCTTGGTGCCATACACAGATACCAG-3' oligo as forward primer and 5'-GAGCCAACAGGCACCACAGAGAAACCGCAG-3' oligo as reverse primer, the cDNAs were digested with PvuII to eliminate linker contamination."
+		},
+		{
+			"mentions": [],
+			"sentence": "The amplified cDNAs were concatamerized and cloned into T vector and sequenced at Functional Bioscience."
+		},
+		{
+			"mentions": [],
+			"sentence": "Bioinformatic analysis of individual short RNA clones from the sequencing results has been described previously.miRNA profiling in RNAs from nave, effector and memory T cell were performed using LNA mercury microarray at Exiqon (Denmark)."
+		},
+		{
+			"mentions": [],
+			"sentence": "The quality of the total RNA was verified by an Agilent 2100 Bioanalyzer profile."
+		},
+		{
+			"mentions": [],
+			"sentence": "A mixture of equal amount of total RNA from nave, effector and memory T cell were made as reference."
+		},
+		{
+			"mentions": [
+				{
+					"from": "2",
+					"id": "2207",
+					"to": "2",
+					"type": "gene",
+					"value": "g"
+				},
+				{
+					"from": "2",
+					"id": "2770",
+					"to": "2",
+					"type": "gene",
+					"value": "g"
+				},
+				{
+					"from": "63",
+					"id": "6085",
+					"to": "65",
+					"type": "gene",
+					"value": "Hy3"
+				},
+				{
+					"from": "145",
+					"id": "3815",
+					"to": "147",
+					"type": "gene",
+					"value": "kit"
+				}
+			],
+			"sentence": "2 g total RNA from sample and reference pool were labeled with Hy3 and Hy5 fluorescent label, respectively, using the miRCURY LNA Array labeling kit (Exiqon, Denmark)."
+		},
+		{
+			"mentions": [
+				{
+					"from": "4",
+					"id": "6085",
+					"to": "6",
+					"type": "gene",
+					"value": "Hy3"
+				}
+			],
+			"sentence": "The Hy3-labeled samples and a Hy5-labeled reference pool RNA samples were mixed pair-wise and hybridized to the miRCURY LNA array version 8.0 (Exiqon, Denmark), which contains capture probes targeting all human, mouse and rat miRNA listed in the miRBASE version 8.0."
+		},
+		{
+			"mentions": [],
+			"sentence": "The hybridization was performed according to the miRCURY LNA array manual using a Tecan HS4800 hybridization station (Tecan, Austria) and the slides were scanned by a ScanArray 4000 XL scanner (Packard Biochip Technologies, USA)."
+		},
+		{
+			"mentions": [],
+			"sentence": "Image analysis was carried out using the ImaGene 6.1.0 software (BioDiscovery, Inc., USA)."
+		},
+		{
+			"mentions": [
+				{
+					"from": "132",
+					"id": "10585",
+					"to": "133",
+					"type": "gene",
+					"value": "RT"
+				}
+			],
+			"sentence": "The quantified signals were normalized using the global Lowess (LOcally WEighted Scatterplot Smoothing) regression algorithm.3'RACE RT-PCR based real-time PCR is modified from previously described methods ."
+		},
+		{
+			"mentions": [
+				{
+					"from": "13",
+					"id": "4900",
+					"to": "14",
+					"type": "gene",
+					"value": "ng"
+				},
+				{
+					"from": "75",
+					"id": "3815",
+					"to": "77",
+					"type": "gene",
+					"value": "kit"
+				},
+				{
+					"from": "59",
+					"id": "142",
+					"to": "62",
+					"type": "gene",
+					"value": "poly"
+				},
+				{
+					"from": "13",
+					"id": "63940",
+					"to": "14",
+					"type": "gene",
+					"value": "ng"
+				}
+			],
+			"sentence": "Briefly, 300 ng small RNA fraction was polyadenylated with poly(A) tailing kit (Epicentre Biotechnologies, US) according to the manufacturer's instructions."
+		},
+		{
+			"mentions": [],
+			"sentence": "The reaction was extracted with phenol/chloroform, and precipitated with ethanol."
+		},
+		{
+			"mentions": [
+				{
+					"from": "144",
+					"id": "3815",
+					"to": "146",
+					"type": "gene",
+					"value": "kit"
+				},
+				{
+					"from": "73",
+					"id": "10585",
+					"to": "74",
+					"type": "gene",
+					"value": "RT"
+				},
+				{
+					"from": "4",
+					"id": "142",
+					"to": "7",
+					"type": "gene",
+					"value": "poly"
+				},
+				{
+					"from": "61",
+					"id": "116448",
+					"to": "65",
+					"type": "gene",
+					"value": "oligo"
+				},
+				{
+					"from": "76",
+					"id": "116448",
+					"to": "80",
+					"type": "gene",
+					"value": "oligo"
+				}
+			],
+			"sentence": "The poly(A) tailed small RNAs were annealed with an anchored oligo dTmiR RT oligo dT and transcribed with Superscript III first chain synthesis kit (Invitrogen) according to manufacturer's instruction."
+		},
+		{
+			"mentions": [
+				{
+					"from": "78",
+					"id": "6039",
+					"to": "80",
+					"type": "gene",
+					"value": "rad"
+				},
+				{
+					"from": "78",
+					"id": "2072",
+					"to": "80",
+					"type": "gene",
+					"value": "rad"
+				},
+				{
+					"from": "78",
+					"id": "5810",
+					"to": "80",
+					"type": "gene",
+					"value": "rad"
+				},
+				{
+					"from": "40",
+					"id": "83881",
+					"to": "42",
+					"type": "gene",
+					"value": "mix"
+				},
+				{
+					"from": "78",
+					"id": "6236",
+					"to": "80",
+					"type": "gene",
+					"value": "rad"
+				}
+			],
+			"sentence": "cDNAs were amplified with SYBR green 2x mix (Takara) in a icycler system (Bio-rad) with 15 seconds at 95C and 30 seconds at 60C for 45 cycles, followed by a thermal denaturing step to generate the melting curves to verify the amplification specificity."
+		},
+		{
+			"mentions": [
+				{
+					"from": "6",
+					"id": "6193",
+					"to": "7",
+					"type": "gene",
+					"value": "S5"
+				},
+				{
+					"from": "125",
+					"id": "2159",
+					"to": "125",
+					"type": "gene",
+					"value": "X"
+				},
+				{
+					"from": "125",
+					"id": "7503",
+					"to": "125",
+					"type": "gene",
+					"value": "X"
+				},
+				{
+					"from": "125",
+					"id": "5613",
+					"to": "125",
+					"type": "gene",
+					"value": "X"
+				},
+				{
+					"from": "81",
+					"id": "5587",
+					"to": "81",
+					"type": "gene",
+					"value": "D"
+				},
+				{
+					"from": "125",
+					"id": "9383",
+					"to": "125",
+					"type": "gene",
+					"value": "X"
+				}
+			],
+			"sentence": "Table S5 shows the primers used in this assay.We thank Victor Ambros and Phillip D. Zamore for helpful discussions and Grace X.Y."
+		},
+		{
+			"mentions": [],
+			"sentence": "Zheng for help with data analysis.The cloning frequency of each miRNA is shown as a percentage of total miRNA clones isolated for each T cell subset.Signal intensity for a particular miRNA in each cell type was divided by that of the pooled RNA reference sample to generate the heat map."
+		},
+		{
+			"mentions": [],
+			"sentence": "Same amount of total RNA is used for each slide (so the signal is actually normalized according to total RNA)."
+		},
+		{
+			"mentions": [],
+			"sentence": "The miRNA clustering tree is shown on the left and the sample clustering tree is shown on the top."
+		},
+		{
+			"mentions": [],
+			"sentence": "The color scale shown at the bottom illustrates the relative expression level of the indicated miRNA across all samples: red denotes an expression above the mean, blue denotes an expression lower than the mean and grey represents signal lower than the background.A) Expression profile by direct cloning."
+		},
+		{
+			"mentions": [],
+			"sentence": "The cloning frequency was normalized to the total hybridization signal in the miRNA microarray."
+		},
+		{
+			"mentions": [
+				{
+					"from": "0",
+					"id": "2185",
+					"to": "0",
+					"type": "gene",
+					"value": "B"
+				},
+				{
+					"from": "0",
+					"id": "207",
+					"to": "0",
+					"type": "gene",
+					"value": "B"
+				},
+				{
+					"from": "0",
+					"id": "2206",
+					"to": "0",
+					"type": "gene",
+					"value": "B"
+				}
+			],
+			"sentence": "B) Expression profile by microarray hybridization."
+		},
+		{
+			"mentions": [],
+			"sentence": "Ratios of sample/reference hybridization signal is shown."
+		},
+		{
+			"mentions": [],
+			"sentence": "C) Expression profile by real time PCR."
+		},
+		{
+			"mentions": [],
+			"sentence": "Expression level was normalized to that of small non-coding RNA U6B."
+		},
+		{
+			"mentions": [],
+			"sentence": "Mean of triplicate experimentsSD is shown."
+		},
+		{
+			"mentions": [],
+			"sentence": "Similar results were also obtained in 2 additional independent experiments.Twenty different miRNAs (indicated on the left) that were picked up by direct cloning and/or microarray hybridization were also tested by real time PCR."
+		},
+		{
+			"mentions": [
+				{
+					"from": "97",
+					"id": "5079",
+					"to": "101",
+					"type": "gene",
+					"value": "all 3"
+				}
+			],
+			"sentence": "A shows miRNAs whose relative expression between nave, effector and memory T cells correlated in all 3 methods."
+		},
+		{
+			"mentions": [
+				{
+					"from": "0",
+					"id": "2185",
+					"to": "0",
+					"type": "gene",
+					"value": "B"
+				},
+				{
+					"from": "0",
+					"id": "207",
+					"to": "0",
+					"type": "gene",
+					"value": "B"
+				},
+				{
+					"from": "87",
+					"id": "10585",
+					"to": "88",
+					"type": "gene",
+					"value": "RT"
+				},
+				{
+					"from": "0",
+					"id": "2206",
+					"to": "0",
+					"type": "gene",
+					"value": "B"
+				}
+			],
+			"sentence": "B shows miRNAs with expression profile correlated only in the microarray and real time RT-PCR."
+		},
+		{
+			"mentions": [
+				{
+					"from": "67",
+					"id": "10585",
+					"to": "68",
+					"type": "gene",
+					"value": "RT"
+				}
+			],
+			"sentence": "C shows the expression profile that correlated only in cloning and RT-PCR."
+		},
+		{
+			"mentions": [
+				{
+					"from": "0",
+					"id": "5587",
+					"to": "0",
+					"type": "gene",
+					"value": "D"
+				}
+			],
+			"sentence": "D shows the expression profile that correlated only in cloning and microarray and E represents the miRNAs that did not correlate in any two methods."
+		},
+		{
+			"mentions": [
+				{
+					"from": "210",
+					"id": "2206",
+					"to": "210",
+					"type": "gene",
+					"value": "B"
+				},
+				{
+					"from": "210",
+					"id": "2185",
+					"to": "210",
+					"type": "gene",
+					"value": "B"
+				},
+				{
+					"from": "210",
+					"id": "207",
+					"to": "210",
+					"type": "gene",
+					"value": "B"
+				},
+				{
+					"from": 161,
+					"id": "hsa-mir-669d",
+					"origin": "miRNA-669d",
+					"to": 171,
+					"type": "miRNA",
+					"value": "hsa-mir-669d"
+				}
+			],
+			"sentence": "The correlation was determined arbitrarily according to their movement in the same direction in the different assays.The presence of the stem loop sequences for miRNA-669d in the mouse genome is depicted in (A-B)."
+		},
+		{
+			"mentions": [
+				{
+					"from": "87",
+					"id": "10585",
+					"to": "88",
+					"type": "gene",
+					"value": "RT"
+				},
+				{
+					"from": "65",
+					"id": "406904",
+					"to": "67",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "65",
+					"id": "220972",
+					"to": "67",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "65",
+					"id": "29116",
+					"to": "67",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "65",
+					"id": "22877",
+					"to": "67",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "65",
+					"id": "1128",
+					"to": "67",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "65",
+					"id": "79187",
+					"to": "67",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "65",
+					"id": "83856",
+					"to": "67",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": 65,
+					"id": "hsa-mir-669d",
+					"origin": "miR-669d",
+					"to": 73,
+					"type": "miRNA",
+					"value": "hsa-mir-669d"
+				}
+			],
+			"sentence": "C) Small RNAs from mouse T cells were tested for the presence of miR-669d by real time RT-PCR."
+		},
+		{
+			"mentions": [],
+			"sentence": "Expression level was normalized to that of small non-coding RNA U6B."
+		},
+		{
+			"mentions": [
+				{
+					"from": "145",
+					"id": "4907",
+					"to": "146",
+					"type": "gene",
+					"value": "nt"
+				},
+				{
+					"from": "157",
+					"id": "126370",
+					"to": "160",
+					"type": "gene",
+					"value": "or 1"
+				},
+				{
+					"from": "162",
+					"id": "4922",
+					"to": "163",
+					"type": "gene",
+					"value": "nt"
+				},
+				{
+					"from": "145",
+					"id": "4922",
+					"to": "146",
+					"type": "gene",
+					"value": "nt"
+				},
+				{
+					"from": "115",
+					"id": "1128",
+					"to": "117",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "88",
+					"id": "51573",
+					"to": "93",
+					"type": "gene",
+					"value": "miR-16"
+				},
+				{
+					"from": "88",
+					"id": "1128",
+					"to": "90",
+					"type": "gene",
+					"value": "miR"
+				},
+				{
+					"from": "157",
+					"id": "81399",
+					"to": "160",
+					"type": "gene",
+					"value": "or 1"
+				},
+				{
+					"from": "88",
+					"id": "406950",
+					"to": "93",
+					"type": "gene",
+					"value": "miR-16"
+				},
+				{
+					"from": "157",
+					"id": "10823",
+					"to": "160",
+					"type": "gene",
+					"value": "or 1"
+				},
+				{
+					"from": "162",
+					"id": "4907",
+					"to": "163",
+					"type": "gene",
+					"value": "nt"
+				},
+				{
+					"from": "115",
+					"id": "406950",
+					"to": "120",
+					"type": "gene",
+					"value": "miR-16"
+				},
+				{
+					"from": "115",
+					"id": "51573",
+					"to": "120",
+					"type": "gene",
+					"value": "miR-16"
+				},
+				{
+					"from": "157",
+					"id": "81176",
+					"to": "160",
+					"type": "gene",
+					"value": "or 1"
+				},
+				{
+					"from": 88,
+					"id": "MIMAT0000069-0",
+					"origin": "miR-16",
+					"to": 94,
+					"type": "miRNA",
+					"value": "hsa-mir-16"
+				},
+				{
+					"from": 88,
+					"id": "MIMAT0000069-1",
+					"origin": "miR-16",
+					"to": 94,
+					"type": "miRNA",
+					"value": "hsa-mir-16"
+				},
+				{
+					"from": 88,
+					"id": "MIMAT0004489-2",
+					"origin": "miR-16",
+					"to": 94,
+					"type": "miRNA",
+					"value": "hsa-mir-16"
+				},
+				{
+					"from": 115,
+					"id": "MIMAT0000069-0",
+					"origin": "miR-16",
+					"to": 121,
+					"type": "miRNA",
+					"value": "hsa-mir-16"
+				},
+				{
+					"from": 115,
+					"id": "MIMAT0000069-1",
+					"origin": "miR-16",
+					"to": 121,
+					"type": "miRNA",
+					"value": "hsa-mir-16"
+				},
+				{
+					"from": 115,
+					"id": "MIMAT0004489-2",
+					"origin": "miR-16",
+					"to": 121,
+					"type": "miRNA",
+					"value": "hsa-mir-16"
+				}
+			],
+			"sentence": "Mean of triplicate experimentsSD is shown.Detection efficiency was compared using exact miR-16 oligonucleotide and miR-16 oligonucleotide with 1 nt deletion or 1 nt addition at the 3 end as templates."
+		},
+		{
+			"mentions": [],
+			"sentence": "Mean of triplicate experimentsSD is shown.Figure 1."
+		},
+		{
+			"mentions": [],
+			"sentence": "Distribution of the seven highly expressed miRNAs in the T cell subsetsFigure 2."
+		},
+		{
+			"mentions": [],
+			"sentence": "Differential expression of miRNAs in nave, effector and memory T cellsFigure 3."
+		},
+		{
+			"mentions": [],
+			"sentence": "Comparison of miRNA expression profile in the T cell subsets by 3 different methodsFigure 4."
+		},
+		{
+			"mentions": [],
+			"sentence": "Correlation amongst three methods of miRNA expression profilingFigure 5."
+		},
+		{
+			"mentions": [
+				{
+					"from": 6,
+					"id": "hsa-mir-669d",
+					"origin": "miRNAmiR-669d",
+					"to": 19,
+					"type": "miRNA",
+					"value": "hsa-mir-669d"
+				}
+			],
+			"sentence": "Novel miRNAmiR-669d in mouse T cellsFigure 6. miRNA 3 end heterogeneity affects detection efficiency of stem-loop primer-based real time PCR"
+		}
+	]
+}

@@ -23,6 +23,13 @@ var config = require('./config');
     app.use(bodyParser.json());
     app.use(bodyParser.urlencoded({ extended: false }));
 
+
+    app.get('/doc', function(req, res, next){
+        console.log('serving mock file: 2000354.json for request url:', req.url);
+        var doc = require('./2000354.json');
+        res.json(doc);
+    });
+
     // required for passport
     app.use(session({ secret: 'mysecretsesson123456789', resave: false, saveUninitialized: false })); // session secret
     app.use(passport.initialize());
