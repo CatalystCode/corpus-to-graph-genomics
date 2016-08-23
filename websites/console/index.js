@@ -24,7 +24,7 @@ var config = require('./config');
     app.use(bodyParser.urlencoded({ extended: false }));
 
 
-    app.get('/doc', function(req, res, next){
+    app.get('/doc/:docId', function(req, res, next){
         console.log('serving mock file: 2000354.json for request url:', req.url);
         var doc = require('./2000354.json');
         res.json(doc);
