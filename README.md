@@ -161,7 +161,10 @@ azure group deployment create -f azuredeploy.sourcecontrol.json -e parameters.pr
 ### Deployment Types
 This repository contains two kinds of deployments
 
+#### Scalable Deployment
 ![Scalable Deployment](/azure-deployment/Images/resource-architecture.png "Scalable Deployment")
+
+#### Slim Deployment
 ![Slim Deployment](/azure-deployment/Images/resource-architecture-aio.png "Slim Deployment")
 
 | Deployment Name | Description                       |
