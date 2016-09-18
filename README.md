@@ -158,8 +158,11 @@ azure group deployment create -f azuredeploy.sourcecontrol.json -e parameters.pr
 * `resource-group-name` - You can use an existing resource group or run `azure group create` to create a new resource group.
 * `deployment-name` - The name for the deployment which you can later monitor through and azure cli or the azure portal.
 
-### Slim Deployment
+### Deployment Types
 This repository contains two kinds of deployments
+
+![Scalable Deployment](/azure-deployment/images/resource-architecture.png "Scalable Deployment")
+![Slim Deployment](/azure-deployment/images/aio-resource-architecture.png "Slim Deployment")
 
 | Deployment Name | Description                       |
 | --------------- | --------------------------------- |
