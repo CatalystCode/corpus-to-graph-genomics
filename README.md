@@ -42,7 +42,10 @@ Components in the solution:
     * [Azure Deployment](#azure-deployment)
     * [Deploy with ARM](#deploy-with-arm)
     * [Deployment parameters](#deployment-parameters)
-    * [Slim Deployment](#slim-deployment)
+    * [Deployment Types](#deployment-types)
+* [Code Challenges](#code-challenges)
+    * [Deploying Node.js as a Web Job](#deploying-nodejs-as-a-web-job)
+    * [Seamless Execution Across Execution Modes](#seamless-execution-across-execution-modes)
 * [License](#license)
 
 # Components
@@ -177,6 +180,51 @@ That folder contains separate files for ARM template (base + source control) and
 
 When deploying using this template, one web job will be created and marked (with environment variable) as `all_in_one`.
 This will cause the npm `postinstall` action to create 4 web jobs on the 1 web app.
+
+# Code Challenges
+
+## Deploying Node.js as a Web Job
+In order to automatically deploy our application via **Continuous Deployment** we need to take the following into consideration:
+
+1. **Continuous Deployment** makes a copy of your repository in `D:\home\site\wwwroot`
+2. **Web Jobs** are automatically created by placement under `D:\home\site\wwwroot\app_data\jobs\<type>\<name>`
+3. <type> is either `continuous` for always running jobs, or `triggered` for manual/scheduled **Web Job**
+4. <name> is the name you will see when viewing the **Web Job** in the **App Service**
+5. For **scheduled** web jobs, you simply need to add a `settings.job` file ([**CRON** format](http://www.nncron.ru/help/EN/working/cron-format.htm)) in that folder as well.
+
+As such, we use the `npm postinstall` script to determine the **Web Job** type and the specific service to run in order to copy/override the `app.js` in the relevant web job folder.
+
+> Currently [Sep 18th 2016] there is an issue deploying **source control** (**continuous deployment**) with **application settings** to **App Services**. The deployment works, requires to tun the deployment command for a second time to ensure **application settings**. It is handled by an issue on git-hub: [azure-xplat-cli issue #2618](https://github.com/Azure/azure-xplat-cli/issues/2618)
+
+## Seamless Execution Across Execution Modes
+The first step in solving the **Continuous Deployment** problem - All services should be connected to the same repository, but each running different code.
+
+For that we used `app.js` as the entry point for all **Web Jobs** and environment variables to tell the current process which service should currently run. This looks something like this:
+
+```js
+var webJobName = process.env.PIPELINE_ROLE;
+...
+var runner = new continuousRunner(webJobName, config);
+runner.start();
+```
+
+Environment variables are used to provide service specific settings, such as Azure storage settings, Sql server configuration, external endpoints, etc. They are also used to define which service should run on which machine (ie. PIPELINE_ROLE).
+
+In each of the following scenarios we set the environment variable in different methods:
+
+##### Development - Process Execution
+Each "web job" has a dedicated `run.<service>.cmd` file, which sets the relevant environment variables for that web job to run. 
+There is also a `run.cmd` file that executes all cmd files simultaneously.
+
+##### Testing - Background Processes
+The testing framework starts all web jobs simultaneously before executing the tests. 
+It uses log history to check whether specific conditions are met to validate tests' results.
+
+The test runs each web job as a separate process as follows:
+
+```js
+var worker = exec('set PIPELINE_ROLE=' + webJobName + '&& node ' + runAppJSPath);
+```
 
 # License
 Document Processing Pipeline is licensed under the [MIT License](LICENSE).
